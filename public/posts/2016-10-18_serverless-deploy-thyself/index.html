@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Serverless — Deploy Thyself</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Lato', sans-serif;
+        background-color: light;
+    }
+
+    :root {
+        --accent: maroon;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://example.com/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.62.0" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Serverless — Deploy Thyself</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/mweagle/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/mweagle/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/mweagle/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Serverless — Deploy Thyself</h2>
+        <h5></h5>
+        
+<a href="http://example.com/tags/serverless"><kbd class="item-tag">Serverless</kbd></a>
+
+<a href="http://example.com/tags/aws"><kbd class="item-tag">AWS</kbd></a>
+
+<a href="http://example.com/tags/go"><kbd class="item-tag">go</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><p>Over the past year or so there’s been a growing interest in s<a href="https://serverless.zone/">erverless</a>/Function-as-a-Service/s<a href="http://www.slideshare.net/ServerlessConf/patrick-debois-from-serverless-to-servicefull">ervicefull</a> style compute models. There are many reasons for this that are ably <a href="http://martinfowler.com/articles/serverless.html">discussed</a> <a href="http://techbeacon.com/essential-guide-serverless-technologies-architectures">elsewhere</a>. Beyond the architectural and economic implications of serverless, I think one of the more underemphasized aspects is that the “serverless-ness” is often interwoven with business logic. If the compute model encourages per-function deployment, the deployment model needs to have a fairly deep understanding of what a function actually <em>is</em>.</p>
+<p>I think that this operational embedding is a powerful lever, which may encourage greater DevOps collaboration and support applications that can start to lift themselves to the cloud.</p>
+<p><img src="/posts/2016-10-18_serverless-deploy-thyself/images/1.jpeg#layoutTextWidth" alt="image"></p>
+<h2 id="pickup-function-sticks">Pickup Function Sticks</h2>
+<p>The initial hook for serverless is its deployment model. With very little friction, it’s possible to take a function and deploy it to the cloud. Products like <a href="https://zeit.co/now">now</a> and <a href="https://webtask.io/">webtask.io</a> truly excel here — the developer experience is really incredible. Their approaches radically simplify how quick and easy it is to go from code to cloud. It actually feels like cheating. Where’s Dockerfile? The bash script? The configuration DSL? Is this the end of Ops? (Hint: <a href="https://charity.wtf/2016/05/31/wtf-is-operations-serverless/">no</a>).</p>
+<p>This makes it incredibly tempting to deploy a function…and then another…and another. Soon you find yourself with a set of apparently independent functions, blissfully unaware of the implicit dependencies that have started to organically emerge across the system.</p>
+<p>Until things start breaking.</p>
+<p>Turns out that the first function is being called by another, which has a hardcoded and brittle dependency on the supposedly “private” response format (no HATEOAS here). Or perhaps there’s a <a href="https://en.wikipedia.org/wiki/Staged_event-driven_architecture">SEDA</a>-style architecture that introduces some level of decoupling but created a discovery requirement so that <em>Function1</em> and <em>Function2</em> are using the same queue. And the discovery requirement was temporarily “solved” by hardcoding queue names — for a queue that has been decommissioned.</p>
+<p>Many, if not all of us, have seen this in a slightly different context: a single codebase. An issue is filed and you go spelunking in the codebase to find the root cause. It often turns out that the root cause is the unintended consequence of otherwise independent subsystems growing into a tightly coupled <a href="http://www.laputan.org/mud/">big ball of mud</a>. After you regain your composure, you settle in and get ready for a round or five of refactoring. When everything is done and working, it’s committed as a unit to SCM and deployed on the next CI train.</p>
+<p>Where does serverless fit into this?</p>
+<p>If a function is the unit of serverless deployment, what is the unit of developer collaboration?</p>
+<p><img src="/posts/2016-10-18_serverless-deploy-thyself/images/2.jpeg#layoutTextWidth" alt="image"></p>
+<p><a href="https://www.flickr.com/photos/jeanot/16246807237/in/photolist-qKF8La-bvdqyV-6n1F5g-dvz67r-dvgA9k-5izZ9G-bxZEqf-8tjp9P-fyM5JZ-ctkbEL-e2hM4x-khP7ix-7fef1J-s6D5d6-pokNbG-nrbbfU-ohS6Ax-ph5Z7i-GyFBsA-keKRkn-aBzjBV-ntqLdj-ei7nXj-kDGaN7-opFvAr-n9YN1y-6xtjm4-keN9DL-nGYD65-aaPQph-np7sgz-sk5BF-gZPmpW-kDE1cP-o8hpER-oU3RTG-5aVqsn-jW8mvG-4obKup-Jqkiyw-KoWRy-eSkpXw-k17cDx-emwbpc-cGZvfj-gmGQiE-nHaS5H-dLGYw8-afdMpB-np9M3C">Flickr</a></p>
+<h2 id="self-deploying-services">Self-Deploying Services</h2>
+<p>Developer time and focus are precious and inelastic resources. Tools and technologies should do everything possible to conserve them. Distributed SCM systems are a boon to team productivity and creativity because they facilitate collaboration, both within and across groups. And while I think serverless marks a <a href="https://medium.com/@mweagle/serverless-the-next-discontinuity-da44823992d8#.9uziy47c7">discontinuous advance</a>, I’m not willing to go back to a <a href="https://en.wikipedia.org/wiki/Zork">Zork</a>-inspired production debugging session when the overall system is misbehaving. “You’re in a dark terminal. To your right, or left, or somewhere else is a function. Buh-bye.”</p>
+<p>While a microservice, ideally responsible for a bounded context, may start with a single function, it shouldn’t be limited to only one as <a href="https://www.thoughtworks.com/insights/blog/microservices-evolutionary-architecture">things change</a>. For example, even a single REST HTTP-resource might ultimately be handled by <em>safe</em> and <em>unsafe</em> functions to more tightly scope security privileges. And at each stage in the microservice’s commit history, the service should be capable of being reliably deployed to the cloud, with a coherent set of cooperating functions that have been <a href="https://serverless.zone/unit-and-integration-testing-for-lambda-fc9510963003#.5j1za7e9q">tested together</a>. Imagine if deploying a standard webapp, with otherwise “independent” URL routing rules and handlers in the same address space, wasn’t deployed as an atomic unit from the same commit. What would happen if the <em>POST /users</em> route was made available, and at some later point (maybe), some <em>GET /users/{userID}</em> route was available? Likely chaos, most definitely PagerDuty.</p>
+<p>The initial serverless deployment ease, the deceiving “ops-lessness” of the first push, can similarly turn into a complex graph of function calls, where the unit of collaboration, the source tree state, is lost as each function finds its own path to the cloud.</p>
+<p>Although serverless enables deployment of individual functions, development is centered around a shared source state. And that entire state should be preserved on its cloud journey. Viewed through this lens, serverless is one cloud destination, but it’s one that should preserve the same guarantees we’ve come to expect from prior approaches. It’s ultimately up to the application codebase to define the compute model best suited for its domain and requirements at every point in its history. In other words, how the service should be <a href="http://nealford.com/memeagora/2015/03/30/architecture_is_abstract_until_operationalized.html">operationalized</a>. And since the end-game of microservice development is to run somewhere other than <em>localhost</em>, the application codebase becomes <strong>self-deploying</strong><em>.</em></p>
+<p>Serverless is an excellent self-deployment target for a lot of workloads, but there are other options like Kubernetes, VMs, or even unikernels. Whatever the end state, the codebase intrinsically includes logic for its operational lifecycle, including aspects like how it <a href="https://vimeo.com/173610242">should be monitored</a>. This merging of operational and application concerns in the same codebase, often in the same language, and with pull requests that address multiple dimensions (logic, compute model, security policy, metric, and alert in the same commit) helps foster a shared space for Ops and Devs to collaborate more.</p>
+<h2 id="sparta-choice-is-an-option">Sparta: Choice Is An Option</h2>
+<p><a href="http://gosparta.io">Sparta</a> initially started with a pure serverless model, combining Go exclusively with AWS Lambda. This cloud compute model made deployment virtually transparent, as AWS handles much of the operational burden.</p>
+<p>Over time Sparta has included more features that supplement the serverless target. At every stage, the unit of deployment has always been a single Go binary that binds operational and application concerns together. Sparta-based applications marshal all AWS operations to CloudFormation, supplementing them with <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources-lambda.html">CustomResources</a> as needed. While this hasn’t always been the most straightforward approach, leveraging CloudFormation provides a lot of confidence that the source state is faithfully moved to the cloud.</p>
+<p>Sparta applications maintain the self-deployment objective, even as they provision more complex topologies:</p>
+<ul>
+<li><a href="https://github.com/mweagle/SpartaHelloWorld">SpartaHelloWorld</a>: AWS Lambda function</li>
+<li><a href="https://github.com/mweagle/SpartaHTML">SpartaHTML</a>: AWS Lambda, API Gateway entry</li>
+<li><a href="https://github.com/mweagle/SpartaGrafana">SpartaGrafana</a>: AWS Lambda, Grafana on bare EC2</li>
+<li><a href="https://github.com/mweagle/SpartaDocker">SpartaDocker</a>: AWS Lambda, SQS, Docker on ECS (<a href="https://serverless.zone/flexibility-is-a-virtue-54059d75b1ef#.g9xjv11d9">article</a>).</li>
+</ul>
+<p>Every service is provisioned with the same command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go run main.go provision --level info --s3Bucket <span style="color:#66d9ef">$(</span>S3_BUCKET<span style="color:#66d9ef">)</span>
+</code></pre></div><p>Over time I’ve come to think that <em>self-deployment</em> is the big win. Serverless makes it incredibly easy to start self-deploying, but if it turns out over time that alternative compute, pricing, or performance requirements cause a serverless re-evaluation, Sparta makes it easy for you to refactor your code to run the same logic in a container, on a VM, or whatever else you need.</p>
+<p>Serverless is a fantastic option for many workloads, but you should be free to choose others. The only constant is change — well, that and the need to run somewhere other than <em>localhost</em>.</p>
+<p><img src="/posts/2016-10-18_serverless-deploy-thyself/images/3.png#layoutTextWidth" alt="image"></p>
+<p>To learn more about Sparta, visit:</p>
+<ul>
+<li><a href="http://gosparta.io">Documentation</a></li>
+<li><a href="https://github.com/mweagle/Sparta">GitHub</a></li>
+</ul>
+</div>
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+

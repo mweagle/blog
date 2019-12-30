@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Matt Weagle</title>
+    <link>http://example.com/tags/</link>
+    <description>Recent content in Tags on Matt Weagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Oct 2018 05:28:43 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS</title>
+      <link>http://example.com/tags/aws/</link>
+      <pubDate>Tue, 23 Oct 2018 05:28:43 +0000</pubDate>
+      
+      <guid>http://example.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>http://example.com/tags/go/</link>
+      <pubDate>Tue, 23 Oct 2018 05:28:43 +0000</pubDate>
+      
+      <guid>http://example.com/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>http://example.com/tags/serverless/</link>
+      <pubDate>Tue, 23 Oct 2018 05:28:43 +0000</pubDate>
+      
+      <guid>http://example.com/tags/serverless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud Computing</title>
+      <link>http://example.com/tags/cloud-computing/</link>
+      <pubDate>Mon, 22 Jan 2018 04:29:17 +0000</pubDate>
+      
+      <guid>http://example.com/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>http://example.com/tags/programming/</link>
+      <pubDate>Mon, 22 Jan 2018 04:29:17 +0000</pubDate>
+      
+      <guid>http://example.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>http://example.com/tags/lambda/</link>
+      <pubDate>Thu, 28 Sep 2017 02:30:16 +0000</pubDate>
+      
+      <guid>http://example.com/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS Lambda</title>
+      <link>http://example.com/tags/aws-lambda/</link>
+      <pubDate>Tue, 08 Nov 2016 15:50:49 +0000</pubDate>
+      
+      <guid>http://example.com/tags/aws-lambda/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

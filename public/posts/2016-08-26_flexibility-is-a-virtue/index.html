@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flexibility is a Virtue</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Lato', sans-serif;
+        background-color: light;
+    }
+
+    :root {
+        --accent: maroon;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://example.com/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.62.0" />
+        
+
+        
+
+        
+            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">Flexibility is a Virtue</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/posts/">Posts</a></li>
+                            
+                                <li><a href="/projects/">Projects</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/mweagle/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/mweagle/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/mweagle/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Flexibility is a Virtue</h2>
+        <h5></h5>
+        
+<a href="http://example.com/tags/aws"><kbd class="item-tag">AWS</kbd></a>
+
+<a href="http://example.com/tags/serverless"><kbd class="item-tag">Serverless</kbd></a>
+
+<a href="http://example.com/tags/go"><kbd class="item-tag">go</kbd></a>
+
+
+    </div>
+
+    <div align="start" class="content"><p><a href="http://gosparta.io/">Sparta</a> v0.8.0 adds a powerful new <a href="http://gosparta.io/docs/application/workflow_hooks/">WorkflowHooks</a> feature that allows service developers the ability to customize the standard provisioning pipeline. This inversion of control makes it possible for a single logical service to be deployed to AWS Lambda <strong>and</strong> the EC2 Container Service…at the same time.</p>
+<p>You read that right. <strong>Docker</strong> <em>and</em> <strong>serverless</strong>, working together to create <strong>mass hysteria!</strong></p>
+<p>Or at the very least, working together as part of a single service.</p>
+<p>I mentioned some of the reasons you might want to do this in a <a href="https://medium.com/@mweagle/make-serverless-servers-great-again-260260297d41#.p95alavz6">previous post</a>, and in this installment I’m going to walk through how the <a href="https://github.com/mweagle/SpartaDocker">SpartaDocker</a> sample accomplishes this. It defines a service where Lambda functions push events onto a dynamically created SQS queue, whose messages are consumed by the same application running in ECS.</p>
+<p><img src="/posts/2016-08-26_flexibility-is-a-virtue/images/1.png#layoutTextWidth" alt="image"></p>
+<p>In addition to exploring the new Sparta feature I think it’ll become evident how much of the operational burden serverless-style architectures promise to offload.</p>
+<p>To the cloud!</p>
+<h2 id="create-a-new-application-mode">Create a new application mode</h2>
+<p>The first step is to create a new application mode that complements the standard Sparta <a href="http://gosparta.io/docs/application/commandline/">options</a>. When the Go application is started in the <em>sqsWorker</em> mode, it will begin consuming messages from an (yet to be defined) SQS provider.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#75715e">// Custom command to startup a simple HelloWorld HTTP server
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">sqsWorkerCommand</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">cobra</span>.<span style="color:#a6e22e">Command</span>{
+  <span style="color:#a6e22e">Use</span>:   <span style="color:#e6db74">&#34;sqsWorker&#34;</span>,
+  <span style="color:#a6e22e">Short</span>: <span style="color:#e6db74">&#34;Sample SQS Worker processor&#34;</span>,
+  <span style="color:#a6e22e">Long</span>:  <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;Sample SQS listener&#34;</span>),
+  <span style="color:#a6e22e">RunE</span>: <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">cmd</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">cobra</span>.<span style="color:#a6e22e">Command</span>, <span style="color:#a6e22e">args</span> []<span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">error</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">sqsListener</span>(<span style="color:#a6e22e">sparta</span>.<span style="color:#a6e22e">OptionsGlobal</span>.<span style="color:#a6e22e">Logger</span>)
+  },
+}
+<span style="color:#a6e22e">sparta</span>.<span style="color:#a6e22e">CommandLineOptions</span>.<span style="color:#a6e22e">Root</span>.<span style="color:#a6e22e">AddCommand</span>(<span style="color:#a6e22e">sqsWorkerCommand</span>)
+</code></pre></div><p>The <strong>sqsListener</strong> function sets up a simple polling loop and writes each received message to CloudWatch Logs.</p>
+<p>Since we’re going to be provisioning an AutoScalingGroup that manages 1 EC2 instance, we also need to provide a mechanism to accept the (required) SSH KeyName.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#75715e">// And add the SSHKeyName option to the provision step
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">sparta</span>.<span style="color:#a6e22e">CommandLineOptions</span>.<span style="color:#a6e22e">Provision</span>.<span style="color:#a6e22e">Flags</span>().<span style="color:#a6e22e">StringVarP</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">SSHKeyName</span>,
+  <span style="color:#e6db74">&#34;key&#34;</span>,
+  <span style="color:#e6db74">&#34;k&#34;</span>,
+  <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;SSH Key Name to use for EC2 instances&#34;</span>)
+</code></pre></div><h2 id="register-workflow-hook">Register Workflow Hook</h2>
+<p>The next step is to define the <em>PostBuild</em> hook that builds the Docker image and pushes it to the EC2 Container Registry.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#75715e">// SpartaPostBuildDockerImageHook workflow hook to build the Docker image
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">SpartaPostBuildDockerImageHook</span>(<span style="color:#a6e22e">context</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">interface</span>{},
+  <span style="color:#a6e22e">serviceName</span> <span style="color:#66d9ef">string</span>,
+  <span style="color:#a6e22e">S3Bucket</span> <span style="color:#66d9ef">string</span>,
+  <span style="color:#a6e22e">buildID</span> <span style="color:#66d9ef">string</span>,
+  <span style="color:#a6e22e">awsSession</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">session</span>.<span style="color:#a6e22e">Session</span>,
+  <span style="color:#a6e22e">noop</span> <span style="color:#66d9ef">bool</span>,
+  <span style="color:#a6e22e">logger</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">logrus</span>.<span style="color:#a6e22e">Logger</span>) <span style="color:#66d9ef">error</span> {
+
+  <span style="color:#a6e22e">dockerServiceName</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">ToLower</span>(<span style="color:#a6e22e">serviceName</span>)
+  <span style="color:#a6e22e">dockerTags</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">string</span>, <span style="color:#ae81ff">0</span>)
+  <span style="color:#a6e22e">dockerTags</span>[<span style="color:#a6e22e">dockerServiceName</span>] = <span style="color:#a6e22e">buildID</span>
+
+  <span style="color:#75715e">// Always build the image
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">buildErr</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">spartaDocker</span>.<span style="color:#a6e22e">BuildDockerImage</span>(<span style="color:#a6e22e">serviceName</span>,
+    <span style="color:#e6db74">&#34;&#34;</span>,
+    <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">dockerTags</span>,
+    <span style="color:#a6e22e">logger</span>)
+  <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">buildErr</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">buildErr</span>
+  }
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ecrURL</span> <span style="color:#66d9ef">string</span>
+  <span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">noop</span> {
+    <span style="color:#75715e">// Push the image to ECR &amp; store the URL s.t. we can properly annotate
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// the CloudFormation template
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">localTag</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;%s:%s&#34;</span>, <span style="color:#a6e22e">dockerServiceName</span>, <span style="color:#a6e22e">buildID</span>)
+    <span style="color:#a6e22e">ecrURLPush</span>, <span style="color:#a6e22e">pushImageErr</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">spartaDocker</span>.<span style="color:#a6e22e">PushDockerImageToECR</span>(<span style="color:#a6e22e">localTag</span>,
+      <span style="color:#a6e22e">ecrRepositoryName</span>,
+      <span style="color:#a6e22e">awsSession</span>,
+      <span style="color:#a6e22e">logger</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">pushImageErr</span> {
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">pushImageErr</span>
+    }
+    <span style="color:#a6e22e">ecrURL</span> = <span style="color:#a6e22e">ecrURLPush</span>
+    <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">WithFields</span>(<span style="color:#a6e22e">logrus</span>.<span style="color:#a6e22e">Fields</span>{
+      <span style="color:#e6db74">&#34;ECRUrl&#34;</span>:    <span style="color:#a6e22e">ecrURL</span>,
+      <span style="color:#e6db74">&#34;PushError&#34;</span>: <span style="color:#a6e22e">pushImageErr</span>,
+    }).<span style="color:#a6e22e">Info</span>(<span style="color:#e6db74">&#34;Docker image pushed&#34;</span>)
+  } <span style="color:#66d9ef">else</span> {
+    <span style="color:#a6e22e">ecrURL</span> = <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;https://123412341234.dkr.ecr.aws-region.amazonaws.com/%s&#34;</span>, <span style="color:#a6e22e">serviceName</span>)
+  }
+  <span style="color:#75715e">// Save the URL
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">context</span>[<span style="color:#e6db74">&#34;URL&#34;</span>] = <span style="color:#a6e22e">ecrURL</span>
+
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+}
+</code></pre></div><p>Sparta provides both <a href="https://godoc.org/github.com/mweagle/Sparta/docker#BuildDockerImage">BuildDockerImage</a> and <a href="https://godoc.org/github.com/mweagle/Sparta/docker#PushDockerImageToECR">PushDockerImageToECR</a> to encapsulate the details around building Docker images, authenticating (with retry) to ECR, and pushing your image to the cloud.</p>
+<p>As the ECR URL is dynamically determined in part from the <em>buildID</em>, it’s stored in the context object so that we can reference it later when building up the CloudFormation template.</p>
+<h2 id="docker-all-the-things">Docker All the Things</h2>
+<p>The SpartaDocker Dockerfile is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> centurylink/ca-certs ARG SPARTA_DOCKER_BINARY ADD $SPARTA_DOCKER_BINARY /SpartaDocker EXPOSE 80 CMD [&#34;/SpartaDocker&#34;, &#34;sqsWorker&#34;]</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>The <strong>BuildDockerImage</strong> function compiles and statically links your application’s dependencies (CGO<em>ENABLED=0). The resulting binary is provided to the Docker build command via the SPARTA_DOCKER_BINARY <a href="https://docs.docker.com/engine/reference/commandline/build/#/set-build-time-variables-build-arg">Docker build argument</a> and our CMD uses the _sqsWorker</em> command line option we defined above.</p>
+<p>Building with Docker 1.12 on OSX, the resulting image is 16.66 MB in size.</p>
+<h3 id="part-1lambda">Part 1 — Lambda</h3>
+<p>The next step is to register a normal Sparta lambda function, together with a <a href="https://godoc.org/github.com/mweagle/Sparta#TemplateDecorator">TemplateDecorator</a>. We’re also going to specify an IAM role so that the Lambda function only has write access to the dynamically provisioned queue (<strong>sqsResourceName</strong>).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#75715e">// Setup an IAM role that allows the lambda function to send a message
+</span><span style="color:#75715e"></span><span style="color:#75715e">// to the queue.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">iamPolicy</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">sparta</span>.<span style="color:#a6e22e">IAMRoleDefinition</span>{
+  <span style="color:#a6e22e">Privileges</span>: []<span style="color:#a6e22e">sparta</span>.<span style="color:#a6e22e">IAMRolePrivilege</span>{
+    <span style="color:#a6e22e">sparta</span>.<span style="color:#a6e22e">IAMRolePrivilege</span>{
+      <span style="color:#a6e22e">Actions</span>: []<span style="color:#66d9ef">string</span>{
+        <span style="color:#e6db74">&#34;sqs:SendMessage&#34;</span>},
+      <span style="color:#a6e22e">Resource</span>: <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">GetAtt</span>(<span style="color:#a6e22e">sqsResourceName</span>, <span style="color:#e6db74">&#34;Arn&#34;</span>).<span style="color:#a6e22e">String</span>(),
+    },
+  },
+}
+
+<span style="color:#75715e">// The actual lambda functions
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">lambdaFn</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">sparta</span>.<span style="color:#a6e22e">NewLambda</span>(<span style="color:#a6e22e">iamPolicy</span>,
+  <span style="color:#a6e22e">helloWorldLambda</span>,
+  <span style="color:#66d9ef">nil</span>)
+<span style="color:#a6e22e">lambdaFn</span>.<span style="color:#a6e22e">Decorator</span> = <span style="color:#a6e22e">helloWorldDecorator</span>
+<span style="color:#a6e22e">lambdaFn</span>.<span style="color:#a6e22e">DependsOn</span> = []<span style="color:#66d9ef">string</span>{<span style="color:#a6e22e">sqsResourceName</span>}
+</code></pre></div><p>It’s the TemplateDecorator that ties everything together.</p>
+<h3 id="parts-2-and-beyond">Parts 2 and Beyond</h3>
+<p>The final step (which is actually multiple steps) is to tie everything together and properly configure and register the ECS cluster. The <strong>helloWorldDecorator</strong> function is by far the largest function in the source. It’s responsible for:</p>
+<ol>
+<li>Adding a new <strong>gocf.SQSQueue{}</strong> resource to the CloudFormation template</li>
+<li>Provisioning an ECS cluster using the <strong>context[“URL”]</strong> image URL we pushed in the previous step.</li>
+<li>Ensuring the ECS cluster can successfully discover the SQS resource</li>
+</ol>
+<p>Behind that second step is ~250 lines of configuration files, multiple interdependencies, various AWS service settings, and environment values to properly configure the cluster. I’d encourage you to work through the source if you’re interested in the gory details. I’d also like to thank <a href="https://stelligent.com/2016/05/26/automating-ecs-provisioning-in-cloudformation-part-1/">Stelligent</a> for their excellent post — the Sparta implementation is largely a port of their writeup.</p>
+<p>There are a few points worth calling out that are specific to the SpartaDocker application.</p>
+<ol>
+<li>
+<p>The EC2 IAM Role associated with the ECS host includes privileges to read from the dynamically provisioned SQS instance:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang">  <span style="color:#a6e22e">ec2IAMStatements</span> = append(<span style="color:#a6e22e">ec2IAMStatements</span>,
+    <span style="color:#a6e22e">spartaIAM</span>.<span style="color:#a6e22e">PolicyStatement</span>{
+      <span style="color:#a6e22e">Action</span>: []<span style="color:#66d9ef">string</span>{<span style="color:#e6db74">&#34;sqs:ChangeMessageVisibility&#34;</span>,
+        <span style="color:#e6db74">&#34;sqs:DeleteMessage&#34;</span>,
+        <span style="color:#e6db74">&#34;sqs:GetQueueAttributes&#34;</span>,
+        <span style="color:#e6db74">&#34;sqs:ReceiveMessage&#34;</span>,
+      },
+    <span style="color:#a6e22e">Effect</span>:   <span style="color:#e6db74">&#34;Allow&#34;</span>,
+    <span style="color:#a6e22e">Resource</span>: <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">GetAtt</span>(<span style="color:#a6e22e">sqsResourceName</span>, <span style="color:#e6db74">&#34;Arn&#34;</span>).<span style="color:#a6e22e">String</span>(),
+</code></pre></div><p>The ECS ContainerTasks inherit this IAM Role which authorizes the Sparta application to access the SQS resource.</p>
+</li>
+<li>
+<p>The dynamically provisioned SQS resource’s properties are provided to the ECS-hosted SpartaDocker application as environment variables:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang">  <span style="color:#a6e22e">Environment</span>: <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">EC2ContainerServiceTaskDefinitionContainerDefinitionsEnvironmentList</span>{
+    <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">EC2ContainerServiceTaskDefinitionContainerDefinitionsEnvironment</span>{
+      <span style="color:#a6e22e">Name</span>:  <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">String</span>(<span style="color:#e6db74">&#34;AWS_REGION&#34;</span>),
+      <span style="color:#a6e22e">Value</span>: <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">Ref</span>(<span style="color:#e6db74">&#34;AWS::Region&#34;</span>).<span style="color:#a6e22e">String</span>(),
+    },
+    <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">EC2ContainerServiceTaskDefinitionContainerDefinitionsEnvironment</span>{
+      <span style="color:#a6e22e">Name</span>:  <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">String</span>(<span style="color:#a6e22e">sqsQueueURLEnvVar</span>),
+      <span style="color:#a6e22e">Value</span>: <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">Ref</span>(<span style="color:#a6e22e">sqsResourceName</span>).<span style="color:#a6e22e">String</span>(),
+    },
+    <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">EC2ContainerServiceTaskDefinitionContainerDefinitionsEnvironment</span>{
+      <span style="color:#a6e22e">Name</span>:  <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">String</span>(<span style="color:#a6e22e">sqsQueueNameEnvVar</span>),
+      <span style="color:#a6e22e">Value</span>: <span style="color:#a6e22e">gocf</span>.<span style="color:#a6e22e">GetAtt</span>(<span style="color:#a6e22e">sqsResourceName</span>, <span style="color:#e6db74">&#34;QueueName&#34;</span>).<span style="color:#a6e22e">String</span>(),
+    },
+  }
+</code></pre></div><p>See the <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html">SQS CloudFormation outputs</a> for more details.</p>
+</li>
+</ol>
+<h2 id="to-the-cloud">To the Cloud</h2>
+<p>Once everything is in place, the WorkflowHooks struct is provided to the new <a href="https://godoc.org/github.com/mweagle/Sparta#MainEx">sparta.MainEx</a> function. Provisioning the service can be done as before:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">make provision
+</code></pre></div><p>This will take a bit longer than a serverless-only Sparta deploy, but the end result is a self-contained service that dynamically provisions an SQS resource and supports dynamic discovery so that both a Sparta lambda function and an ECS worker are able to communicate through it.</p>
+<p>Using the AWS Console to test the Lambda function:</p>
+<p><img src="/posts/2016-08-26_flexibility-is-a-virtue/images/2.jpeg#layoutTextWidth" alt="image"></p>
+<p>You can verify the ECS worker pool processed the message by checking the CloudWatch Logs:</p>
+<p><img src="/posts/2016-08-26_flexibility-is-a-virtue/images/3.jpeg#layoutTextWidth" alt="image"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>While the Serverless model is an ideal fit for many workloads and can significantly reduce both a service’s time to market and ongoing operational costs, it’s not always a perfect match. To support shifting workloads and different topologies, consider adding Docker and ECS deployments to your Sparta application. It does require more configuration and potential monetary costs, but the payoff is a significant increase in flexibility &amp; the ability to exploit new <a href="https://aws.amazon.com/blogs/aws/new-aws-application-load-balancer/">AWS features</a>.</p>
+<p>Plus, there’s always the off chance that once Docker and serverless have reconciled, cats and dogs can once again live in peace together.</p>
+<p><img src="/posts/2016-08-26_flexibility-is-a-virtue/images/4.png#layoutTextWidth" alt="image"></p>
+</div>
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+

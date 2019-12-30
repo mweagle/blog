@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lambda on Matt Weagle</title>
+    <link>http://example.com/tags/lambda/</link>
+    <description>Recent content in Lambda on Matt Weagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Sep 2017 02:30:16 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.com/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Serverless, Serverfull, and Weaving Pipelines</title>
+      <link>http://example.com/posts/2017-09-28_serverless-serverfull-and-weaving-pipelines/</link>
+      <pubDate>Thu, 28 Sep 2017 02:30:16 +0000</pubDate>
+      
+      <guid>http://example.com/posts/2017-09-28_serverless-serverfull-and-weaving-pipelines/</guid>
+      <description>Serverless computing is a hot topic these days. Depending on the tweet-weather, it’s a cloud computing revolution, a ripe source of lock-in, a net cost savings or an unpredictable cost driver, a stepping stone to event-sourced applications, the commoditization of containers, and a host of other things. Or maybe it’s just a full circle return to the glory days of Perl and cgi-bin.
+Putting aside the tweet-bait, there’s a general agreement that running a “serverless service” definitely doesn’t signal the End of Ops.</description>
+    </item>
+    
+    <item>
+      <title>See Lambda Go</title>
+      <link>http://example.com/posts/2017-05-03_see-lambda-go/</link>
+      <pubDate>Wed, 03 May 2017 03:16:28 +0000</pubDate>
+      
+      <guid>http://example.com/posts/2017-05-03_see-lambda-go/</guid>
+      <description>The Sparta framework for AWS Lambda provides a full-featured environment for writing go-based, Serverless-powered applications.
+Up until version 0.11.1 however, there was a measurable overhead to this approach, especially in container cold-start scenarios. Cold-starts happen when a serverless function of any type needs to be created, placed, and invoked by a provider. For Sparta applications, this meant a relatively large performance penalty before the NodeJS-based shim was able to forward the request to the standalone go binary.</description>
+    </item>
+    
+  </channel>
+</rss>

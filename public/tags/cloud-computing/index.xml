@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Computing on Matt Weagle</title>
+    <link>http://example.com/tags/cloud-computing/</link>
+    <description>Recent content in Cloud Computing on Matt Weagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jan 2018 04:29:17 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.com/tags/cloud-computing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build an S3 website with API Gateway and AWS Lambda for Go using Sparta</title>
+      <link>http://example.com/posts/2018-01-22_build-an-s3-website-with-api-gateway-and-aws-lambda-for-go-using-sparta/</link>
+      <pubDate>Mon, 22 Jan 2018 04:29:17 +0000</pubDate>
+      
+      <guid>http://example.com/posts/2018-01-22_build-an-s3-website-with-api-gateway-and-aws-lambda-for-go-using-sparta/</guid>
+      <description>While AWS Lambda has always supported the ability to run arbitrary binaries, enabling a response to Lambda requests had always proven difficult — requiring some type of shim layer to proxy requests through one of the supported runtimes.
+Over the past few years, I’ve been working on a Go framework that produces self-deploying AWS Lambda-powered microservices. Sparta offered both NodeJS (via a Go binary) and Python (via cgo shims) — but each approach suffered from both runtime performance penalties and developer complexity.</description>
+    </item>
+    
+    <item>
+      <title>Scaling the serverless summit requires environmental sympathy with dev &amp; ops</title>
+      <link>http://example.com/posts/2017-05-19_scaling-the-serverless-summit-requires-environmental-sympathy-with-dev-ops/</link>
+      <pubDate>Fri, 19 May 2017 05:37:48 +0000</pubDate>
+      
+      <guid>http://example.com/posts/2017-05-19_scaling-the-serverless-summit-requires-environmental-sympathy-with-dev-ops/</guid>
+      <description>In the wake of Serverlessconf 2017 in Austin, there’s been an increasing number of discussions about today’s cold reality of serverless. While we can see the glory of serverless manifesting in the not-too distant future, the community still finds it difficult to test, deploy, debug, self-discover, and generally develop serverless applications.
+The discussion has been amplified in recent days with tweet storms summarized by Toby Hede, and the great threads on the Serverless Slack channel from Paul Johnston that prompted this post.</description>
+    </item>
+    
+  </channel>
+</rss>
