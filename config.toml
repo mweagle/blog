@@ -7,7 +7,7 @@ googleAnalytics = ""
 
 [params]
     author = "Matt Weagle"
-    description = "Writings"
+    description = ""
     githubUsername = "#"
     accent = "maroon"
     showBorder = true
@@ -23,8 +23,8 @@ googleAnalytics = ""
     weight = 1
 
 [[menu.main]]
-    url = "/about/"
-    name = "About"
+    url = "/me/"
+    name = "Me"
     weight = 2
 
 [[menu.main]]
