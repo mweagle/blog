@@ -1,0 +1,158 @@
+# We don't include a [deploy] config block because
+# it's built and deployed by netlify
+baseurl: ""
+theme: "PaperMod"
+title: Matt Weagle
+paginate: 7
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Matt Weagle
+  description: "Matt Weagle Blog"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/icons8-word.png"
+    favicon16x16: "/icons8-word.png"
+    favicon32x32: "/icons8-word.png"
+    apple_touch_icon: "/icons8-word.png"
+    safari_pinned_tab: "/icons8-word.png"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Matt Weagle
+    subtitle: ""
+    imageUrl: "/lyftshot.jpg"
+    imageWidth: 213
+    imageHeight: 133.5
+    imageTitle: Matt Weagle
+    buttons:
+      - name: posts
+        url: posts
+      - name: tags
+        url: tags
+      - name: search
+        url: search
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: mastodon
+      url: "https://hachyderm.io/@mweagle"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/mweagle/"
+    - name: github
+      url: "https://github.com/mweagle"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+  #    bing:
+  #      SiteVerificationTag: "XYZabc"
+  #    yandex:
+  #      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    includeScore: true
+    shouldSort: true
+    location: 0
+    distance: 32
+    threshold: 0
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: resume
+      name: resume
+      url: /resume
+      weight: 10
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 15
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: search
+      url: /search
+      weight: 40
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    style: vscode

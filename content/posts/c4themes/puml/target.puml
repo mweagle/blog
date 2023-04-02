@@ -1,0 +1,39 @@
+Title C4 Plant UML Example
+
+!include "https://mweagle.io/resources/c4themes/colorbrewer/c4-theme.puml"
+
+' We only include the icon files.
+'!include <awslib/AWSCommon>
+'!include <awslib/InternetOfThings/IoTRule>
+'!include <awslib/Analytics/KinesisDataStreams>
+'!include <awslib/ApplicationIntegration/SimpleQueueService>
+'
+'left to right direction
+'
+'agent "Published Event" as event #fff
+'
+'IoTRule(iotRule, "Action Error Rule", "error if Kinesis fails")
+'KinesisDataStreams(eventStream, "IoT Events", "2 shards")
+'SimpleQueueService(errorQueue, "Rule Error Queue", "failed Rule actions")
+'
+'event --> iotRule : JSON message
+'iotRule --> eventStream : messages
+'iotRule --> errorQueue : Failed action message
+
+Person(wat, "NICE")
+Person(customer, "Personal Banking Customer")
+System(banking_system, "Internet Banking System")
+
+System_Ext(mail_system, "E-mail system")
+System_Ext(mainframe, "Mainframe Banking System")
+Container(containerAlias, "Label", "Technology", "Optional Description")
+Container_Ext(OthercontainerAlias, "Label", "OTHER Technology", "Optional Description")
+Component(someComponetn, "THIS THING", "WAT")
+Component_Ext(anotherComp, "THIS OTHER THING", "WAT")
+
+Rel(customer, banking_system, "Uses")
+Rel_Back(customer, mail_system, "Sends e-mails to")
+Rel_Neighbor(banking_system, mail_system, "Sends e-mails")
+Rel(banking_system, mainframe, "Uses")
+
+SHOW_LEGEND()
