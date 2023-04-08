@@ -15,11 +15,13 @@ Customer-focused, hands-on software engineering manager and individual contribut
 
 Software Development Manager for [AWS Lambda](https://aws.amazon.com/lambda/) and [AWS CodeCatalyst](https://codecatalyst.aws/explore).
 
-* Contributed to [AWS Lambda SmartStart](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html) feature.
-* Implemented mechanisms and metrics to improve CI/CD for 120+ SDE monolithic deployment artifact with high blast radius.
-* Championed decomposition of existing codebase into localhost `gRPC` microservices to align ownerhip and improve organizational alignment.
+* Contributed to [AWS Lambda SmartStart](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html) capability.
+* Created mechanisms and metrics to coordinate CI/CD for 100+ person development group.
+* Doubled team size to increase capacity and reduce operational frequency.
+* Championed decomposition of existing `go` codebase into multiple, localhost `gRPC` microservices to align ownerhip and improve organizational execution.
 * Led the [Lambda Corection of Error Bar Raiser](https://wa.aws.amazon.com/wat.concept.coe.en.html) program to improve our incident documentation, learnings, and discussions.
-* Part of team that delivered [GitHub Actions](https://aws.amazon.com/blogs/devops/using-github-actions-with-amazon-codecatalyst/) on CodeCatalyst.
+* Delivered [GitHub Actions](https://aws.amazon.com/blogs/devops/using-github-actions-with-amazon-codecatalyst/) on CodeCatalyst.
+* Owned delivery of [CodeCatalyst Build](https://docs.aws.amazon.com/codecatalyst/latest/userguide/build-workflow-actions.html) and [CodeCatalyst Workflow Actions](https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-actions.html).
 
 ---
 
