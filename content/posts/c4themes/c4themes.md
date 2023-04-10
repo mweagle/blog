@@ -6,7 +6,7 @@ lastmod: 2023-02-18T21:57:17-08:00
 tags: ["architecture", "visualization"]
 ShowToc: true
 description: "Plant UML Themes"
-draft: true
+draft: false
 subtitle: "Using ColorBrewer palettes for C4 architecture diagrams"
 
 image: ""
@@ -17,5 +17,4 @@ image: ""
 
 Summary of article here...
 
-{{< plantuml id="eg" source="./c4themes/puml/target.puml" >}}
-
+{{< plantuml id="eg" source="./puml/target.puml" >}}

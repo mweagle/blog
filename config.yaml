@@ -9,7 +9,7 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # is necessary
+    - JSON # is necessary for JS search
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -27,9 +27,9 @@ params:
   title: Matt Weagle
   description: "Matt Weagle Blog"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  author: mweagle
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  #images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -69,9 +69,9 @@ params:
     enabled: true # needs to be explicitly set
     title: Matt Weagle
     subtitle: ""
-    imageUrl: "/lyftshot.jpg"
-    imageWidth: 213
-    imageHeight: 133.5
+    imageUrl: "/mweagle.jpg"
+    imageWidth: 267
+    imageHeight: 267
     imageTitle: Matt Weagle
     buttons:
       - name: posts
@@ -95,8 +95,8 @@ params:
       url: "https://github.com/mweagle"
 
   analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
+  #  google:
+  #    SiteVerificationTag: "XYZabc"
   #    bing:
   #      SiteVerificationTag: "XYZabc"
   #    yandex:
@@ -108,7 +108,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/mweagle/blog"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 

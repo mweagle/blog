@@ -1,6 +1,6 @@
 Title C4 Plant UML Example
 
-!include "https://mweagle.io/resources/c4themes/colorbrewer/c4-theme.puml"
+!include "../../../../resources/c4themes/colorbrewer/c4-theme.puml"
 
 ' We only include the icon files.
 '!include <awslib/AWSCommon>
