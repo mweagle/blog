@@ -11,7 +11,7 @@ Title C4 Plant UML Example
 !if (%getenv("USER") == "mweagle")
 !$ROOT_PATH = "/Users/mweagle/Library/CloudStorage/Dropbox/Apps/Github/blog/content/posts/"
 !else
-!$ROOT_PATH = "https://mweagle.io/"
+!$ROOT_PATH = "https://mweagle.io/posts/"
 !endif
 
 
