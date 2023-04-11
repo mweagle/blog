@@ -1,9 +1,9 @@
-!include ./C4-PlantUML/C4.puml
-!include ./C4-PlantUML/C4_Component.puml
-!include ./C4-PlantUML/C4_Container.puml
-!include ./C4-PlantUML/C4_Context.puml
-!include ./C4-PlantUML/C4_Deployment.puml
-!include ./C4-PlantUML/C4_Dynamic.puml
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/C4-PlantUML/C4.puml)
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/C4-PlantUML/C4_Component.puml)
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/C4-PlantUML/C4_Container.puml)
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/C4-PlantUML/C4_Context.puml)
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/C4-PlantUML/C4_Deployment.puml)
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/C4-PlantUML/C4_Dynamic.puml)
 
 ' Globals/Users/mweagle/Library/CloudStorage/Dropbox/Apps/Github/blog/static/resources/C4-PlantUML
 skinparam DefaultFontName Avenir

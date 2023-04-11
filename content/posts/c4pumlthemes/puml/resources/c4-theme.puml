@@ -1,6 +1,7 @@
 ' Include the common theme elements
 
-!include ./c4-theme-common.puml
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/c4-theme-common.puml)
+'!include ./c4-theme-common.puml
 
 !define PUMLNAME(a,b,c) ##a-##b-##c.puml
 
@@ -8,8 +9,8 @@
 ' https://github.com/plantuml-stdlib/C4-PlantUML/issues/245
 !$PALETTE_THEME_NAME?=PUMLNAME($PALETTE_TYPE, $PALETTE_NAME, $PALETTE_COLOR_COUNT)
 
-'!include ./colorbrewer/palettes/seq-RdPu-9.puml
-!include ./colorbrewer/palettes/$PALETTE_THEME_NAME
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/colorbrewer/palettes/$PALETTE_THEME_NAME)
+
 
 ' Internal
 !if ($PALETTE_COLOR_COUNT == 9)

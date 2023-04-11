@@ -2,23 +2,38 @@
 
 Title C4 Plant UML Example
 
+' POST: posts/c4pumlthemes/c4pumlthemes/
+' YES: https://mweagle.io/posts/c4pumlthemes/puml/resources/c4-theme.puml
+
+' LOCAL_ROOT:
+' HOSTED_ROOT: https://mweagle.io/
+
+!if (%getenv("USER") == "mweagle")
+!$ROOT_PATH = "/Users/mweagle/Library/CloudStorage/Dropbox/Apps/Github/blog/content/posts/"
+!else
+!$ROOT_PATH = "https://mweagle.io/"
+!endif
+
+
+!define INCLUDE(a,b) ##a##b
+
 
 !$PALETTE_TYPE = seq
 !$PALETTE_NAME = RdPu
 !$PALETTE_COLOR_COUNT = 9
 
-!include ./resources/c4-theme.puml
-!include <tupadr3/common>
-!include <tupadr3/font-awesome/gitlab>
-
+!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/c4-theme.puml)
+' !include <tupadr3/common>
+' !include <tupadr3/font-awesome/gitlab>
+' !include <awslib/AWSCommon>
+' !include <awslib/Compute/Lambda>
 ' Ref: https://github.com/awslabs/aws-icons-for-plantuml
 '❗ Syntax of !include <awslib/AWSCommon.puml> uses the embedded
 ' plantuml-stdlib. As of the PlantUML version 1.2022.14 update,
 ' this includes the Release 14-2022.07.31 icon set.
 
 
-!include <awslib/AWSCommon>
-!include <awslib/Compute/Lambda>
+
 
 '!include <awslib/InternetOfThings/IoTRule>
 '!include <awslib/Analytics/KinesisDataStreams>
@@ -37,14 +52,15 @@ Title C4 Plant UML Example
 'iotRule --> errorQueue : Failed action message
 
 
-Person(wat, "NICE", $sprite="gitlab")
+Person(wat, "NICE")
 Person(customer, "Personal Banking Customer")
 System(banking_system, "Internet Banking System")
 
 System_Ext(mail_system, "E-mail system")
 System_Ext(mainframe, "Mainframe Banking System")
 Container(containerAlias, "Label", "Technology", "Optional Description")
-Container_Ext(OthercontainerAlias, "Label", "OTHER Technology", "Optional Description", $sprite="Lambda,scale=0.5")
+', $sprite="Lambda,scale=0.5"
+Container_Ext(OthercontainerAlias, "Label", "OTHER Technology", "Optional Description")
 Component(someComponetn, "THIS THING", "WAT")
 Component_Ext(anotherComp, "THIS OTHER THING", "WAT")
 
