@@ -1,6 +1,6 @@
 ' Include the common theme elements
 
-!include c4-theme-common.puml
+!include ./c4-theme-common.puml
 
 !define PUMLNAME(a,b,c) ##a-##b-##c.puml
 

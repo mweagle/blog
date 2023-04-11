@@ -7,10 +7,10 @@ Title C4 Plant UML Example
 !$PALETTE_NAME = RdPu
 !$PALETTE_COLOR_COUNT = 9
 
-!include resources/c4-theme.puml
-
+!include ./resources/c4-theme.puml
 !include <tupadr3/common>
 !include <tupadr3/font-awesome/gitlab>
+
 ' Ref: https://github.com/awslabs/aws-icons-for-plantuml
 '❗ Syntax of !include <awslib/AWSCommon.puml> uses the embedded
 ' plantuml-stdlib. As of the PlantUML version 1.2022.14 update,
