@@ -1,15 +1,15 @@
-
 ' Include the common theme elements
-!include ./c4-theme-common.puml
+
+!include c4-theme-common.puml
+
+!define PUMLNAME(a,b,c) ##a-##b-##c.puml
+
+' Styling information for C4
 ' https://github.com/plantuml-stdlib/C4-PlantUML/issues/245
+!$PALETTE_THEME_NAME?=PUMLNAME($PALETTE_TYPE, $PALETTE_NAME, $PALETTE_COLOR_COUNT)
 
-!$PALETTE_TYPE = seq
-!$PALETTE_NAME = YlOrBr
-!$PALETTE_COLOR_COUNT = 9
-'!$PALETTE_THEME_NAME?= $PALETTE_TYPE-$PALETTE_NAME-$PALETTE_COLOR_COUNT
-
-!include ./palettes/seq-RdPu-9.puml
-'!include ./palettes/seq-YlOrBr-9.puml
+'!include ./colorbrewer/palettes/seq-RdPu-9.puml
+!include ./colorbrewer/palettes/$PALETTE_THEME_NAME
 
 ' Internal
 !if ($PALETTE_COLOR_COUNT == 9)

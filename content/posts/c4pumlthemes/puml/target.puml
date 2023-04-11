@@ -1,9 +1,25 @@
+@startuml
+
 Title C4 Plant UML Example
 
-!include "../../../resources/c4themes/colorbrewer/c4-theme.puml"
 
-' We only include the icon files.
-'!include <awslib/AWSCommon>
+!$PALETTE_TYPE = seq
+!$PALETTE_NAME = RdPu
+!$PALETTE_COLOR_COUNT = 9
+
+!include resources/c4-theme.puml
+
+!include <tupadr3/common>
+!include <tupadr3/font-awesome/gitlab>
+' Ref: https://github.com/awslabs/aws-icons-for-plantuml
+'❗ Syntax of !include <awslib/AWSCommon.puml> uses the embedded
+' plantuml-stdlib. As of the PlantUML version 1.2022.14 update,
+' this includes the Release 14-2022.07.31 icon set.
+
+
+!include <awslib/AWSCommon>
+!include <awslib/Compute/Lambda>
+
 '!include <awslib/InternetOfThings/IoTRule>
 '!include <awslib/Analytics/KinesisDataStreams>
 '!include <awslib/ApplicationIntegration/SimpleQueueService>
@@ -20,14 +36,15 @@ Title C4 Plant UML Example
 'iotRule --> eventStream : messages
 'iotRule --> errorQueue : Failed action message
 
-Person(wat, "NICE")
+
+Person(wat, "NICE", $sprite="gitlab")
 Person(customer, "Personal Banking Customer")
 System(banking_system, "Internet Banking System")
 
 System_Ext(mail_system, "E-mail system")
 System_Ext(mainframe, "Mainframe Banking System")
 Container(containerAlias, "Label", "Technology", "Optional Description")
-Container_Ext(OthercontainerAlias, "Label", "OTHER Technology", "Optional Description")
+Container_Ext(OthercontainerAlias, "Label", "OTHER Technology", "Optional Description", $sprite="Lambda,scale=0.5")
 Component(someComponetn, "THIS THING", "WAT")
 Component_Ext(anotherComp, "THIS OTHER THING", "WAT")
 
@@ -37,3 +54,5 @@ Rel_Neighbor(banking_system, mail_system, "Sends e-mails")
 Rel(banking_system, mainframe, "Uses")
 
 SHOW_LEGEND()
+
+@enduml

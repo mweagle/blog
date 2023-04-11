@@ -1,8 +1,8 @@
 ---
-title: "PUML Themes"
+title: "C4 PlantUML Themes"
 author: "Matt Weagle"
-date: 2023-02-25T22:24:42-07:00
-lastmod: 2023-02-18T21:57:17-08:00
+date: 2023-04-10T08:57:31-08:00
+lastmod: 2023-04-10T08:57:31-08:00
 tags: ["architecture", "visualization"]
 ShowToc: true
 description: "Plant UML Themes"
