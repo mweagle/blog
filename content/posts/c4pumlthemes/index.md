@@ -18,3 +18,9 @@ image: ""
 Summary of article here...
 
 {{< plantuml id="eg" source="./puml/target.puml" >}}
+
+<!--[![my image](./puml/resources/colorbrewer/palettes/div-BrBG-9.png)](./puml/resources/colorbrewer/palettes/div-BrBG-9.puml)-->
+
+{{< pumlthemes id="allthemes"
+  path="content/posts/c4pumlthemes/puml/resources/colorbrewer/palettes"
+  sitepath="/posts/c4pumlthemes/puml/resources/colorbrewer/palettes/">}}

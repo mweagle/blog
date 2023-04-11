@@ -32,3 +32,4 @@ _testmain.go
 *.exe
 *.test
 *.prof
+/content/posts/c4pumlthemes/puml/pumloutput

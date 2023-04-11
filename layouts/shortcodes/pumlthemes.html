@@ -1,0 +1,21 @@
+{{- $path := .Get "path" -}}
+{{- $sitepath := .Get "sitepath" -}}
+
+{{- $files := readDir $path -}}
+<table>
+    <th>Filename</th>
+    <th>Palette</th>
+{{- range sort $files ".Name" }}
+  {{ if (and (strings.HasSuffix .Name ".puml" ) (not .IsDir) ) }}
+    {{ $barename := strings.TrimSuffix  ".puml" .Name}}
+    {{ $imgpath := printf "%s/%s.png" $sitepath $barename}}
+    {{ $relpath := printf "%s/%s" $sitepath .Name}}
+    <tr>
+      <td><a href="{{$relpath}}">{{ .Name }}</a></td>
+      <td>
+        <img src="{{$imgpath}}">
+      </td>
+    </tr>
+  {{end}}
+{{- end }}
+</table>
