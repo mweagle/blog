@@ -13,113 +13,22 @@ Title C4 Plant UML Example
 !define INCLUDE(a,b) ##a##b
 
 ' Palette selectors
-!$PALETTE_TYPE = seq
-!$PALETTE_NAME = Reds
-!$PALETTE_COLOR_COUNT = 9
+!$PALETTE_TYPE=div
+!$PALETTE_NAME=RdGy
+!$PALETTE_COLOR_COUNT=11
 
 ' Include the primary theme...
 !include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/c4-theme.puml)
 
-skinparam DefaultFontName Hasklig
-skinparam Handwritten true
-skinparam linetype ortho
-
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
-!include AWSPuml/AWSCommon.puml
-!include AWSPuml/Compute/all.puml
-!include AWSPuml/ApplicationIntegration/APIGateway.puml
-!include AWSPuml/General/Internetalt1.puml
-!include AWSPuml/Database/DynamoDB.puml
-
-'!theme crt-amber
-'\skinparam DefaultFontName Gochi Hand
-'!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Component.puml
-
-Container(ui, "CharlesCD-UI", "ReacjJS, Typescript", "Web Application: Interface do produto")
-Container(moove, "CharlesCD-Moove", "Kotlin, SpringBoot", "API Application: Processa e armazena no banco de dados as informações dos usuários, aplicações e configurações em geral. Orquestra as requisições para as outras aplicações.")
-Container(prometheus, "Prometheus", "System Monitoring", "Coleta e armazena métricas do Charles.")
-Container(datasource, "Datasource", "Prometheus or Google Analytics", "Coleta e armazena métricas das aplicações.")
-Container(moove_database, "Moove Database", "Postgres", "Armazena Informações sobre Usuários, Grupos de Usuários, Token Sistêmicos, Permissões, Roles, Workspaces, Componentes, Modules,  Builds, Deployments, Círculos, Configurações de Métricas e Configurações de Ambiente de deploy.")
-Container(compass_database, "Compass Database", "Postgres", "Armazena Informações sobre datasources, actions, group-actions, metric-group-actions")
-
-Container_Boundary(charlescd_compass, "CharlesCD Compass"){
-
-    Component(middleware, "Middleware", "Middleware", "Faz a autorização das requisições.")
-    Component(casbin, "Casbin", "Access Control Lib", "Realiza as validações de permissionamento de acordo com as regras definidas.")
-
-    Component(datasource_api, "Data Source API", "Http Handler, Use Case", "Fornece funcionalidades de manipulação de datasources, como criação, deleção, buscar as métricas associadas ao datasource e testar uma conexão com um datasource.")
-    Component(action_api, "Action API", "Http Handler, Use Case", "Autoriza a requisição utilizando token ou header de autorização.")
-    Component(metrics_group_api, "Metrics Group API", "Http Handler, Use Case", "Fornece funcionalidades de manipulação de grupo de métricas, como criação, deleção e busca.")
-    Component(metrics_api, "Metrics API", "Http Handler, Use Case", "Fornece funcionalidades de manipulação de métricas, como criação, deleção e busca.")
-    Component(group_actions_api, "Group Actions API", "Http Handler, Use Case", "Fornece funcionalidades de manipulação de ações de grupo, como criação, deleção e busca.")
-    Component(plugins_api, "Plugin API", "Http Handler, Use Case", "Lista os plugins disponíveis.")
-    Component(circle_api, "Circles API", "Http Handler, Use Case", "Lista as métricas de grupos em um círculo.")
-
-    Component(compass_repository, "Compass Repository", "Database Repository, GORM", "Engloba os repositórios datasources, actions, group-actions, metric-group-actions.")
-
-    Component(moove_client, "Moove Client", "Client API", "Busca o permissionamento do usuário da requisição.")
-
-    Component(action_plugin, "Action Plugin", "Plugin", "Permite que ações sejam realizadas dentro do Charles de acordo com métricas.")
-    Component(action_deploy_plugin, "Deploy Action", "Service", "Solicita o deploy em um círculo de acordo com a ação cadastrada.")
-    Component(action_undeploy_plugin, "Undeploy Action", "Service", "Solicita o undeploy em um círculo de acordo com a ação cadastrada.")
-
-    Component(datasource_plugin, "Datasource Plugin", "Plugin", "Permite a integração e coleta informações em um datasource.")
-    Component(datasource_prometheus_plugin, "Prometheus Datasource", "Service", "Integração e coleta informações no Prometheus.")
-    Component(datasource_ga_plugin, "Google Analytics", "Google Analytics Datasource", "Integração e coleta informações no Google Analytics.")
-
-    Component(metric_dispatcher, "Metric Dispatcher", "Goroutine", "Sincroniza os valores das métricas no datasource com o banco de dados.")
-    Component(action_dispatcher, "Action Dispatcher", "Goroutine", "Verifica as métricas para disparar uma ação, se necessário.")
-
-    Rel(middleware, casbin, "Usa")
-    Rel(middleware, moove_client, "Usa")
-
-    Rel(datasource_api, compass_repository, "Usa")
-    Rel(action_api, compass_repository, "Usa")
-    Rel(metrics_group_api, compass_repository, "Usa")
-    Rel(metrics_api, compass_repository, "Usa")
-    Rel(group_actions_api, compass_repository, "Usa")
-    Rel(plugins_api, compass_repository, "Usa")
-    Rel(circle_api, compass_repository, "Usa")
-
-    Rel(compass_repository, moove_database, "Usa")
-    Rel(compass_repository, compass_database, "Usa")
-
-    Rel(action_plugin, action_deploy_plugin, "Tem")
-    Rel(action_plugin, action_undeploy_plugin, "Tem")
-    Rel(action_deploy_plugin, moove_client, "Usa")
-    Rel(action_undeploy_plugin, moove_client, "Usa")
-
-    Rel(action_dispatcher, action_plugin, "Usa")
-    Rel(action_dispatcher, compass_repository, "Usa")
-
-    Rel(datasource_plugin, datasource_prometheus_plugin, "Tem")
-    Rel(datasource_plugin, datasource_ga_plugin, "Tem")
-    Rel(datasource_prometheus_plugin, datasource, "Faz a requisição via HTTPS/JSON")
-    Rel(datasource_ga_plugin, datasource, "Faz a requisição via HTTPS/JSON")
-    Rel(metric_dispatcher, datasource_plugin, "Usa")
-
-    Rel(moove_client, moove, "Faz a requisição via HTTPS/JSON")
-
-}
-
-Rel(ui, moove, "Faz a requisição", "JSON/HTTPS")
-Rel(ui, action_api, "Faz a requisição", "JSON/HTTPS")
-Rel(ui, metrics_group_api, "Faz a requisição", "JSON/HTTPS")
-Rel(ui, group_actions_api, "Faz a requisição", "JSON/HTTPS")
-Rel(ui, plugins_api, "Faz a requisição", "JSON/HTTPS")
-Rel(ui, circle_api, "Faz a requisição", "JSON/HTTPS")
-Rel(moove, datasource_api, "Faz a requisição", "JSON/HTTPS")
-Rel(prometheus, metrics_api, "Faz a requisição", "JSON/HTTPS")
-
-!global $PERSON_BG_COLOR = "#08427b"
-LAYOUT_WITH_LEGEND()
-LAYOUT_LEFT_RIGHT()
+' skinparam DefaultFontName Hasklig
+' skinparam Handwritten true
+' skinparam linetype ortho
 
 
 ' !include <tupadr3/common>
 ' !include <tupadr3/font-awesome/gitlab>
-' !include <awslib/AWSCommon>
-' !include <awslib/Compute/Lambda>
+!include <awslib/AWSCommon>
+!include <awslib/Compute/Lambda>
 ' Ref: https://github.com/awslabs/aws-icons-for-plantuml
 '❗ Syntax of !include <awslib/AWSCommon.puml> uses the embedded
 ' plantuml-stdlib. As of the PlantUML version 1.2022.14 update,
@@ -142,24 +51,24 @@ LAYOUT_LEFT_RIGHT()
 'iotRule --> errorQueue : Failed action message
 
 
-'Person(wat, "NICE")
+Person(wat, "NICE")
 
-' Person(customer, "Personal Banking Customer")
-' System(banking_system, "Internet Banking System")
-'
-' System_Ext(mail_system, "E-mail system")
-' System_Ext(mainframe, "Mainframe Banking System")
-' Container(containerAlias, "Label", "Technology", "Optional Description")
-' ', $sprite="Lambda,scale=0.5"
-' Container_Ext(OthercontainerAlias, "Label", "OTHER Technology", "Optional Description")
-' Component(someComponetn, "THIS THING", "WAT")
-' Component_Ext(anotherComp, "THIS OTHER THING", "WAT")
-'
-' Rel(customer, banking_system, "Uses")
-' Rel_Back(customer, mail_system, "Sends e-mails to")
-' Rel_Neighbor(banking_system, mail_system, "Sends e-mails")
-' Rel(banking_system, mainframe, "Uses")
-'
-' SHOW_LEGEND()
+Person(customer, "Personal Banking Customer")
+System(banking_system, "Internet Banking System")
+
+System_Ext(mail_system, "E-mail system")
+System_Ext(mainframe, "Mainframe Banking System")
+Container(containerAlias, "Label", "Technology", "Optional Description")
+', $sprite="Lambda,scale=0.5"
+Container_Ext(OthercontainerAlias, "Label", "OTHER Technology", "Optional Description")
+Component(someComponetn, "THIS THING", "WAT")
+Component_Ext(anotherComp, "THIS OTHER THING", "WAT")
+
+Rel(customer, banking_system, "Uses")
+Rel_Back(customer, mail_system, "Sends e-mails to")
+Rel_Neighbor(banking_system, mail_system, "Sends e-mails")
+Rel(banking_system, mainframe, "Uses")
+
+SHOW_LEGEND()
 
 @enduml

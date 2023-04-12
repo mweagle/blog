@@ -11,7 +11,6 @@
 
 !include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/colorbrewer/palettes/$PALETTE_THEME_NAME)
 
-
 ' Internal
 !if ($PALETTE_COLOR_COUNT == 9)
   ' Internal
@@ -34,8 +33,7 @@
   UpdateElementStyle("external_system", $bgColor=$COLOR_INDEX_6, $fontColor=$COLOR_TEXT_LIGHT, $borderColor=$COLOR_BORDER_COLOR, $shadowing="true")
   UpdateElementStyle("external_container", $bgColor=$COLOR_INDEX_3, $fontColor=$COLOR_TEXT_DARK, $borderColor=$COLOR_BORDER_COLOR, $shadowing="true")
   UpdateElementStyle("external_component", $bgColor=$COLOR_INDEX_0, $fontColor=$COLOR_TEXT_DARK, $borderColor=$COLOR_BORDER_COLOR, $shadowing="true")
-  UpdateRelStyle($lineColor=$COLOR_REL_COLOR, $textColor=$COLOR_REL_COLOR)
-$else
+!else
   !log Unsupported PALETTE_COLOR_COUNT value: $PALETTE_COLOR_COUNT
 !endif
 

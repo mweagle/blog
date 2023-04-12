@@ -33,3 +33,4 @@ _testmain.go
 *.test
 *.prof
 /content/posts/c4pumlthemes/puml/pumloutput
+/content/posts/c4pumlthemes/puml/target.png
