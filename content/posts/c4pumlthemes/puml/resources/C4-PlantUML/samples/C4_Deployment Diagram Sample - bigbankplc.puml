@@ -1,5 +1,5 @@
 @startuml
-  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.5.0/C4_Deployment.puml
+  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
 ' uncomment the following line and comment the first to use locally
 ' !include C4_Deployment.puml
 
@@ -38,7 +38,7 @@ Deployment_Node(mob, "Customer's mobile device", "Apple IOS or Android"){
     Container(mobile, "Mobile App", "Xamarin", "Provides a limited subset of the Internet Banking functionality to customers via their mobile device.")
 }
 
-Deployment_Node(comp, "Customer's computer", "Mircosoft Windows or Apple macOS"){
+Deployment_Node(comp, "Customer's computer", "Microsoft Windows or Apple macOS"){
     Deployment_Node(browser, "Web Browser", "Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge"){
         Container(spa, "Single Page Application", "JavaScript and Angular", "Provides all of the Internet Banking functionality to customers via their web browser.")
     }

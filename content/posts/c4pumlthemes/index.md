@@ -17,9 +17,11 @@ image: ""
 
 Summary of article here...
 
-{{< plantuml id="eg" source="./puml/target.puml" >}}
+{{< plantuml id="eg" source="./puml/sample.puml" >}}
 
 <!--[![my image](./puml/resources/colorbrewer/palettes/div-BrBG-9.png)](./puml/resources/colorbrewer/palettes/div-BrBG-9.puml)-->
+
+### All C4 Plant UML Themes
 
 {{< pumlthemes id="allthemes"
   path="content/posts/c4pumlthemes/puml/resources/colorbrewer/palettes"

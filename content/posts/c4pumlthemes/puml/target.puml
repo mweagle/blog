@@ -2,57 +2,40 @@
 
 Title C4 Plant UML Example
 
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' START - Handle local PlantUML render and remote hosting
+'
+!$THEME_NAME = div_RdGy_9
+'
 !if (%getenv("LOCAL_EDIT_BLOG_ROOT") == "")
-!$ROOT_PATH = "https://mweagle.io/posts/"
+!$THEME_ROOT_PATH = "https://mweagle.io/posts/c4pumlthemes/puml/resources/"
 !else
-' The local absolute root path (including trailing delimiter)
-' to this blog content. Example: ~/Documents/Github/blog/content/posts
-!$ROOT_PATH = %getenv("LOCAL_EDIT_BLOG_ROOT")
+!$THEME_ROOT_PATH = %getenv("LOCAL_EDIT_BLOG_ROOT") + "c4pumlthemes/puml/resources/"
 !endif
-' Macro to handle local vs server references
 !define INCLUDE(a,b) ##a##b
 
-' Palette selectors
-!$PALETTE_TYPE=div
-!$PALETTE_NAME=RdGy
-!$PALETTE_COLOR_COUNT=11
+' Define the theme name we're going to use
+!if (%getenv("LOCAL_EDIT_BLOG_ROOT") == "")
+!theme $THEME_NAME from https://mweagle.io/posts/c4pumlthemes/puml/resources/colorbrewer/palettes
+!else
+!theme $THEME_NAME from resources/colorbrewer/palettes
+!endif
 
-' Include the primary theme...
-!include INCLUDE($ROOT_PATH, c4pumlthemes/puml/resources/c4-theme.puml)
-
-' skinparam DefaultFontName Hasklig
-' skinparam Handwritten true
-' skinparam linetype ortho
-
+!include INCLUDE($THEME_ROOT_PATH, c4-theme-common.puml)
+' END - Handle local PlantUML render and remote hosting
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 ' !include <tupadr3/common>
 ' !include <tupadr3/font-awesome/gitlab>
 !include <awslib/AWSCommon>
 !include <awslib/Compute/Lambda>
+
 ' Ref: https://github.com/awslabs/aws-icons-for-plantuml
 '❗ Syntax of !include <awslib/AWSCommon.puml> uses the embedded
 ' plantuml-stdlib. As of the PlantUML version 1.2022.14 update,
 ' this includes the Release 14-2022.07.31 icon set.
 
-'!include <awslib/InternetOfThings/IoTRule>
-'!include <awslib/Analytics/KinesisDataStreams>
-'!include <awslib/ApplicationIntegration/SimpleQueueService>
-'
-'left to right direction
-'
-'agent "Published Event" as event #fff
-'
-'IoTRule(iotRule, "Action Error Rule", "error if Kinesis fails")
-'KinesisDataStreams(eventStream, "IoT Events", "2 shards")
-'SimpleQueueService(errorQueue, "Rule Error Queue", "failed Rule actions")
-'
-'event --> iotRule : JSON message
-'iotRule --> eventStream : messages
-'iotRule --> errorQueue : Failed action message
-
-
-Person(wat, "NICE")
-
+Person(someperson, "Hello World")
 Person(customer, "Personal Banking Customer")
 System(banking_system, "Internet Banking System")
 
@@ -68,7 +51,7 @@ Rel(customer, banking_system, "Uses")
 Rel_Back(customer, mail_system, "Sends e-mails to")
 Rel_Neighbor(banking_system, mail_system, "Sends e-mails")
 Rel(banking_system, mainframe, "Uses")
-
 SHOW_LEGEND()
+LAYOUT_AS_SKETCH()
 
 @enduml
