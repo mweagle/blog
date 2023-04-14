@@ -13,9 +13,13 @@ image: ""
 
 ---
 
-## Sample
+## Hugo Shortcode with C4 Plant UML themes
 
-Summary of article here...
+References:
+* https://paul.dugas.cc/post/plantuml-shortcode/
+* https://colorbrewer2.org
+* https://seaborn.pydata.org/generated/seaborn.color_palette.html
+
 
 {{< plantuml id="eg" source="./puml/sample.puml" >}}
 
