@@ -2,14 +2,15 @@
 ' START - Handle local PlantUML render and remote hosting
 '
 !if (%getenv("LOCAL_EDIT_BLOG_ROOT") == "")
-!$THEME_ROOT_PATH = "https://mweagle.io/posts/c4pumlthemes/puml/resources/"
+!$THEME_ROOT_PATH = "https://mweagle.io/posts/c4pumlthemes/puml/"
 !else
-!$THEME_ROOT_PATH = %getenv("LOCAL_EDIT_BLOG_ROOT") + "c4pumlthemes/puml/resources/"
+!$THEME_ROOT_PATH = %getenv("LOCAL_EDIT_BLOG_ROOT") + "c4pumlthemes/puml/"
 !endif
 !define INCLUDE(a,b) ##a##b
 
 ' Include the global theme name
 !include INCLUDE($THEME_ROOT_PATH, globals.puml)
+
 
 ' Define the theme name we're going to use
 !if (%getenv("LOCAL_EDIT_BLOG_ROOT") == "")
@@ -21,6 +22,7 @@
 !include INCLUDE($THEME_ROOT_PATH, c4-theme-common.puml)
 ' END - Handle local PlantUML render and remote hosting
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 
 LAYOUT_WITH_LEGEND()
 
