@@ -33,13 +33,14 @@ _Image credit to [Robert Katzki](https://unsplash.com/@ro_ka) on [Unsplash](http
 
 {{< plantuml id="eg" source="./puml/bigbank-system.puml" >}}
 
-<!-- ## Container Diagram
+## Container Diagram
 
 {{< plantuml id="eg" source="./puml/bigbank-container.puml" >}}
 
 ## Component Diagram
 
-{{< plantuml id="eg" source="./puml/bigbank-component.puml" >}} -->
+{{< plantuml id="eg" source="./puml/bigbank-component.puml" >}}
+
 ### All C4 Plant UML Themes
 
 {{< pumlthemes id="allthemes"
