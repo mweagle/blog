@@ -9,10 +9,16 @@ hugo_install:
 	tar -xvf ./.vscode/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz --directory ./.vscode
 	mv -fv ./.vscode/hugo ./
 
-clean:
-	rm -rf ./public
 
-build: clean
+clean:
+	rm -rfv ./public
+
+ext_assets: clean
+	rm -rfv ./content/posts/c4pumlthemes/puml/resources/palettes
+	mkdir -pv ./content/posts/c4pumlthemes/puml/resources/palettes
+	cp -Rv ~/Documents/GitHub/C4-PlantUML-Themes/palettes ./content/posts/c4pumlthemes/puml/resources
+
+build: ext_assets clean
 	./hugo
 
 commit:

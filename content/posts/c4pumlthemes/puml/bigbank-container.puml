@@ -1,0 +1,52 @@
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' START - Handle local PlantUML render and remote hosting
+'
+'
+!if (%getenv("LOCAL_EDIT_BLOG_ROOT") == "")
+!$THEME_ROOT_PATH = "https://mweagle.io/posts/c4pumlthemes/puml/resources/"
+!else
+!$THEME_ROOT_PATH = %getenv("LOCAL_EDIT_BLOG_ROOT") + "c4pumlthemes/puml/resources/"
+!endif
+!define INCLUDE(a,b) ##a##b
+
+' Include the global theme name
+!include INCLUDE($THEME_ROOT_PATH, globals.puml)
+
+' Define the theme name we're going to use
+!if (%getenv("LOCAL_EDIT_BLOG_ROOT") == "")
+!theme $THEME_NAME from https://mweagle.io/posts/c4pumlthemes/puml/resources/palettes
+!else
+!theme $THEME_NAME from resources/palettes
+!endif
+
+!include INCLUDE($THEME_ROOT_PATH, c4-theme-common.puml)
+' END - Handle local PlantUML render and remote hosting
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+LAYOUT_WITH_LEGEND()
+title Container diagram for Internet Banking System
+
+Person(customer, Customer, "A customer of the bank, with personal bank accounts")
+
+System_Boundary(c1, "Internet Banking") {
+    Container(web_app, "Web Application", "Java, Spring MVC", "Delivers the static content and the Internet banking SPA")
+    Container(spa, "Single-Page App", "JavaScript, Angular", "Provides all the Internet banking functionality to customers via their web browser")
+    Container(mobile_app, "Mobile App", "C#, Xamarin", "Provides a limited subset of the Internet banking functionality to customers via their mobile device")
+    ContainerDb(database, "Database", "SQL Database", "Stores user registration information, hashed auth credentials, access logs, etc.")
+    Container(backend_api, "API Application", "Java, Docker Container", "Provides Internet banking functionality via API")
+}
+
+System_Ext(email_system, "E-Mail System", "The internal Microsoft Exchange system")
+System_Ext(banking_system, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+Rel(customer, web_app, "Uses", "HTTPS")
+Rel(customer, spa, "Uses", "HTTPS")
+Rel(customer, mobile_app, "Uses")
+
+Rel_Neighbor(web_app, spa, "Delivers")
+Rel(spa, backend_api, "Uses", "async, JSON/HTTPS")
+Rel(mobile_app, backend_api, "Uses", "async, JSON/HTTPS")
+Rel_Back_Neighbor(database, backend_api, "Reads from and writes to", "sync, JDBC")
+
+Rel_Back(customer, email_system, "Sends e-mails to")
+Rel_Back(email_system, backend_api, "Sends e-mails using", "sync, SMTP")
+Rel_Neighbor(backend_api, banking_system, "Uses", "sync/async, XML/HTTPS")
