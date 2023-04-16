@@ -31,15 +31,15 @@ _Image credit to [Robert Katzki](https://unsplash.com/@ro_ka) on [Unsplash](http
 
 ## System Diagram
 
-{{< plantuml id="eg" source="./puml/bigbank-system.puml" >}}
+{{< plantuml id="bigbank-system" source="./puml/bigbank-system.puml" >}}
 
 ## Container Diagram
 
-{{< plantuml id="eg" source="./puml/bigbank-container.puml" >}}
+{{< plantuml id="bigbank-container" source="./puml/bigbank-container.puml" >}}
 
 ## Component Diagram
 
-{{< plantuml id="eg" source="./puml/bigbank-component.puml" >}}
+{{< plantuml id="bigbank-component" source="./puml/bigbank-component.puml" >}}
 
 ### All C4 Plant UML Themes
 
