@@ -5,7 +5,7 @@ draft: false
 subtitle: "How the Reductive Tendency Affects Cognitive Engineering"
 description:
 date: 2023-05-09T10:57:48-07:00
-lastmod: 2023-05-09T10:57:48-07:00
+lastmod: 2023-05-10T23:00:32-08:00
 image:
 tags: ["paper", "cognitive systems"]
 ShowToc: true
