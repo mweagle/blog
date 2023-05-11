@@ -39,13 +39,13 @@ Cognitive Flexibility Theory research proposed eleven axes of "understandability
 
 Phenomena towards the latter option are complex and encourage new learners to employ reductive simplifications. They support a rejection of complexifying information with defensive behaviors (_demean effect_, _argument from faulty causal reasoning_, _extirpation_). Reductionism also leads to shallow and inaccurate conclusions.
 
-What does this mean for understanding Complex Sociotechnical Systems (CSSs)? CSS are both (1) continually changing via new technologies and the [Law of Streched Systems](https://www.researchgate.net/publication/221473225_The_law_of_stretched_systems_in_action_Exploiting_robots) and (2) every participant is concurrently modeling of both the work and the other parties involved. So there are always differing perspectives on goals, urgency, scope, etc.
+What does this mean for understanding Complex Sociotechnical Systems (CSSs)? CSS are both (1) continually changing via new technologies and the [Law of Streched Systems](https://www.researchgate.net/publication/221473225_The_law_of_stretched_systems_in_action_Exploiting_robots) and (2) every participant is concurrently modeling the work and the other parties involved. So there are always differing perspectives on goals, urgency, scope, etc.
 
 For CSSs, the reductivist tendency challenges understanding across the previous eleven axes. For instance:
 
 > **Homogeneous/heterogeneous**
 >
-> The reductive tendency would result in assumptions that the processes, values,ways of doing things cultural norms, abilities, loyalties, and so forth are pretty much the same across the many diverse units ofthe CSS—a kind of uniformity tendency. This reduction’s effect in design would be that the cognitive engineer fails to anticipate the diversity of reactions and adaptations to a workplace change.
+> The reductive tendency would result in assumptions that the processes, values,ways of doing things cultural norms, abilities, loyalties, and so forth are pretty much mathe same across the many diverse units ofthe CSS—a kind of uniformity tendency. This reduction’s effect in design would be that the cognitive engineer fails to anticipate the diversity of reactions and adaptations to a workplace change.
 
 From a more conceptual level, reductionism makes perfect substitutability between human actors and devices seem possible ([How to Make Automated Systems Team Players
 ](https://www.researchgate.net/publication/2483863_How_to_Make_Automated_Systems_Team_Players), [MABA-MABA or abracadabra? Progress on human-automation co-ordination
