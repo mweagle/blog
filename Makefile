@@ -42,4 +42,4 @@ commit-auto: commit-nomessage
 edit: clean
 	# Used for localhost editing
 	open http://localhost:1313
-	LOCAL_DEVELOPMENT=TRUE ./hugo server --watch --disableFastRender --forceSyncStatic --noHTTPCache
+	LOCAL_DEVELOPMENT=TRUE ./hugo server --watch --disableFastRender --forceSyncStatic --noHTTPCache --buildDrafts

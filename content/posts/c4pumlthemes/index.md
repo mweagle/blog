@@ -29,6 +29,9 @@ The following [sample diagrams](https://github.com/plantuml-stdlib/C4-PlantUML/b
 
 _Image credit to [Robert Katzki](https://unsplash.com/@ro_ka) on [Unsplash](https://unsplash.com/photos/jbtfM0XBeRc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)._
 
+## All Diagram
+{{< plantuml id="bg_example" source="./puml/resources/palettes/puml-theme-cb_div_BrBG_11-example.puml" >}}
+
 ## System Diagram
 
 {{< plantuml id="bigbank-system" source="./puml/bigbank-system.puml" >}}

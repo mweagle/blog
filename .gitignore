@@ -8,6 +8,7 @@ vendor/
 .hugo_build.lock
 hugo
 frontmatter-maker.py
+blog.code-workspace
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.o
 *.a

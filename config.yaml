@@ -2,6 +2,7 @@
 # it's built and deployed by netlify
 baseurl: ""
 theme: "PaperMod"
+# Documentation: https://github.com/adityatelange/hugo-PaperMod/wiki
 title: Matt Weagle
 paginate: 7
 
@@ -36,6 +37,7 @@ params:
 
   ShowReadingTime: true
   ShowShareButtons: true
+  ShareButtons: ["linkedin", "reddit", "whatsapp", "telegram"]
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
