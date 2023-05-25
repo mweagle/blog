@@ -17,7 +17,7 @@ Feltovich, P. J., R. R. Hoffman, D. Woods, and A. Roesler. 2004. “Keeping It T
 
 [Source](https://paperpile.com/shared/sGlij98ndSwulpBzxvCN7KA)
 
-## TL;DR;
+## TL;DR
 
 There are eleven axes of "understandability", or alternatively "complexity", that tempt reductivist interpretations. Reductionism leads to suboptimal complex sociotechnical systems (CSS) design and mistaken assumptions about perfect substitutability between humans and automation. We should instead consider these dimensions when designing CSSs and proactively counteract reductivism.
 

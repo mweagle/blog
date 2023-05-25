@@ -135,9 +135,9 @@ menu:
       name: posts
       url: /posts/
       weight: 15
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: twitter
+      name: twitter
+      url: /posts/migrated/twitter/
       weight: 20
     - identifier: tags
       name: tags
