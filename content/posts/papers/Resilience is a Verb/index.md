@@ -1,13 +1,13 @@
 ---
 title: "Resilience is a Verb"
-date: 2023-05-25T05:51:53-08:00
-lastmod: 2023-05-25T05:51:53-08:00
 draft: false
+
 subtitle:
 description:
-tags: ["resilience", "adaptive capacity", "paper"]
+date: 2023-05-25T06:57:00-07:00
+lastmod: 2023-05-25T06:57:00-07:00
 image:
-
+tags: ["resilience", "adaptive capacity", "paper"]
 ShowToc: true
 ---
 
@@ -18,13 +18,13 @@ https://www.researchgate.net/publication/329035477
 
 ## TL;DR
 
-This is a very readable paper on resilience engineering. At a high level, Woods' proposal is that resilience is better thought of in terms of a system's potential capacity, rather than a state to be achieved. Adaptive capacity is "the potential for adjusting patterns of activities to handle future changes in the kinds of  events, opportunities and disruptions experienced."
+This is a very readable paper on resilience engineering. At a high level, Woods' proposal is that resilience is better thought of in terms of a system's potential capacity, rather than a state to be achieved. Adaptive capacity is "the potential for adjusting patterns of activities to handle future changes in the kinds of events, opportunities and disruptions experienced."
 
 ## Summary
 
-As laid out in [“Resilience Engineering : Concepts and Precepts](https://www.researchgate.net/publication/50232053), resilience is about what a system can do, including the capacity to: 1. anticipate to mitigate; 2. synchronize to reduce coordination friction/misalignment; 3. promptly respond; 4. proactively learn.
+As laid out in [Resilience Engineering : Concepts and Precepts](https://www.researchgate.net/publication/50232053), resilience is about what a system can do, including the capacity to: 1. anticipate to mitigate; 2. synchronize to reduce coordination friction/misalignment; 3. promptly respond; 4. proactively learn.
 
-Adaptive capacity is a potential held in reserve rather than an essentialist system property. This implies some level of system self-awareness so that there are explicit junctures to evaluate whether the current course is appropriate (pivot, proceed, pause). Adaptive capacity is an option, not a mandate for continual change:
+Adaptive capacity is a potential held in reserve rather than an essentialist system property. This implies some level of system self-awareness so that there are explicit junctures to evaluate whether the current course is appropriate (pivot, proceed, pause). Adaptive capacity is a optional reserve, not a mandate for continual change:
 
 > Adaptive capacity does not mean a system is constantly changing what it has planned or does so all the time, but rather that the system has some ability to recognize when it's adequate to continue the plan, to continue to work in the usual way, and when it is not adequate to continue on, given the demands, changes and context ongoing or upcoming.
 
@@ -38,7 +38,7 @@ Complex systems improve over time and also catastrophically fail when encounteri
 
 > Organizational systems succeed despite the basic limits of automata and plans in a complex, interdependent and changing environment because responsible people adapt to make the system work despite its design—SNAFU Catching.
 
-There are four capabilities needed for continual adaptation: 1. initiative, favoring local cognition; 2. reciprocity across people and teams to load balance; 3. exploiting surprises to drive learnings; and 4. effective learning reviews.
+There are four capabilities needed for continual adaptation: 1. initiative, favoring local cognitive units; 2. reciprocity across people and teams to load balance as demands shift; 3. exploiting surprises to drive learnings; and 4. effective learning reviews.
 
 > To be proactive in learning about resilience shifts the focus: study how systems work well usually despite difficulties, limited resources, trade-offs, and surprises—SNAFU Catching.
 

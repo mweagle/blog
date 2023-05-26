@@ -1,6 +1,6 @@
 default: build
 
-HUGO_VERSION := "0.110.0"
+HUGO_VERSION := "0.112.3"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 .PHONY: run edit
 
