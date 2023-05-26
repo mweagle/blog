@@ -5,7 +5,7 @@ draft: false
 subtitle:
 description:
 date: 2023-05-25T06:57:00-07:00
-lastmod: 2023-05-25T06:57:00-07:00
+lastmod: 2023-05-26T08:38:00-07:00
 image:
 tags: ["resilience", "adaptive capacity", "paper"]
 ShowToc: true
