@@ -28,19 +28,23 @@ Adaptive capacity is a potential held in reserve rather than an essentialist sys
 
 > Adaptive capacity does not mean a system is constantly changing what it has planned or does so all the time, but rather that the system has some ability to recognize when it's adequate to continue the plan, to continue to work in the usual way, and when it is not adequate to continue on, given the demands, changes and context ongoing or upcoming.
 
-Adaptive capacity is a latent system property and all systems are messy and running degraded. SNAFUs (_Situation Normal, All Fouled Up_) provide opportunities to surface where the current system's capacity is limited and could or should be re-evaluated. Similar to the "Learning from near-misses" perspective.
+Adaptive capacity is a latent system property and all systems are messy and running degraded. SNAFUs (_Situation Normal, All Fouled Up_) is the steady state and SNAFU Catching occurs when people are able to detect, mitigate, and compensate on an ongoing basis. People provide the adaptive capability that makes the system work.
 
 There's a cycle of 1. systems growing in scale, tempo, and complexity (interconnectedness, Law of Stretched Systems); 2. actors in the system exploiting those changes for new purposes; 3. creating new SNAFUs which move the system to a new normal and move things back to 1.
 
-Rather than viewing SNAFUs as intrinsic and opportunities to improve resilience, organizations often "rationalize this core finding away on grounds of rarity, prevention, compliance.". It's more appealing to view SNAFUs as uncommon, obsolete due to prior improvements, or caused by a lack of human compliance. The emphasis on compliance and work-to-{plan, role, rule} pushes the adaptive capacity underground.
+Rather than viewing SNAFU Catching as everpresent and necessary, organizations often "rationalize this core finding away on grounds of rarity, prevention, compliance.". It's more appealing to view SNAFUs as uncommon, obsolete due to prior improvements, or caused by a lack of human compliance. The emphasis on compliance and work-to-{plan, role, rule} pushes the adaptive capacity underground. People can be put in double-bind situations where rule compliance is at odds with system stability, so opportunities for learning and alignment are foregone.
 
-Complex systems improve over time and also catastrophically fail when encountering new circumstances. What to do? Continually adapt!
+Despite continual improvements and increases in tempo, complex systems catastrophically fail when encountering new circumstances. It's sort of unexpected those types of failures don't happen more often. Why not? People are constantly SNAFU Catching and transparently compensating, mitigating, and acting in ways to support the system.
+
+At an organizational level, this implies a need for continual adaptation. Internet services are an exemplary testbed to explore these concepts. These systems function and evolve because of SNAFU catching, not despite the existence of SNAFUs:
 
 > Organizational systems succeed despite the basic limits of automata and plans in a complex, interdependent and changing environment because responsible people adapt to make the system work despite its design—SNAFU Catching.
 
-There are four capabilities needed for continual adaptation: 1. initiative, favoring local cognitive units; 2. reciprocity across people and teams to load balance as demands shift; 3. exploiting surprises to drive learnings; and 4. effective learning reviews.
+Organizations need four capabilities to support continual adaptation: 1. initiative, favoring local cognitive units; 2. reciprocity across people and teams to load balance as demands shift while acknowledging this shift will trigger compliance violations; 3. recognizing tangible surprises to drive learnings; and 4. effective learning reviews of effectively handled surprises.
 
 > To be proactive in learning about resilience shifts the focus: study how systems work well usually despite difficulties, limited resources, trade-offs, and surprises—SNAFU Catching.
+
+See also the [SNAFU Catchers](https://snafucatchers.github.io/) writeup for a more technology focused view.
 
 ## Notable Quotes
 
