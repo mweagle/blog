@@ -18,7 +18,7 @@ https://www.researchgate.net/publication/329035477
 
 ## TL;DR
 
-This is a very readable paper on resilience engineering. At a high level, Woods' proposal is that resilience is better thought of in terms of a system's potential capacity, rather than a state to be achieved. Adaptive capacity is "the potential for adjusting patterns of activities to handle future changes in the kinds of events, opportunities and disruptions experienced."
+This is a very readable paper on resilience engineering. At a high level, Woods' proposal is that resilience is better thought of in terms of a system's potential capacity, rather than a state to be achieved. Adaptive capacity is "the potential for adjusting patterns of activities to handle future changes in the kinds of events, opportunities and disruptions experienced." Systems run in degraded modes, full of SNAFUs, and sustained by the adaptive responses of people (SNAFU Catchers).
 
 ## Summary
 
