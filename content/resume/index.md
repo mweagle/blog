@@ -28,8 +28,8 @@ Software Development Manager for [AWS Lambda](https://aws.amazon.com/lambda/) an
 * Contributed to [AWS Lambda SmartStart](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html) and [AWS Lambda response streaming](https://aws.amazon.com/blogs/compute/introducing-aws-lambda-response-streaming/) capabilities.
 * Defined and drove meetings, mechanisms and metrics to coordinate CI/CD for 100+ person development team spanning multiple organizations. The result of this work was increased visibility into per-component change/fail rates, regional deployment skew, and batch size. Metrics were automatically published as part of CI/CD execution and included standardized release note generation with commit history to reduce operational response time.
 * Over the course of a year, doubled team size to increase capacity and reduce operational load.
-* Managed decomposition of legacy `go` codebase into multiple, localhost `gRPC` microservices to align ownerhip, increase organizational velocity, and reduce response latency.
-* Led the [Lambda Corection of Error Bar Raiser](https://wa.aws.amazon.com/wat.concept.coe.en.html) program to improve our incident documentation, learnings, and discussions.
+* Managed decomposition of legacy `go` codebase into multiple, localhost `gRPC` microservices to align ownership, increase organizational velocity, and reduce response latency.
+* Led the [Lambda Correction of Error Bar Raiser](https://wa.aws.amazon.com/wat.concept.coe.en.html) program to improve our incident documentation, learnings, and discussions.
 * Delivered [GitHub Actions](https://aws.amazon.com/blogs/devops/using-github-actions-with-amazon-codecatalyst/) on CodeCatalyst.
 * Owned delivery of [CodeCatalyst Build](https://docs.aws.amazon.com/codecatalyst/latest/userguide/build-workflow-actions.html) and [CodeCatalyst Workflow Actions](https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-actions.html).
 
@@ -42,9 +42,9 @@ Engineering Manager for Forecasting and ML Training/[Flyte](https://flyte.org/) 
 * Created space for the team to replace legacy system with Spark-based pipelines for scalable, reliable, and cost-efficient training. Worked with team to migrate a near real-time system to a more durable and scalable solution using Kafka, [Flink](https://flink.apache.org/), [Druid](https://druid.apache.org/) and [Seldon](https://www.seldon.io/).
 * Fostered a culture of learning, collaboration, and delivery.
 * Mentored and coached within and across the team.
-* Instituted [press release driven development](https://www.allthingsdistributed.com/2006/11/working_backwards.html) practices to clarify objectives and closeaccountability gaps.
+* Instituted [press release driven development](https://www.allthingsdistributed.com/2006/11/working_backwards.html) practices to clarify objectives and close accountability gaps.
 * Conducted bi-weekly retrospectives to recognize accomplishments and discuss opportunitiesfor improvement.
-* Cross-functionally collaborated with ML scientists to reduce downstream engineeringintegration costs.
+* Cross-functionally collaborated with ML scientists to reduce downstream engineering integration costs.
 
 The Flyte team (now [Union.AI](https://www.union.ai)) was responsible for providing a platform for 100,000+ workflow executions a month for business-critical workloads.
 

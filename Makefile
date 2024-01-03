@@ -22,7 +22,16 @@ clean:
 	mkdir -pv $(STAGING_DIR)
 
 # Ensure that the Netlify config uses the same Hugo
-# version we've configured in the Makefile
+# version we've configured in the Makefile. Output:
+# 
+# # Created: 2024-01-03T11:56:31-0800
+# [build]
+# command = "hugo"
+# publish = "public"
+
+# [build.environment]
+# HUGO_VERSION = "0.121.1"
+# 
 netlify_toml:
 	 @echo "# Created: $(NOW_TIME)\n[build]\ncommand = \"hugo\"\npublish = \"public\"\n\n[build.environment]\nHUGO_VERSION = \"$(HUGO_VERSION)\"" > netlify.toml
 
