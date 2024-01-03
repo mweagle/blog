@@ -1,3 +1,4 @@
+# Created: 2024-01-03T11:56:31-0800
 [build]
 command = "hugo"
 publish = "public"

@@ -1,5 +1,8 @@
 default: build
-# Hugo requirements
+# Execute time
+NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
+
+# Hugo requirements. 
 HUGO_VERSION := "0.121.1"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 .PHONY: run edit
@@ -18,7 +21,12 @@ clean:
 	rm -rfv $(STAGING_DIR)
 	mkdir -pv $(STAGING_DIR)
 
-ext_assets: clean
+# Ensure that the Netlify config uses the same Hugo
+# version we've configured in the Makefile
+netlify_toml:
+	 @echo "# Created: $(NOW_TIME)\n[build]\ncommand = \"hugo\"\npublish = \"public\"\n\n[build.environment]\nHUGO_VERSION = \"$(HUGO_VERSION)\"" > netlify.toml
+
+ext_assets: clean netlify_toml
 	git clone --depth=1 https://github.com/mweagle/C4-PlantUML-Themes "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes"
 	rm -rfv ./content/posts/c4pumlthemes/puml/resources/palettes
 	mkdir -pv ./content/posts/c4pumlthemes/puml/resources/palettes
@@ -45,7 +53,7 @@ publish: commit-nomessage push
 commit-auto: commit-nomessage
 	git push
 
-edit: clean
+edit: clean 
 	# Used for localhost editing
 	open http://localhost:1313
 	LOCAL_DEVELOPMENT=TRUE ./hugo server --watch --disableFastRender --forceSyncStatic --noHTTPCache --buildDrafts
