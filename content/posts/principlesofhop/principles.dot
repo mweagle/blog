@@ -31,12 +31,11 @@ fontsize="96"
 	fontname="Gochi Hand" 
 
   graph [imagepath="images" overlap=false];
-	node [fontname="Gochi Hand" colorscheme=prgn11 shape=plaintext penwidth=0]
-  edge [colorscheme=prgn9]
-	edge [penwidth=5 color=4]
+	node [fontname="Gochi Hand" colorscheme=puor11 shape=plaintext penwidth=0 fontcolor=11]
+	edge [colorscheme=puor11 penwidth=5 color=4 fontcolor=11]
 
   # Center node
-	node [fontsize=32 fontcolor=1]
+	node [fontsize=32 penwidth=3]
 	FivePrinciples [fontsize=96 label=<
 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
   <TR>
@@ -46,6 +45,7 @@ fontsize="96"
    
   # Chapter nodes
 	node [fontsize=32]
+	edge [penwidth=20 color=2]
 
  	FivePrinciples -- {
 		PeopleMakeMistakes
@@ -54,6 +54,10 @@ fontsize="96"
 		HowYouRespond
 		BlameFixesNothing
 	}
+
+  # Details nodes
+	edge [penwidth=5 color=4]
+
 
   # People make mistakes
  	PeopleMakeMistakes [label=<
@@ -112,7 +116,7 @@ fontsize="96"
 </TABLE>>];  
 
   # Bullet point nodes
-	node [fontsize=32 fontcolor=11]
+	node [fontsize=32]
   PeopleMakeMistakes -- {
     "Errors are normal"
     "Since error is a normal state of existence,\nerror is never causal"
@@ -160,7 +164,7 @@ fontsize="96"
     "People are watching you"
   } 
   # Finish with attribution
-  node [fontsize=28 fontcolor=3]
+  node [fontsize=28 fontcolor=7]
   infonode [
     label=<
 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">

@@ -19,418 +19,418 @@
 <!-- PeopleMakeMistakes -->
 <g id="node2" class="node">
 <title>PeopleMakeMistakes</title>
-<text text-anchor="start" x="2292.97" y="-2292.32" font-family="Gochi Hand" font-weight="bold" font-size="32.00" fill="#40004b">People Make Mistakes</text>
+<text text-anchor="start" x="2292.97" y="-2292.32" font-family="Gochi Hand" font-weight="bold" font-size="32.00" fill="#2d004b">People Make Mistakes</text>
 <image xlink:href="cast.png" width="124px" height="124px" preserveAspectRatio="xMinYMin meet" x="2401.22" y="-2285.47"/>
 </g>
 <!-- FivePrinciples&#45;&#45;PeopleMakeMistakes -->
 <g id="edge1" class="edge">
 <title>FivePrinciples&#45;&#45;PeopleMakeMistakes</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2005.17,-1754.87C2119.06,-1875.89 2284.42,-2051.61 2382.18,-2155.49"/>
+<path fill="none" stroke="#b35806" stroke-width="20" d="M2005.17,-1754.87C2119.06,-1875.89 2284.42,-2051.61 2382.18,-2155.49"/>
 </g>
 <!-- LearningAndImproving -->
 <g id="node3" class="node">
 <title>LearningAndImproving</title>
-<text text-anchor="start" x="1040.21" y="-2184.62" font-family="Gochi Hand" font-size="32.00" fill="#40004b">Learning &amp; Improving</text>
-<text text-anchor="start" x="1141.83" y="-2152.37" font-family="Gochi Hand" font-size="32.00" fill="#40004b"> is Vital</text>
+<text text-anchor="start" x="1040.21" y="-2184.62" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Learning &amp; Improving</text>
+<text text-anchor="start" x="1141.83" y="-2152.37" font-family="Gochi Hand" font-size="32.00" fill="#2d004b"> is Vital</text>
 <image xlink:href="laptop.png" width="124px" height="124px" preserveAspectRatio="xMinYMin meet" x="1130.83" y="-2146.52"/>
 </g>
 <!-- FivePrinciples&#45;&#45;LearningAndImproving -->
 <g id="edge2" class="edge">
 <title>FivePrinciples&#45;&#45;LearningAndImproving</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1745.02,-1720.87C1626.44,-1806.32 1455.02,-1929.84 1334.72,-2016.53"/>
+<path fill="none" stroke="#b35806" stroke-width="20" d="M1745.02,-1720.87C1626.44,-1806.32 1455.02,-1929.84 1334.72,-2016.53"/>
 </g>
 <!-- ContextDrivesBehavior -->
 <g id="node4" class="node">
 <title>ContextDrivesBehavior</title>
-<text text-anchor="start" x="969.87" y="-1298.89" font-family="Gochi Hand" font-size="32.00" fill="#40004b">Context Drives Behavior</text>
+<text text-anchor="start" x="969.87" y="-1298.89" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Context Drives Behavior</text>
 <image xlink:href="thought-bubble.png" width="124px" height="124px" preserveAspectRatio="xMinYMin meet" x="1080.37" y="-1293.04"/>
 </g>
 <!-- FivePrinciples&#45;&#45;ContextDrivesBehavior -->
 <g id="edge3" class="edge">
 <title>FivePrinciples&#45;&#45;ContextDrivesBehavior</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1745.08,-1554.14C1623.21,-1492.47 1443.88,-1401.73 1312.52,-1335.26"/>
+<path fill="none" stroke="#b35806" stroke-width="20" d="M1745.08,-1554.14C1623.21,-1492.47 1443.88,-1401.73 1312.52,-1335.26"/>
 </g>
 <!-- HowYouRespond -->
 <g id="node5" class="node">
 <title>HowYouRespond</title>
-<text text-anchor="start" x="1730.8" y="-897.9" font-family="Gochi Hand" font-size="32.00" fill="#40004b">How You Respond to</text>
-<text text-anchor="start" x="1774.3" y="-865.65" font-family="Gochi Hand" font-size="32.00" fill="#40004b">Failure Matters</text>
+<text text-anchor="start" x="1730.8" y="-897.9" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">How You Respond to</text>
+<text text-anchor="start" x="1774.3" y="-865.65" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Failure Matters</text>
 <image xlink:href="angry.png" width="124px" height="124px" preserveAspectRatio="xMinYMin meet" x="1819.17" y="-859.799"/>
 </g>
 <!-- FivePrinciples&#45;&#45;HowYouRespond -->
 <g id="edge4" class="edge">
 <title>FivePrinciples&#45;&#45;HowYouRespond</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1881.01,-1490.98C1881.05,-1334.31 1881.11,-1076.35 1881.15,-934.12"/>
+<path fill="none" stroke="#b35806" stroke-width="20" d="M1881.01,-1490.98C1881.05,-1334.31 1881.11,-1076.35 1881.15,-934.12"/>
 </g>
 <!-- BlameFixesNothing -->
 <g id="node6" class="node">
 <title>BlameFixesNothing</title>
-<text text-anchor="start" x="2470.32" y="-1300.13" font-family="Gochi Hand" font-size="32.00" fill="#40004b">Blame Fixes Nothing</text>
+<text text-anchor="start" x="2470.32" y="-1300.13" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Blame Fixes Nothing</text>
 <image xlink:href="point.png" width="124px" height="124px" preserveAspectRatio="xMinYMin meet" x="2556.07" y="-1294.28"/>
 </g>
 <!-- FivePrinciples&#45;&#45;BlameFixesNothing -->
 <g id="edge5" class="edge">
 <title>FivePrinciples&#45;&#45;BlameFixesNothing</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2016.6,-1554.37C2142.07,-1490.96 2328.56,-1396.71 2460.57,-1330"/>
+<path fill="none" stroke="#b35806" stroke-width="20" d="M2016.6,-1554.37C2142.07,-1490.96 2328.56,-1396.71 2460.57,-1330"/>
 </g>
 <!-- Errors are normal -->
 <g id="node7" class="node">
 <title>Errors are normal</title>
-<text text-anchor="middle" x="3465.61" y="-1764.34" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Errors are normal</text>
+<text text-anchor="middle" x="3465.61" y="-1764.34" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Errors are normal</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;Errors are normal -->
 <g id="edge6" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;Errors are normal</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2643.29,-2158.43C2882.23,-2048.06 3289.36,-1860.02 3422.26,-1798.63"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2643.29,-2158.43C2882.23,-2048.06 3289.36,-1860.02 3422.26,-1798.63"/>
 </g>
 <!-- Since error is a normal state of existence,\nerror is never causal -->
 <g id="node8" class="node">
 <title>Since error is a normal state of existence,\nerror is never causal</title>
-<text text-anchor="middle" x="3407.97" y="-2085.65" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Since error is a normal state of existence,</text>
-<text text-anchor="middle" x="3407.97" y="-2053.4" font-family="Gochi Hand" font-size="32.00" fill="#00441b">error is never causal</text>
+<text text-anchor="middle" x="3407.97" y="-2085.65" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Since error is a normal state of existence,</text>
+<text text-anchor="middle" x="3407.97" y="-2053.4" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">error is never causal</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;Since error is a normal state of existence,\nerror is never causal -->
 <g id="edge7" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;Since error is a normal state of existence,\nerror is never causal</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2643.42,-2211.5C2799.38,-2185.45 3025.3,-2147.72 3191.13,-2120.02"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2643.42,-2211.5C2799.38,-2185.45 3025.3,-2147.72 3191.13,-2120.02"/>
 </g>
 <!-- Error is not the opposite of success.\nError is a part of being successful -->
 <g id="node9" class="node">
 <title>Error is not the opposite of success.\nError is a part of being successful</title>
-<text text-anchor="middle" x="3299.46" y="-2373.1" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Error is not the opposite of success.</text>
-<text text-anchor="middle" x="3299.46" y="-2340.85" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Error is a part of being successful</text>
+<text text-anchor="middle" x="3299.46" y="-2373.1" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Error is not the opposite of success.</text>
+<text text-anchor="middle" x="3299.46" y="-2340.85" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Error is a part of being successful</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;Error is not the opposite of success.\nError is a part of being successful -->
 <g id="edge8" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;Error is not the opposite of success.\nError is a part of being successful</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2643.38,-2269.53C2767.01,-2288.7 2932.23,-2314.31 3065.94,-2335.04"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2643.38,-2269.53C2767.01,-2288.7 2932.23,-2314.31 3065.94,-2335.04"/>
 </g>
 <!-- Error exists in success as well as failure -->
 <g id="node10" class="node">
 <title>Error exists in success as well as failure</title>
-<text text-anchor="middle" x="3164.14" y="-2618.31" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Error exists in success as well as failure</text>
+<text text-anchor="middle" x="3164.14" y="-2618.31" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Error exists in success as well as failure</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;Error exists in success as well as failure -->
 <g id="edge9" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;Error exists in success as well as failure</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2617.47,-2327.64C2783.33,-2420.17 3035.7,-2560.94 3128.39,-2612.64"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2617.47,-2327.64C2783.33,-2420.17 3035.7,-2560.94 3128.39,-2612.64"/>
 </g>
 <!-- Errors are not choices\nError only becomes a choice in retrospect -->
 <g id="node11" class="node">
 <title>Errors are not choices\nError only becomes a choice in retrospect</title>
-<text text-anchor="middle" x="3004.91" y="-2857.63" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Errors are not choices</text>
-<text text-anchor="middle" x="3004.91" y="-2825.38" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Error only becomes a choice in retrospect</text>
+<text text-anchor="middle" x="3004.91" y="-2857.63" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Errors are not choices</text>
+<text text-anchor="middle" x="3004.91" y="-2825.38" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Error only becomes a choice in retrospect</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;Errors are not choices\nError only becomes a choice in retrospect -->
 <g id="edge10" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;Errors are not choices\nError only becomes a choice in retrospect</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2539.11,-2327.65C2659.51,-2464.16 2889.25,-2724.65 2973.19,-2819.82"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2539.11,-2327.65C2659.51,-2464.16 2889.25,-2724.65 2973.19,-2819.82"/>
 </g>
 <!-- You can’t remove error\nso you must defend against\nthe inevitability of error -->
 <g id="node12" class="node">
 <title>You can’t remove error\nso you must defend against\nthe inevitability of error</title>
-<text text-anchor="middle" x="2829.93" y="-3048.32" font-family="Gochi Hand" font-size="32.00" fill="#00441b">You can’t remove error</text>
-<text text-anchor="middle" x="2829.93" y="-3016.07" font-family="Gochi Hand" font-size="32.00" fill="#00441b">so you must defend against</text>
-<text text-anchor="middle" x="2829.93" y="-2983.82" font-family="Gochi Hand" font-size="32.00" fill="#00441b">the inevitability of error</text>
+<text text-anchor="middle" x="2829.93" y="-3048.32" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">You can’t remove error</text>
+<text text-anchor="middle" x="2829.93" y="-3016.07" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">so you must defend against</text>
+<text text-anchor="middle" x="2829.93" y="-2983.82" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">the inevitability of error</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;You can’t remove error\nso you must defend against\nthe inevitability of error -->
 <g id="edge11" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;You can’t remove error\nso you must defend against\nthe inevitability of error</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2503.16,-2327.51C2579.46,-2491.61 2743.83,-2845.15 2805.71,-2978.25"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2503.16,-2327.51C2579.46,-2491.61 2743.83,-2845.15 2805.71,-2978.25"/>
 </g>
 <!-- Good systems\nbuild in error tolerance -->
 <g id="node13" class="node">
 <title>Good systems\nbuild in error tolerance</title>
-<text text-anchor="middle" x="2613.2" y="-3153.64" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Good systems</text>
-<text text-anchor="middle" x="2613.2" y="-3121.39" font-family="Gochi Hand" font-size="32.00" fill="#00441b">build in error tolerance</text>
+<text text-anchor="middle" x="2613.2" y="-3153.64" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Good systems</text>
+<text text-anchor="middle" x="2613.2" y="-3121.39" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">build in error tolerance</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;Good systems\nbuild in error tolerance -->
 <g id="edge12" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;Good systems\nbuild in error tolerance</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2477.4,-2327.64C2509.27,-2521.07 2585.5,-2983.7 2607.29,-3115.93"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2477.4,-2327.64C2509.27,-2521.07 2585.5,-2983.7 2607.29,-3115.93"/>
 </g>
 <!-- Knowing errors will happen\nis a good thing -->
 <g id="node14" class="node">
 <title>Knowing errors will happen\nis a good thing</title>
-<text text-anchor="middle" x="2237.1" y="-3229.24" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Knowing errors will happen</text>
-<text text-anchor="middle" x="2237.1" y="-3196.99" font-family="Gochi Hand" font-size="32.00" fill="#00441b">is a good thing</text>
+<text text-anchor="middle" x="2237.1" y="-3229.24" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Knowing errors will happen</text>
+<text text-anchor="middle" x="2237.1" y="-3196.99" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">is a good thing</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;Knowing errors will happen\nis a good thing -->
 <g id="edge13" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;Knowing errors will happen\nis a good thing</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2443.55,-2327.36C2396.27,-2533.47 2277.79,-3050.02 2245.4,-3191.23"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2443.55,-2327.36C2396.27,-2533.47 2277.79,-3050.02 2245.4,-3191.23"/>
 </g>
 <!-- An error without significance consequence\nis the closest thing to a\nleading indicator data you will find -->
 <g id="node15" class="node">
 <title>An error without significance consequence\nis the closest thing to a\nleading indicator data you will find</title>
-<text text-anchor="middle" x="1719.12" y="-3245.39" font-family="Gochi Hand" font-size="32.00" fill="#00441b">An error without significance consequence</text>
-<text text-anchor="middle" x="1719.12" y="-3213.14" font-family="Gochi Hand" font-size="32.00" fill="#00441b">is the closest thing to a</text>
-<text text-anchor="middle" x="1719.12" y="-3180.89" font-family="Gochi Hand" font-size="32.00" fill="#00441b">leading indicator data you will find</text>
+<text text-anchor="middle" x="1719.12" y="-3245.39" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">An error without significance consequence</text>
+<text text-anchor="middle" x="1719.12" y="-3213.14" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">is the closest thing to a</text>
+<text text-anchor="middle" x="1719.12" y="-3180.89" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">leading indicator data you will find</text>
 </g>
 <!-- PeopleMakeMistakes&#45;&#45;An error without significance consequence\nis the closest thing to a\nleading indicator data you will find -->
 <g id="edge14" class="edge">
 <title>PeopleMakeMistakes&#45;&#45;An error without significance consequence\nis the closest thing to a\nleading indicator data you will find</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2398.49,-2327.36C2248.3,-2526.33 1879.75,-3014.61 1758.5,-3175.25"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2398.49,-2327.36C2248.3,-2526.33 1879.75,-3014.61 1758.5,-3175.25"/>
 </g>
 <!-- Organizations have\ntwo choices when responding to failure:\nto learn and improve\nor to blame and punish -->
 <g id="node21" class="node">
 <title>Organizations have\ntwo choices when responding to failure:\nto learn and improve\nor to blame and punish</title>
-<text text-anchor="middle" x="1112.2" y="-3140.63" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Organizations have</text>
-<text text-anchor="middle" x="1112.2" y="-3108.38" font-family="Gochi Hand" font-size="32.00" fill="#00441b">two choices when responding to failure:</text>
-<text text-anchor="middle" x="1112.2" y="-3076.13" font-family="Gochi Hand" font-size="32.00" fill="#00441b">to learn and improve</text>
-<text text-anchor="middle" x="1112.2" y="-3043.88" font-family="Gochi Hand" font-size="32.00" fill="#00441b">or to blame and punish</text>
+<text text-anchor="middle" x="1112.2" y="-3140.63" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Organizations have</text>
+<text text-anchor="middle" x="1112.2" y="-3108.38" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">two choices when responding to failure:</text>
+<text text-anchor="middle" x="1112.2" y="-3076.13" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">to learn and improve</text>
+<text text-anchor="middle" x="1112.2" y="-3043.88" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">or to blame and punish</text>
 </g>
 <!-- LearningAndImproving&#45;&#45;Organizations have\ntwo choices when responding to failure:\nto learn and improve\nor to blame and punish -->
 <g id="edge20" class="edge">
 <title>LearningAndImproving&#45;&#45;Organizations have\ntwo choices when responding to failure:\nto learn and improve\nor to blame and punish</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1184.51,-2220.75C1168.04,-2422.48 1131.7,-2867.64 1117.78,-3038.2"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1184.51,-2220.75C1168.04,-2422.48 1131.7,-2867.64 1117.78,-3038.2"/>
 </g>
 <!-- Learning is a strategic and operational\nchoice towards improvement -->
 <g id="node22" class="node">
 <title>Learning is a strategic and operational\nchoice towards improvement</title>
-<text text-anchor="middle" x="893.56" y="-2995.57" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Learning is a strategic and operational</text>
-<text text-anchor="middle" x="893.56" y="-2963.32" font-family="Gochi Hand" font-size="32.00" fill="#00441b">choice towards improvement</text>
+<text text-anchor="middle" x="893.56" y="-2995.57" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Learning is a strategic and operational</text>
+<text text-anchor="middle" x="893.56" y="-2963.32" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">choice towards improvement</text>
 </g>
 <!-- LearningAndImproving&#45;&#45;Learning is a strategic and operational\nchoice towards improvement -->
 <g id="edge21" class="edge">
 <title>LearningAndImproving&#45;&#45;Learning is a strategic and operational\nchoice towards improvement</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1157.92,-2220.85C1091.23,-2415.81 948.57,-2832.88 905.88,-2957.7"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1157.92,-2220.85C1091.23,-2415.81 948.57,-2832.88 905.88,-2957.7"/>
 </g>
 <!-- Learning is a deliberate\nimprovement strategy -->
 <g id="node23" class="node">
 <title>Learning is a deliberate\nimprovement strategy</title>
-<text text-anchor="middle" x="715.2" y="-2832.32" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Learning is a deliberate</text>
-<text text-anchor="middle" x="715.2" y="-2800.07" font-family="Gochi Hand" font-size="32.00" fill="#00441b">improvement strategy</text>
+<text text-anchor="middle" x="715.2" y="-2832.32" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Learning is a deliberate</text>
+<text text-anchor="middle" x="715.2" y="-2800.07" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">improvement strategy</text>
 </g>
 <!-- LearningAndImproving&#45;&#45;Learning is a deliberate\nimprovement strategy -->
 <g id="edge22" class="edge">
 <title>LearningAndImproving&#45;&#45;Learning is a deliberate\nimprovement strategy</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1124.4,-2220.74C1015.93,-2382.36 809.62,-2689.78 739.34,-2794.49"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1124.4,-2220.74C1015.93,-2382.36 809.62,-2689.78 739.34,-2794.49"/>
 </g>
 <!-- Knowing how work is done is difficult -->
 <g id="node24" class="node">
 <title>Knowing how work is done is difficult</title>
-<text text-anchor="middle" x="577.28" y="-2604.73" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Knowing how work is done is difficult</text>
+<text text-anchor="middle" x="577.28" y="-2604.73" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Knowing how work is done is difficult</text>
 </g>
 <!-- LearningAndImproving&#45;&#45;Knowing how work is done is difficult -->
 <g id="edge23" class="edge">
 <title>LearningAndImproving&#45;&#45;Knowing how work is done is difficult</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1067.15,-2220.9C917.71,-2342.35 678.83,-2536.48 601.97,-2598.94"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1067.15,-2220.9C917.71,-2342.35 678.83,-2536.48 601.97,-2598.94"/>
 </g>
 <!-- Workers are the experts,\nthe profound users of the work process -->
 <g id="node25" class="node">
 <title>Workers are the experts,\nthe profound users of the work process</title>
-<text text-anchor="middle" x="450.7" y="-2367.06" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Workers are the experts,</text>
-<text text-anchor="middle" x="450.7" y="-2334.81" font-family="Gochi Hand" font-size="32.00" fill="#00441b">the profound users of the work process</text>
+<text text-anchor="middle" x="450.7" y="-2367.06" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Workers are the experts,</text>
+<text text-anchor="middle" x="450.7" y="-2334.81" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">the profound users of the work process</text>
 </g>
 <!-- LearningAndImproving&#45;&#45;Workers are the experts,\nthe profound users of the work process -->
 <g id="edge24" class="edge">
 <title>LearningAndImproving&#45;&#45;Workers are the experts,\nthe profound users of the work process</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1030.43,-2172.7C887.63,-2220.12 683.74,-2287.83 559.69,-2329.02"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1030.43,-2172.7C887.63,-2220.12 683.74,-2287.83 559.69,-2329.02"/>
 </g>
 <!-- Workers always complete the process design -->
 <g id="node26" class="node">
 <title>Workers always complete the process design</title>
-<text text-anchor="middle" x="343.83" y="-2065.46" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Workers always complete the process design</text>
+<text text-anchor="middle" x="343.83" y="-2065.46" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Workers always complete the process design</text>
 </g>
 <!-- LearningAndImproving&#45;&#45;Workers always complete the process design -->
 <g id="edge25" class="edge">
 <title>LearningAndImproving&#45;&#45;Workers always complete the process design</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1030.39,-2111.3C929.18,-2106.65 795.31,-2100.49 672.68,-2094.86"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1030.39,-2111.3C929.18,-2106.65 795.31,-2100.49 672.68,-2094.86"/>
 </g>
 <!-- Defenses are placed in systems,\ntested in systems,\nand strengthed in systems\nby learning how successful work is done -->
 <g id="node27" class="node">
 <title>Defenses are placed in systems,\ntested in systems,\nand strengthed in systems\nby learning how successful work is done</title>
-<text text-anchor="middle" x="293.75" y="-1810.99" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Defenses are placed in systems,</text>
-<text text-anchor="middle" x="293.75" y="-1778.74" font-family="Gochi Hand" font-size="32.00" fill="#00441b">tested in systems,</text>
-<text text-anchor="middle" x="293.75" y="-1746.49" font-family="Gochi Hand" font-size="32.00" fill="#00441b">and strengthed in systems</text>
-<text text-anchor="middle" x="293.75" y="-1714.24" font-family="Gochi Hand" font-size="32.00" fill="#00441b">by learning how successful work is done</text>
+<text text-anchor="middle" x="293.75" y="-1810.99" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Defenses are placed in systems,</text>
+<text text-anchor="middle" x="293.75" y="-1778.74" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">tested in systems,</text>
+<text text-anchor="middle" x="293.75" y="-1746.49" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">and strengthed in systems</text>
+<text text-anchor="middle" x="293.75" y="-1714.24" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">by learning how successful work is done</text>
 </g>
 <!-- LearningAndImproving&#45;&#45;Defenses are placed in systems,\ntested in systems,\nand strengthed in systems\nby learning how successful work is done -->
 <g id="edge26" class="edge">
 <title>LearningAndImproving&#45;&#45;Defenses are placed in systems,\ntested in systems,\nand strengthed in systems\nby learning how successful work is done</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1030.28,-2056.95C873.31,-1997.27 636.14,-1907.08 473.59,-1845.27"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1030.28,-2056.95C873.31,-1997.27 636.14,-1907.08 473.59,-1845.27"/>
 </g>
 <!-- Workers do what they do for a reason.\nAnd the reason makes sense\nto the worker given the context -->
 <g id="node28" class="node">
 <title>Workers do what they do for a reason.\nAnd the reason makes sense\nto the worker given the context</title>
-<text text-anchor="middle" x="297.89" y="-1484.82" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Workers do what they do for a reason.</text>
-<text text-anchor="middle" x="297.89" y="-1452.57" font-family="Gochi Hand" font-size="32.00" fill="#00441b">And the reason makes sense</text>
-<text text-anchor="middle" x="297.89" y="-1420.32" font-family="Gochi Hand" font-size="32.00" fill="#00441b">to the worker given the context</text>
+<text text-anchor="middle" x="297.89" y="-1484.82" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Workers do what they do for a reason.</text>
+<text text-anchor="middle" x="297.89" y="-1452.57" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">And the reason makes sense</text>
+<text text-anchor="middle" x="297.89" y="-1420.32" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">to the worker given the context</text>
 </g>
 <!-- ContextDrivesBehavior&#45;&#45;Workers do what they do for a reason.\nAnd the reason makes sense\nto the worker given the context -->
 <g id="edge27" class="edge">
 <title>ContextDrivesBehavior&#45;&#45;Workers do what they do for a reason.\nAnd the reason makes sense\nto the worker given the context</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M959.91,-1296.2C824.74,-1331.04 640.53,-1378.52 500.73,-1414.56"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M959.91,-1296.2C824.74,-1331.04 640.53,-1378.52 500.73,-1414.56"/>
 </g>
 <!-- Complex systems don’t lend themselves\nto traditional metrics -->
 <g id="node29" class="node">
 <title>Complex systems don’t lend themselves\nto traditional metrics</title>
-<text text-anchor="middle" x="359.09" y="-1163.82" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Complex systems don’t lend themselves</text>
-<text text-anchor="middle" x="359.09" y="-1131.57" font-family="Gochi Hand" font-size="32.00" fill="#00441b">to traditional metrics</text>
+<text text-anchor="middle" x="359.09" y="-1163.82" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Complex systems don’t lend themselves</text>
+<text text-anchor="middle" x="359.09" y="-1131.57" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">to traditional metrics</text>
 </g>
 <!-- ContextDrivesBehavior&#45;&#45;Complex systems don’t lend themselves\nto traditional metrics -->
 <g id="edge28" class="edge">
 <title>ContextDrivesBehavior&#45;&#45;Complex systems don’t lend themselves\nto traditional metrics</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M960.21,-1228.89C868.91,-1218.72 756.08,-1206.16 652.93,-1194.68"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M960.21,-1228.89C868.91,-1218.72 756.08,-1206.16 652.93,-1194.68"/>
 </g>
 <!-- Local rationale is information to be discovered,\nnot to be weaponized -->
 <g id="node30" class="node">
 <title>Local rationale is information to be discovered,\nnot to be weaponized</title>
-<text text-anchor="middle" x="455.67" y="-876.51" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Local rationale is information to be discovered,</text>
-<text text-anchor="middle" x="455.67" y="-844.26" font-family="Gochi Hand" font-size="32.00" fill="#00441b">not to be weaponized</text>
+<text text-anchor="middle" x="455.67" y="-876.51" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Local rationale is information to be discovered,</text>
+<text text-anchor="middle" x="455.67" y="-844.26" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">not to be weaponized</text>
 </g>
 <!-- ContextDrivesBehavior&#45;&#45;Local rationale is information to be discovered,\nnot to be weaponized -->
 <g id="edge29" class="edge">
 <title>ContextDrivesBehavior&#45;&#45;Local rationale is information to be discovered,\nnot to be weaponized</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M984.83,-1163.25C838.52,-1083.45 627.79,-968.53 521.82,-910.74"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M984.83,-1163.25C838.52,-1083.45 627.79,-968.53 521.82,-910.74"/>
 </g>
 <!-- The environment in which work occurs\nmainly determines workers\nbehavior and actions -->
 <g id="node31" class="node">
 <title>The environment in which work occurs\nmainly determines workers\nbehavior and actions</title>
-<text text-anchor="middle" x="590.18" y="-635.61" font-family="Gochi Hand" font-size="32.00" fill="#00441b">The environment in which work occurs</text>
-<text text-anchor="middle" x="590.18" y="-603.36" font-family="Gochi Hand" font-size="32.00" fill="#00441b">mainly determines workers</text>
-<text text-anchor="middle" x="590.18" y="-571.11" font-family="Gochi Hand" font-size="32.00" fill="#00441b">behavior and actions</text>
+<text text-anchor="middle" x="590.18" y="-635.61" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">The environment in which work occurs</text>
+<text text-anchor="middle" x="590.18" y="-603.36" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">mainly determines workers</text>
+<text text-anchor="middle" x="590.18" y="-571.11" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">behavior and actions</text>
 </g>
 <!-- ContextDrivesBehavior&#45;&#45;The environment in which work occurs\nmainly determines workers\nbehavior and actions -->
 <g id="edge30" class="edge">
 <title>ContextDrivesBehavior&#45;&#45;The environment in which work occurs\nmainly determines workers\nbehavior and actions</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1067.33,-1163.34C951,-1030.29 730.66,-778.3 635.65,-669.65"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1067.33,-1163.34C951,-1030.29 730.66,-778.3 635.65,-669.65"/>
 </g>
 <!-- Individual behavior is influenced\nby the organizational processes and values -->
 <g id="node32" class="node">
 <title>Individual behavior is influenced\nby the organizational processes and values</title>
-<text text-anchor="middle" x="752.38" y="-402.72" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Individual behavior is influenced</text>
-<text text-anchor="middle" x="752.38" y="-370.47" font-family="Gochi Hand" font-size="32.00" fill="#00441b">by the organizational processes and values</text>
+<text text-anchor="middle" x="752.38" y="-402.72" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Individual behavior is influenced</text>
+<text text-anchor="middle" x="752.38" y="-370.47" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">by the organizational processes and values</text>
 </g>
 <!-- ContextDrivesBehavior&#45;&#45;Individual behavior is influenced\nby the organizational processes and values -->
 <g id="edge31" class="edge">
 <title>ContextDrivesBehavior&#45;&#45;Individual behavior is influenced\nby the organizational processes and values</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1102.83,-1163.16C1018.98,-980.77 826.31,-561.67 768.85,-436.68"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1102.83,-1163.16C1018.98,-980.77 826.31,-561.67 768.85,-436.68"/>
 </g>
 <!-- You have two choices:\ngetting better or getting even -->
 <g id="node33" class="node">
 <title>You have two choices:\ngetting better or getting even</title>
-<text text-anchor="middle" x="939.73" y="-232.73" font-family="Gochi Hand" font-size="32.00" fill="#00441b">You have two choices:</text>
-<text text-anchor="middle" x="939.73" y="-200.48" font-family="Gochi Hand" font-size="32.00" fill="#00441b">getting better or getting even</text>
+<text text-anchor="middle" x="939.73" y="-232.73" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">You have two choices:</text>
+<text text-anchor="middle" x="939.73" y="-200.48" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">getting better or getting even</text>
 </g>
 <!-- HowYouRespond&#45;&#45;You have two choices:\ngetting better or getting even -->
 <g id="edge32" class="edge">
 <title>HowYouRespond&#45;&#45;You have two choices:\ngetting better or getting even</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1721.2,-729.9C1506.84,-593.02 1137.08,-356.9 996.34,-267.03"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1721.2,-729.9C1506.84,-593.02 1137.08,-356.9 996.34,-267.03"/>
 </g>
 <!-- You can blame and punish,\nor you can learn and improve,\nbut you can’t do both -->
 <g id="node34" class="node">
 <title>You can blame and punish,\nor you can learn and improve,\nbut you can’t do both</title>
-<text text-anchor="middle" x="1165.02" y="-134.73" font-family="Gochi Hand" font-size="32.00" fill="#00441b">You can blame and punish,</text>
-<text text-anchor="middle" x="1165.02" y="-102.48" font-family="Gochi Hand" font-size="32.00" fill="#00441b">or you can learn and improve,</text>
-<text text-anchor="middle" x="1165.02" y="-70.23" font-family="Gochi Hand" font-size="32.00" fill="#00441b">but you can’t do both</text>
+<text text-anchor="middle" x="1165.02" y="-134.73" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">You can blame and punish,</text>
+<text text-anchor="middle" x="1165.02" y="-102.48" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">or you can learn and improve,</text>
+<text text-anchor="middle" x="1165.02" y="-70.23" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">but you can’t do both</text>
 </g>
 <!-- HowYouRespond&#45;&#45;You can blame and punish,\nor you can learn and improve,\nbut you can’t do both -->
 <g id="edge33" class="edge">
 <title>HowYouRespond&#45;&#45;You can blame and punish,\nor you can learn and improve,\nbut you can’t do both</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1778.95,-729.94C1623.98,-575.16 1335.17,-286.7 1217.22,-168.9"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1778.95,-729.94C1623.98,-575.16 1335.17,-286.7 1217.22,-168.9"/>
 </g>
 <!-- You create the feedback systems you have -->
 <g id="node35" class="node">
 <title>You create the feedback systems you have</title>
-<text text-anchor="middle" x="1568.26" y="-21.97" font-family="Gochi Hand" font-size="32.00" fill="#00441b">You create the feedback systems you have</text>
+<text text-anchor="middle" x="1568.26" y="-21.97" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">You create the feedback systems you have</text>
 </g>
 <!-- HowYouRespond&#45;&#45;You create the feedback systems you have -->
 <g id="edge34" class="edge">
 <title>HowYouRespond&#45;&#45;You create the feedback systems you have</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1841.07,-730.05C1766.94,-541.52 1612.7,-149.27 1576.15,-56.31"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1841.07,-730.05C1766.94,-541.52 1612.7,-149.27 1576.15,-56.31"/>
 </g>
 <!-- Managers shape how organizations learn\nby their reaction to failure -->
 <g id="node36" class="node">
 <title>Managers shape how organizations learn\nby their reaction to failure</title>
-<text text-anchor="middle" x="2192.27" y="-38.1" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Managers shape how organizations learn</text>
-<text text-anchor="middle" x="2192.27" y="-5.85" font-family="Gochi Hand" font-size="32.00" fill="#00441b">by their reaction to failure</text>
+<text text-anchor="middle" x="2192.27" y="-38.1" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Managers shape how organizations learn</text>
+<text text-anchor="middle" x="2192.27" y="-5.85" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">by their reaction to failure</text>
 </g>
 <!-- HowYouRespond&#45;&#45;Managers shape how organizations learn\nby their reaction to failure -->
 <g id="edge35" class="edge">
 <title>HowYouRespond&#45;&#45;Managers shape how organizations learn\nby their reaction to failure</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1921.05,-730.05C1991.06,-550.96 2132.93,-188.03 2178.11,-72.46"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1921.05,-730.05C1991.06,-550.96 2132.93,-188.03 2178.11,-72.46"/>
 </g>
 <!-- Every aspect of improvement is contingent\non leadership’s deliberate decision to get better -->
 <g id="node37" class="node">
 <title>Every aspect of improvement is contingent\non leadership’s deliberate decision to get better</title>
-<text text-anchor="middle" x="2595.5" y="-118.61" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Every aspect of improvement is contingent</text>
-<text text-anchor="middle" x="2595.5" y="-86.36" font-family="Gochi Hand" font-size="32.00" fill="#00441b">on leadership’s deliberate decision to get better</text>
+<text text-anchor="middle" x="2595.5" y="-118.61" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Every aspect of improvement is contingent</text>
+<text text-anchor="middle" x="2595.5" y="-86.36" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">on leadership’s deliberate decision to get better</text>
 </g>
 <!-- HowYouRespond&#45;&#45;Every aspect of improvement is contingent\non leadership’s deliberate decision to get better -->
 <g id="edge36" class="edge">
 <title>HowYouRespond&#45;&#45;Every aspect of improvement is contingent\non leadership’s deliberate decision to get better</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M1983.14,-729.94C2145.23,-567.63 2454.12,-258.33 2559.35,-152.96"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M1983.14,-729.94C2145.23,-567.63 2454.12,-258.33 2559.35,-152.96"/>
 </g>
 <!-- People are watching you -->
 <g id="node38" class="node">
 <title>People are watching you</title>
-<text text-anchor="middle" x="2821.06" y="-216.65" font-family="Gochi Hand" font-size="32.00" fill="#00441b">People are watching you</text>
+<text text-anchor="middle" x="2821.06" y="-216.65" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">People are watching you</text>
 </g>
 <!-- HowYouRespond&#45;&#45;People are watching you -->
 <g id="edge37" class="edge">
 <title>HowYouRespond&#45;&#45;People are watching you</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2040.88,-729.91C2269.29,-583.82 2674.45,-324.7 2789.7,-250.99"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2040.88,-729.91C2269.29,-583.82 2674.45,-324.7 2789.7,-250.99"/>
 </g>
 <!-- Blame is emotionally important,\nbut not operationally important -->
 <g id="node16" class="node">
 <title>Blame is emotionally important,\nbut not operationally important</title>
-<text text-anchor="middle" x="3008.5" y="-402.79" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Blame is emotionally important,</text>
-<text text-anchor="middle" x="3008.5" y="-370.54" font-family="Gochi Hand" font-size="32.00" fill="#00441b">but not operationally important</text>
+<text text-anchor="middle" x="3008.5" y="-402.79" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Blame is emotionally important,</text>
+<text text-anchor="middle" x="3008.5" y="-370.54" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">but not operationally important</text>
 </g>
 <!-- BlameFixesNothing&#45;&#45;Blame is emotionally important,\nbut not operationally important -->
 <g id="edge15" class="edge">
 <title>BlameFixesNothing&#45;&#45;Blame is emotionally important,\nbut not operationally important</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2657.48,-1164.67C2741.31,-982.27 2934.4,-562.15 2991.99,-436.85"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2657.48,-1164.67C2741.31,-982.27 2934.4,-562.15 2991.99,-436.85"/>
 </g>
 <!-- Blame makes error a choice in retrospect -->
 <g id="node17" class="node">
 <title>Blame makes error a choice in retrospect</title>
-<text text-anchor="middle" x="3170.78" y="-603.46" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Blame makes error a choice in retrospect</text>
+<text text-anchor="middle" x="3170.78" y="-603.46" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Blame makes error a choice in retrospect</text>
 </g>
 <!-- BlameFixesNothing&#45;&#45;Blame makes error a choice in retrospect -->
 <g id="edge16" class="edge">
 <title>BlameFixesNothing&#45;&#45;Blame makes error a choice in retrospect</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2693.19,-1164.42C2823.35,-1015.43 3083.61,-717.52 3153.28,-637.77"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2693.19,-1164.42C2823.35,-1015.43 3083.61,-717.52 3153.28,-637.77"/>
 </g>
 <!-- Blame takes up emotional and intellectual\nspace with little added value -->
 <g id="node18" class="node">
 <title>Blame takes up emotional and intellectual\nspace with little added value</title>
-<text text-anchor="middle" x="3305.44" y="-876.64" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Blame takes up emotional and intellectual</text>
-<text text-anchor="middle" x="3305.44" y="-844.39" font-family="Gochi Hand" font-size="32.00" fill="#00441b">space with little added value</text>
+<text text-anchor="middle" x="3305.44" y="-876.64" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Blame takes up emotional and intellectual</text>
+<text text-anchor="middle" x="3305.44" y="-844.39" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">space with little added value</text>
 </g>
 <!-- BlameFixesNothing&#45;&#45;Blame takes up emotional and intellectual\nspace with little added value -->
 <g id="edge17" class="edge">
 <title>BlameFixesNothing&#45;&#45;Blame takes up emotional and intellectual\nspace with little added value</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2775.34,-1164.47C2921.77,-1084.45 3132.94,-969.05 3239.14,-911.02"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2775.34,-1164.47C2921.77,-1084.45 3132.94,-969.05 3239.14,-911.02"/>
 </g>
 <!-- Blame misdirects resources and strategies -->
 <g id="node19" class="node">
 <title>Blame misdirects resources and strategies</title>
-<text text-anchor="middle" x="3402.27" y="-1147.88" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Blame misdirects resources and strategies</text>
+<text text-anchor="middle" x="3402.27" y="-1147.88" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Blame misdirects resources and strategies</text>
 </g>
 <!-- BlameFixesNothing&#45;&#45;Blame misdirects resources and strategies -->
 <g id="edge18" class="edge">
 <title>BlameFixesNothing&#45;&#45;Blame misdirects resources and strategies</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2775.82,-1232.65C2905.31,-1218.08 3088.64,-1197.45 3223.54,-1182.27"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2775.82,-1232.65C2905.31,-1218.08 3088.64,-1197.45 3223.54,-1182.27"/>
 </g>
 <!-- Blame is the opposite of encouragement -->
 <g id="node20" class="node">
 <title>Blame is the opposite of encouragement</title>
-<text text-anchor="middle" x="3463.5" y="-1453.01" font-family="Gochi Hand" font-size="32.00" fill="#00441b">Blame is the opposite of encouragement</text>
+<text text-anchor="middle" x="3463.5" y="-1453.01" font-family="Gochi Hand" font-size="32.00" fill="#2d004b">Blame is the opposite of encouragement</text>
 </g>
 <!-- BlameFixesNothing&#45;&#45;Blame is the opposite of encouragement -->
 <g id="edge19" class="edge">
 <title>BlameFixesNothing&#45;&#45;Blame is the opposite of encouragement</title>
-<path fill="none" stroke="#e7d4e8" stroke-width="5" d="M2775.61,-1290.82C2956.78,-1337.29 3246.98,-1411.74 3385.28,-1447.22"/>
+<path fill="none" stroke="#fdb863" stroke-width="5" d="M2775.61,-1290.82C2956.78,-1337.29 3246.98,-1411.74 3385.28,-1447.22"/>
 </g>
 <!-- infonode -->
 <g id="node39" class="node">
 <title>infonode</title>
-<text text-anchor="start" x="3723.51" y="-121.53" font-family="Gochi Hand" font-size="28.00" fill="#9970ab">2023 mweagle@hachyderm.io (Mastodon)</text>
-<text text-anchor="start" x="3801.51" y="-89.03" font-family="Gochi Hand" font-size="28.00" fill="#9970ab">Icons courtesy of Smashicons</text>
-<text text-anchor="start" x="3546.13" y="-56.53" font-family="Gochi Hand" font-size="28.00" fill="#9970ab">https://www.flaticon.com/authors/basic&#45;miscellany/lineal?author_id=159</text>
+<text text-anchor="start" x="3723.51" y="-121.53" font-family="Gochi Hand" font-size="28.00" fill="#d8daeb">2023 mweagle@hachyderm.io (Mastodon)</text>
+<text text-anchor="start" x="3801.51" y="-89.03" font-family="Gochi Hand" font-size="28.00" fill="#d8daeb">Icons courtesy of Smashicons</text>
+<text text-anchor="start" x="3546.13" y="-56.53" font-family="Gochi Hand" font-size="28.00" fill="#d8daeb">https://www.flaticon.com/authors/basic&#45;miscellany/lineal?author_id=159</text>
 <image xlink:href="smashicons.jpg" width="44px" height="44px" preserveAspectRatio="xMinYMin meet" x="3966.26" y="-50.6264"/>
 </g>
 </g>
