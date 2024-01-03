@@ -1,7 +1,7 @@
 # We don't include a [deploy] config block because
 # it's built and deployed by netlify
 baseurl: ""
-theme: "PaperMod"
+theme: "hugo-PaperMod"
 # Documentation: https://github.com/adityatelange/hugo-PaperMod/wiki
 title: Matt Weagle
 paginate: 7
@@ -158,3 +158,4 @@ markup:
     # guessSyntax: true
     # lineNos: true
     style: vscode
+    unsafe: true

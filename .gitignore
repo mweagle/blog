@@ -1,5 +1,6 @@
 .vscode/*
 .obsidian/*
+.staging/*
 vendor/
 vendor/
 .sparta/

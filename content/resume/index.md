@@ -11,7 +11,7 @@ Customer-focused, hands-on software engineering manager and individual contribut
 
 ## Experience
 
-### Software Development Manager - AWS (2020 - Present)
+### Software Development Manager - AWS (2020 - 2023)
 
 Software Development Manager for [AWS Lambda](https://aws.amazon.com/lambda/) and [AWS CodeCatalyst](https://codecatalyst.aws/explore).
 

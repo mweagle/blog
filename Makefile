@@ -1,24 +1,30 @@
 default: build
-
-HUGO_VERSION := "0.112.3"
+# Hugo requirements
+HUGO_VERSION := "0.121.1"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 .PHONY: run edit
+
+# External resources that need to be rebuilt
+STAGING_DIR := "./.staging"
+GITHUB_STAGING_DIR := "$(STAGING_DIR)/github"
 
 hugo_install:
 	curl -L -vs --create-dirs -O --output-dir ./.vscode $(HUGO_SOURCE_URL)
 	tar -xvf ./.vscode/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz --directory ./.vscode
 	mv -fv ./.vscode/hugo ./
 
-
 clean:
 	rm -rfv ./public
+	rm -rfv $(STAGING_DIR)
+	mkdir -pv $(STAGING_DIR)
 
 ext_assets: clean
+	git clone --depth=1 https://github.com/mweagle/C4-PlantUML-Themes "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes"
 	rm -rfv ./content/posts/c4pumlthemes/puml/resources/palettes
 	mkdir -pv ./content/posts/c4pumlthemes/puml/resources/palettes
-	cp -Rv ~/Documents/GitHub/C4-PlantUML-Themes/palettes ./content/posts/c4pumlthemes/puml/resources
+	cp -Rv "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes/palettes" ./content/posts/c4pumlthemes/puml/resources
 
-build: ext_assets clean
+build: clean ext_assets 
 	./hugo
 
 commit:

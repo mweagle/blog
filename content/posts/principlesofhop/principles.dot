@@ -1,0 +1,180 @@
+graph principlesofperformance {
+  # Source material:
+  # 
+  # This graph depends on the following font
+  # https://fonts.google.com/specimen/Gochi+Hand?query=gochi
+  # 
+  # This graph depends on the following icons existing in the ./images subpath
+  # https://www.flaticon.com/free-icon/angry_135809?term=angry&page=1&position=23&page=1&position=23&related_id=135809&origin=style -> angry.png
+  # https://www.flaticon.com/premium-icon/cast_3000085?term=broken%20arm&page=1&position=1&page=1&position=1&related_id=3000085&origin=style -> cast.png
+  # https://www.flaticon.com/free-icon/five-stars_6302869?term=star&page=1&position=26&page=1&position=26&related_id=6302869&origin=style -> five-stars.png
+  # https://www.flaticon.com/free-icon/point_6300900?term=point&page=1&position=23&page=1&position=23&related_id=6300900&origin=style -> point.png
+  # https://cdn-teams-slug.flaticon.com/smashicons.jpg -> smashicons.jpg
+  # https://www.flaticon.com/premium-icon/thought-bubble_3130200?term=thinking&related_id=3130200 -> thought-bubble.png
+  # https://www.flaticon.com/premium-icon/laptop_3000312?term=laptop&related_id=3000312 -> laptop.png
+  #
+  # Command: 
+  # 
+  # dotit() {
+  #   IMAGE_TYPES=("jpeg" "pdf" "svg")
+  #   for eachtype in ${IMAGE_TYPES[@]}; do
+  #     dot -T $eachtype $1 -o$1.$eachtype
+  #     echo "Created: $1.$eachtype"
+  #   done
+  # }
+  # dotit principles.dot
+  #
+layout=twopi; 
+labelloc="t"
+fontsize="96"
+	label="The 5 Principles of Human Performance\nBy Todd E. Conklin PhD\n\n"
+	fontname="Gochi Hand" 
+
+  graph [imagepath="images" overlap=false];
+	node [fontname="Gochi Hand" colorscheme=prgn11 shape=plaintext penwidth=0]
+  edge [colorscheme=prgn9]
+	edge [penwidth=5 color=4]
+
+  # Center node
+	node [fontsize=32 fontcolor=1]
+	FivePrinciples [fontsize=96 label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR>
+    <TD fixedsize="true" width="256" height="256"><IMG SRC="five-stars.png" /></TD>
+  </TR>
+</TABLE>>];
+   
+  # Chapter nodes
+	node [fontsize=32]
+
+ 	FivePrinciples -- {
+		PeopleMakeMistakes
+		LearningAndImproving
+		ContextDrivesBehavior
+		HowYouRespond
+		BlameFixesNothing
+	}
+
+  # People make mistakes
+ 	PeopleMakeMistakes [label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR>
+    <TD><B>People Make Mistakes</B></TD>
+  </TR>
+  <TR>
+    <TD fixedsize="true" width="128" height="128"><IMG SRC="cast.png" /></TD>
+  </TR>
+</TABLE>>];   
+
+  # Blame fixes nothing
+ 	BlameFixesNothing [label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR>
+    <TD>Blame Fixes Nothing</TD>
+  </TR>
+  <TR>
+    <TD fixedsize="true" width="128" height="128"><IMG SRC="point.png" /></TD>
+  </TR>
+</TABLE>>];   
+
+
+  # Learning and Improving is vital
+ 	LearningAndImproving [label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR>
+    <TD>Learning &amp; Improving<BR /> is Vital</TD>
+  </TR>
+  <TR>
+    <TD fixedsize="true" width="128" height="128"><IMG SRC="laptop.png" /></TD>
+  </TR>
+</TABLE>>];   
+
+  # Context drives behavior
+ 	ContextDrivesBehavior [label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR>
+    <TD>Context Drives Behavior</TD>
+  </TR>
+  <TR>
+    <TD fixedsize="true" width="128" height="128"><IMG SRC="thought-bubble.png" /></TD>
+  </TR>
+</TABLE>>];   
+
+  # How you respond to failure matters
+ 	HowYouRespond [label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR>
+    <TD>How You Respond to<BR />Failure Matters</TD>
+  </TR>
+  <TR>
+    <TD fixedsize="true" width="128" height="128"><IMG SRC="angry.png" /></TD>
+  </TR>
+</TABLE>>];  
+
+  # Bullet point nodes
+	node [fontsize=32 fontcolor=11]
+  PeopleMakeMistakes -- {
+    "Errors are normal"
+    "Since error is a normal state of existence,\nerror is never causal"
+    "Error is not the opposite of success.\nError is a part of being successful"
+    "Error exists in success as well as failure"
+    "Errors are not choices\nError only becomes a choice in retrospect"
+    "You can’t remove error\nso you must defend against\nthe inevitability of error"
+    "Good systems\nbuild in error tolerance"
+    "Knowing errors will happen\nis a good thing"
+    "An error without significance consequence\nis the closest thing to a\nleading indicator data you will find"
+  }
+
+  BlameFixesNothing -- {
+    "Blame is emotionally important,\nbut not operationally important"
+    "Blame makes error a choice in retrospect"
+    "Blame takes up emotional and intellectual\nspace with little added value"
+    "Blame misdirects resources and strategies"
+    "Blame is the opposite of encouragement"
+  }
+
+  LearningAndImproving -- {
+    "Organizations have\ntwo choices when responding to failure:\nto learn and improve\nor to blame and punish"
+    "Learning is a strategic and operational\nchoice towards improvement"
+    "Learning is a deliberate\nimprovement strategy"
+    "Knowing how work is done is difficult"
+    "Workers are the experts,\nthe profound users of the work process"
+    "Workers always complete the process design"
+    "Defenses are placed in systems,\ntested in systems,\nand strengthed in systems\nby learning how successful work is done"
+  }
+
+  ContextDrivesBehavior -- {
+    "Workers do what they do for a reason.\nAnd the reason makes sense\nto the worker given the context"
+    "Complex systems don’t lend themselves\nto traditional metrics"
+    "Local rationale is information to be discovered,\nnot to be weaponized"
+    "The environment in which work occurs\nmainly determines workers\nbehavior and actions"
+    "Individual behavior is influenced\nby the organizational processes and values"
+  }
+
+  HowYouRespond -- {
+    "You have two choices:\ngetting better or getting even"
+    "You can blame and punish,\nor you can learn and improve,\nbut you can’t do both"
+    "You create the feedback systems you have"
+    "Managers shape how organizations learn\nby their reaction to failure"
+    "Every aspect of improvement is contingent\non leadership’s deliberate decision to get better"
+    "People are watching you"
+  } 
+  # Finish with attribution
+  node [fontsize=28 fontcolor=3]
+  infonode [
+    label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR>
+    <TD>2023 mweagle@hachyderm.io (Mastodon)</TD>
+  </TR>
+  <TR>
+    <TD>Icons courtesy of Smashicons</TD>
+  </TR>
+  <TR>
+    <TD>https://www.flaticon.com/authors/basic-miscellany/lineal?author_id=159</TD>
+  </TR>
+  <TR>
+    <TD fixedsize="true" width="48" height="48"><IMG SRC="smashicons.jpg" /></TD>
+  </TR>
+</TABLE>>]
+}
