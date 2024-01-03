@@ -13,7 +13,7 @@ ShowToc: false
 
 ![image](./images/nick-fewings-EkyuhD7uwSM-unsplash.jpg)
 
-Todd Conklin is the host of the recommended [PreAccident Investigation Podcast](https://preaccidentpodcast.podbean.com) and recently published a book titled [The 5 Principles of Human Performance](https://a.co/d/b6VGAc9). It's an excellent introduction to high-performing organizations and the New View of Safety. To learn more, please visit [Lorin Hochstein's] Github repo of [resiliency papers](https://github.com/lorin/resilience-engineering). 
+Todd Conklin is the host of the recommended [PreAccident Investigation Podcast](https://preaccidentpodcast.podbean.com) and recently published a book titled [The 5 Principles of Human Performance](https://a.co/d/b6VGAc9). It's an excellent introduction to high-performing organizations and the New View of Safety. To learn more, please visit Lorin Hochstein's Github repo of [resiliency papers](https://github.com/lorin/resilience-engineering).
 
 In the meantime, I've distilled Todd's Five Principles into a single visualization below:
 
