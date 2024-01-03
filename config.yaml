@@ -95,6 +95,8 @@ params:
       url: "https://www.linkedin.com/in/mweagle/"
     - name: github
       url: "https://github.com/mweagle"
+    - name: email
+      url: "mailto:mweagle+inquiry@gmail.com?subject=Hello"
 
   analytics:
   #  google:

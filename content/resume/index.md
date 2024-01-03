@@ -1,7 +1,17 @@
-# Matt Weagle
+---
+title: "Matt Weagle - Resume"
+subtitle: "🌎 Seattle, WA"
+draft: false
+description:
+date: 2024-01-03T12:13:06-08:00
+lastmod: 2024-01-03T12:13:06-08:00
+tags: ["resume"]
+ShowToc: true
+---
 
-| 🌎 Seattle, WA | 📧 [mweagle@gmail.com](mailto:mweagle+inquiry@gmail.com?subject=resume_inquiry) | 🗣 [hachyderm.io@mweagle](https://hachyderm.io)
-| --- | --- | ---
+## Contact Me
+
+Please visit the [homepage](http://mweagle.io) for contact information.
 
 ## Summary
 
