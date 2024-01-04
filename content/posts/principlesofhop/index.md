@@ -5,7 +5,7 @@ draft: false
 subtitle: "Todd Conklin's Five Principles of Performance"
 description:
 date: 2024-01-03T10:07:51-08:00
-lastmod: 2024-01-03T10:07:51-08:00
+lastmod: 2024-01-04T13:47:27-08:00
 image: './images/nick-fewings-EkyuhD7uwSM-unsplash.jpg'
 tags: ["book", "organizational safety", "resilience"]
 ShowToc: true
