@@ -11,7 +11,7 @@ ShowToc: true
 
 ## Contact Me
 
-Please visit the [homepage](http://mweagle.io) for contact information.
+Please visit the [homepage](http://mweagle.net) for contact information.
 
 ## Summary
 
