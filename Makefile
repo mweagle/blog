@@ -20,7 +20,9 @@ clean:
 	rm -rfv ./public
 	rm -rfv $(STAGING_DIR)
 	mkdir -pv $(STAGING_DIR)
-
+#
+# TODO: https://christianspecht.de/2020/08/10/creating-an-image-gallery-with-hugo-and-lightbox2/
+#
 # Ensure that the Netlify config uses the same Hugo
 # version we've configured in the Makefile. Output:
 # 
