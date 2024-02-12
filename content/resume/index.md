@@ -34,7 +34,7 @@ Software Development Manager for [AWS Lambda](https://aws.amazon.com/lambda/) an
 
 ---
 
-### Engineering Manager - Lyft (2019-2020)
+### Engineering Manager - Machine Learning - Lyft (2019-2020)
 
 Engineering Manager for [Lyft](https://eng.lyft.com) Forecasting and ML Training/[Flyte](https://flyte.org/) teams. The Lyft Forecasting team is responsible for providing near real-time (~5 minute) and long-term business forecasts (~12 month).
 
