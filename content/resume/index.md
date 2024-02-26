@@ -17,7 +17,11 @@ Please visit the [homepage](http://mweagle.net) for contact information.
 
 Customer-focused, hands-on software engineering manager and individual contributor with experience managing technical teams and delivering products and platforms in fast-evolving consumer services spaces. Experience building highly available, fault-tolerant, large-scale distributed systems. Brings system-level thinking to design discussions. Servant-leader, pragmatic decision-maker, and advocate for generative culture.
 
----
+## Skills
+
+* **Languages/Technologies**: C/C++, go, gRPC, Java, JavaScript, Python, React, Ruby, Scala, X* technologies
+* **Infrastructure**: CloudFormation, CloudWatch, Docker, EC2, ECS, Fargate, Jenkins, Lambda, X-Ray, Kafka, Kinesis, Kubernetes, git, GitHub, S3, SNS, SQS
+* **Organizational**: Distributed/asynchronous team management, Engineering efficiency, Mentorship, Microservices, Operational excellence
 
 ## Experience
 
@@ -26,7 +30,7 @@ Customer-focused, hands-on software engineering manager and individual contribut
 Software Development Manager for [AWS Lambda](https://aws.amazon.com/lambda/) and [AWS CodeCatalyst](https://codecatalyst.aws/explore).
 
 * Contributed to [AWS Lambda SmartStart](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html) and [AWS Lambda response streaming](https://aws.amazon.com/blogs/compute/introducing-aws-lambda-response-streaming/) capabilities.
-* Defined and drove meetings, mechanisms, and metrics to coordinate CI/CD for 100+ person development team spanning multiple organizations. The result of this work was increased visibility into per-component change/fail rates, regional deployment skew, and batch size. Metrics were automatically published as part of CI/CD execution and included standardized release note generation with commit history to reduce operational response time.
+* Defined and drove meetings, mechanisms, and metrics to coordinate CI/CD for 100+ person development team spanning multiple organizations. The result of this work was increased visibility into per-component change/fail rates, regional deployment skew, and batch size. Metrics were automatically published as part of CI/CD execution and emitted standardized release notes with full commit history to reduce operational response time.
 * Over the course of a year, doubled team size to increase capacity and improve operational posture.
 * Managed decomposition of legacy `go` codebase into multiple, localhost `gRPC` microservices to align ownership, increase organizational velocity, and reduce response latency.
 * Led the [Lambda Correction of Error Bar Raiser](https://wa.aws.amazon.com/wat.concept.coe.en.html) program to improve our incident documentation, learnings, and discussions.
@@ -56,7 +60,7 @@ The Flyte team (now [Union.AI](https://www.union.ai)) was responsible for provid
 
 ### Director of Site Reliability Engineering - ShiftLeft (2016-2019)
 
-Responsible for bootstrapping core [ShiftLeft](https://shiftleft.io/) (now [Qwiet AI](https://qwiet.ai)) *go* codebase for common microservice architecture which represents a processing graph mediated by Kafka topics. Successfully onboarded additional team members to evolve and extend the core codebase. Additional accomplishments:
+Responsible for bootstrapping core [ShiftLeft](https://shiftleft.io/) (now [Qwiet AI](https://qwiet.ai)) *go* codebase for common microservice architecture which represents a processing graph mediated by Kafka topics. Successfully onboarded new team members to evolve and extend the core codebase. Accomplishments:
 
 * Ensured all services expose Prometheus-compatible observability information.
 * Created single fail-fast configuration initialization path with actionable error feedback.
@@ -72,7 +76,7 @@ Responsible for bootstrapping core [ShiftLeft](https://shiftleft.io/) (now [Qwie
 
 ### Engineering Manager - NodeSource (2016-2016)
 
-Managed and contributed to [NodeSource](https://nodesource.com/) team responsible for building [NodeSource Certified Modules](https://docs.nodesource.com/ncm/docs), an SaaS offering built on AWS using EC2, SQS, CloudFormation, and several other AWS service offerings. Highlights of my work:
+Managed and contributed to [NodeSource](https://nodesource.com/) team responsible for building [NodeSource Certified Modules](https://docs.nodesource.com/ncm/docs), an SaaS offering built on AWS using EC2, SQS, CloudFormation, and related AWS services. Accomplishments:
 
 * Created JavaScript toolchain to automate CloudFormation service provisioning.
 * Worked with sales team to provision NodeSource VMs to AWS Marketplace.
@@ -82,64 +86,43 @@ Managed and contributed to [NodeSource](https://nodesource.com/) team responsibl
 
 ### Engineering Manager - Adobe (2014-2015)
 
-Led [Adobe](https://www.adobe.com) engineering team to deliver the *Adobe Creative Cloud Assets* presence. The team is responsible for building and supporting all service aspects from the DevOps/infrastructure layer to the business-logic microservices tier. All services are deployed to AWS across multiple accounts and geographies. In addition to supporting large-scale release events, helped lead a feature-flipper gated system that enabled continual product improvement. Additional accomplishments:
+Led [Adobe](https://www.adobe.com) engineering team to deliver the *Adobe Creative Cloud Assets* presence. The team is responsible for building and supporting all service aspects from the DevOps/infrastructure layer to the business-logic microservices tier. All services are deployed to AWS across multiple accounts and geographies. In addition to supporting large-scale release events, lead a feature-flipper gated system that enabled continual product improvement. Accomplishments:
 
 * Prioritized and managed the team’s technical roadmap.
 * Migrated the platform services tier to Docker and etcd-backed configuration service. Migration occurred in tandem with CI/CD pipeline delivering multiple releases per day.
-* Identified build-vs-buy opportunities and secured funding as needed.
+* Identified build-vs-buy opportunities and secured funding.
 
----
+#### Engineering Lead - Adobe (2012-2014)
 
-### Engineering Lead - Adobe (2012-2014)
-
-Lead architect and developer for *Adobe Creative Cloud Assets* services tier. Highlights of my work:
+Lead architect and developer for *Adobe Creative Cloud Assets* services tier. Accomplishments:
 
 * Led complete application rewrite (from Ruby to Node.js) and MongoDB database denormalization to alleviate performance bottlenecks. Twice lazily migrated millions of user datasets with zero downtime.
 * Defined Node.js coding standards & architectural patterns.
 * Designed restify-backed core workflow engine to minimize response latency during HTTP request handling.
-* Integrated additional AWS services for improved performance and resiliency.
+* Integrated AWS services for improved performance and resiliency.
 
----
-
-### Senior Computer Scientist - Adobe (2010-2012)
+#### Senior Computer Scientist - Adobe (2010-2012)
 
 Developer of real-time, collaborative [video editing product](http://www.adobe.com/products/adobeanywhere.html). The server is delivered as a set of OSGi bundles installed into custom distributions of Apache Sling and Adobe CQ5. These runtimes embed the Java Content Repository and provide a NoSQL-style hierarchical storage model together with a Sling HTTP routing mechanism. Accomplishments:
 
 * Designed and implemented JVM-based job handler. The agent is responsible for consuming JMS messages and delivering them to a locally managed native process.
-* Implemented logfile aggregation, arbitrary process monitoring, and host metric sampling. Exposed observability information via the SIGAR library, published as JSON over-HTTP, and visualized with Dygraphs.
+* Implemented logfile aggregation, arbitrary process monitoring, and host metric sampling. Exposed observability information via the SIGAR library, exposed as JSON over-HTTP, and visualized with Dygraphs.
 * Implemented in Scala using Akka and Apache Camel.
 
----
-
-### Senior Computer Scientist (Lead) - Adobe (2007-2010)
+#### Senior Computer Scientist (Lead) - Adobe (2007-2010)
 
 Engineering lead for Atom Publishing Protocol solution for rich-content delivery. This end-to end solution featured a rich Internet application media upload tool for batched, localizable uploads to an AtomPub server. Highlights of my work:
 
 * Implemented REST-compliant API built on a stack of Java/Restlet, XQuery, and Lucene.
 * Designed and implemented multiple memory caching strategies and render-to-disk phase in the publish-to-production step to minimize latency.
-* Created RIA end-user client that dynamically reconfigured UI in response to server state. Client included inline video playback, dynamic view theming, and native drag-and-drop functionality.
+* Created RIA end-user client that dynamically reconfigured UI in response to server state. Client supported inline video playback, dynamic view theming, and native drag-and-drop functionality.
 
----
-
-### Computer Scientist (Lead) - Adobe (2004-2007)
+#### Computer Scientist (Lead) - Adobe (2004-2007)
 
 Project lead for cross-platform installer package compiler that uses an XML input file with declarative semantics to build Windows Installer Packages and proprietary Macintosh OSX archives. Accomplishments:
 
 * Technology was adopted by more than 20 internal teams within a single 18-month product release cycle.
 * Created the system that uses XML and Regular Expressions to allow users to inductively declare install-time behaviors. Build-pipeline is composed of Python, XSLT, C++, and C#/Cocoa. Cross-platform runtime user interface uses embedded Internet Explorer control supported by core DOM published via COM.
-
----
-
-### Computer Scientist - Adobe (1999-2004)
-
-Supported more than a dozen different Windows application installers. Responsibilities included:
-
-* Requirements gathering
-* Primary implementation
-* Continuous delivery/integration
-* Enterprise support
-* Knowledge transfer
-* Localization/internationalization
 
 ## Community
 
