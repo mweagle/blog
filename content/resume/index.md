@@ -4,7 +4,7 @@ subtitle: "🌎 Seattle, WA"
 draft: false
 description:
 date: 2024-01-03T12:13:06-08:00
-lastmod: 2024-01-03T12:13:06-08:00
+lastmod: 2024-02-26T12:26:21-08:00
 tags: ["resume"]
 ShowToc: true
 ---
