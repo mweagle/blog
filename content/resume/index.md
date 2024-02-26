@@ -92,7 +92,7 @@ Led [Adobe](https://www.adobe.com) engineering team to deliver the *Adobe Creati
 * Migrated the platform services tier to Docker and etcd-backed configuration service. Migration occurred in tandem with CI/CD pipeline delivering multiple releases per day.
 * Identified build-vs-buy opportunities and secured funding.
 
-#### Engineering Lead - Adobe (2012-2014)
+### Engineering Lead - Adobe (2012-2014)
 
 Lead architect and developer for *Adobe Creative Cloud Assets* services tier. Accomplishments:
 
@@ -101,7 +101,7 @@ Lead architect and developer for *Adobe Creative Cloud Assets* services tier. Ac
 * Designed restify-backed core workflow engine to minimize response latency during HTTP request handling.
 * Integrated AWS services for improved performance and resiliency.
 
-#### Senior Computer Scientist - Adobe (2010-2012)
+### Senior Computer Scientist - Adobe (2010-2012)
 
 Developer of real-time, collaborative [video editing product](http://www.adobe.com/products/adobeanywhere.html). The server is delivered as a set of OSGi bundles installed into custom distributions of Apache Sling and Adobe CQ5. These runtimes embed the Java Content Repository and provide a NoSQL-style hierarchical storage model together with a Sling HTTP routing mechanism. Accomplishments:
 
@@ -109,20 +109,13 @@ Developer of real-time, collaborative [video editing product](http://www.adobe.c
 * Implemented logfile aggregation, arbitrary process monitoring, and host metric sampling. Exposed observability information via the SIGAR library, exposed as JSON over-HTTP, and visualized with Dygraphs.
 * Implemented in Scala using Akka and Apache Camel.
 
-#### Senior Computer Scientist (Lead) - Adobe (2007-2010)
+### Senior Computer Scientist (Lead) - Adobe (2007-2010)
 
 Engineering lead for Atom Publishing Protocol solution for rich-content delivery. This end-to end solution featured a rich Internet application media upload tool for batched, localizable uploads to an AtomPub server. Highlights of my work:
 
 * Implemented REST-compliant API built on a stack of Java/Restlet, XQuery, and Lucene.
 * Designed and implemented multiple memory caching strategies and render-to-disk phase in the publish-to-production step to minimize latency.
 * Created RIA end-user client that dynamically reconfigured UI in response to server state. Client supported inline video playback, dynamic view theming, and native drag-and-drop functionality.
-
-#### Computer Scientist (Lead) - Adobe (2004-2007)
-
-Project lead for cross-platform installer package compiler that uses an XML input file with declarative semantics to build Windows Installer Packages and proprietary Macintosh OSX archives. Accomplishments:
-
-* Technology was adopted by more than 20 internal teams within a single 18-month product release cycle.
-* Created the system that uses XML and Regular Expressions to allow users to inductively declare install-time behaviors. Build-pipeline is composed of Python, XSLT, C++, and C#/Cocoa. Cross-platform runtime user interface uses embedded Internet Explorer control supported by core DOM published via COM.
 
 ## Community
 
