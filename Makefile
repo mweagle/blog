@@ -68,3 +68,6 @@ edit: clean
 	# Used for localhost editing
 	open http://localhost:1313
 	LOCAL_DEVELOPMENT=TRUE ./hugo server --watch --disableFastRender --forceSyncStatic --noHTTPCache --buildDrafts
+
+netlify:
+	open "https://app.netlify.com/teams/mweagle/overview"
