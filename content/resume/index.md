@@ -19,7 +19,7 @@ Customer-focused, hands-on software engineering manager and individual contribut
 
 ## Skills
 
-* **Languages/Technologies**: C/C++, go, gRPC, Java, JavaScript, Python, React, Ruby, Scala, X* technologies
+* **Languages/Technologies**: C/C++, go, gRPC, Java, JavaScript, LLMs, Python, React, Ruby, Scala, X* technologies
 * **Infrastructure**: CloudFormation, CloudWatch, Docker, EC2, ECS, Fargate, Jenkins, Lambda, X-Ray, Kafka, Kinesis, Kubernetes, git, GitHub, S3, SNS, SQS
 * **Organizational**: Distributed/asynchronous team management, Engineering efficiency, Mentorship, Microservices, Operational excellence
 
