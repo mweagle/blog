@@ -8,7 +8,7 @@ description:
 date: 2024-02-29T12:38:09-08:00
 lastmod: 2024-02-29T12:38:09-08:00
 
-tags: [""]
+tags: ["work", "ai", "technology"]
 
 cover:
     image: "./posts/2024/03/shuvra-podder-XWZYiX85aGk-unsplash.jpg"
