@@ -50,9 +50,9 @@ See also the [SNAFU Catchers](https://snafucatchers.github.io/) writeup for a mo
 
 > As organizations focus on making systems work faster, better, and cheaper, they develop new plans embodied in procedures, automation, policies, and forcing functions. These plans are seen as effective since they represent improvements relative to how the system worked previously. When surprising results occur, the organization interprets the surprises as deviations—erratic people were unable to work to plan, to work to their role within the plan, and to work to the rules prescribed for their role. The countermeasures become more stringent pressures to work-to-plan, work-to-role and work-to-rule.
 
-### References
+## References
 
-### Attributions
+## Attributions
 
 Photo by <a href="https://unsplash.com/@pedrosanz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pedro Sanz</a> on <a href="https://unsplash.com/photos/a-lone-tree-on-top-of-a-rocky-mountain-5viuCBIXywA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   

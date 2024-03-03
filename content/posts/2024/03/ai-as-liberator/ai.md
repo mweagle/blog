@@ -7,7 +7,6 @@ description:
 date: 2024-02-29T12:38:09-08:00
 lastmod: 2024-02-29T12:38:09-08:00
 image: "./posts/2024/03/ai-as-liberator/shuvra-podder-XWZYiX85aGk-unsplash.jpg"
-toc: false
 tags: ["work", "AI", "technology"]
 
 ---
@@ -37,6 +36,6 @@ ___
 
 ## References
 
-### Attributions
+## Attributions
 
 Photo by [Shuvra Podder](https://unsplash.com/@shuvra8872?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-fountain-in-a-large-room-with-lights-on-the-ceiling-XWZYiX85aGk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)</a>

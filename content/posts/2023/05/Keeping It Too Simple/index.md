@@ -58,10 +58,8 @@ We should use awareness of the reductivist tendencies when designing CSSs. Speci
 
 > When learners are confronted with evidence contrary to their views, they perform mental maneuvers to rationalize their faulty beliefs without fundamentally altering them. These protective operations are calledknowledge shields, and researchers have identified 23 of them.
 
-### References
+## References
 
-### Attributions
+## Attributions
 
 Photo by <a href="https://unsplash.com/@florianklauer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Florian Klauer</a> on <a href="https://unsplash.com/photos/pink-balloon-tied-on-white-wooden-chair-nptLmg6jqDo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
-  

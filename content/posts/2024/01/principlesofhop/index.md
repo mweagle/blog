@@ -72,7 +72,7 @@ The full raw text of the visualization is posted below. Thanks to [Geoff Baskwil
 
 ## References
 
-### Attributions
+## Attributions
 
 Photo by [Nick Fewings](https://unsplash.com/photos/scrabbled-scrabble-tiles-with-words-on-them-EkyuhD7uwSM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash) on _Unsplash_.
   

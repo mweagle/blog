@@ -53,11 +53,11 @@ These "Laws" can be broken, but doing so inevitably produces undesirable consequ
 
 ## Notable Quotes
 
-### References
+## References
 
 See also [Ferd's The Law of Stretched [Cognitive] Systems](https://ferd.ca/the-law-of-stretched-cognitive-systems.html)
 
-### Attributions
+## Attributions
 
 Photo by <a href="https://unsplash.com/@bkaraivanov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bozhin Karaivanov</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-rope-with-a-blue-background-TAm41f61SFQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
