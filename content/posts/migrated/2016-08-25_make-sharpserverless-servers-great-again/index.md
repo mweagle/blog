@@ -5,7 +5,8 @@ date: 2016-08-25T05:17:06.697Z
 lastmod: 2023-02-18T21:57:23-08:00
 tags: ["serverless", "sparta"]
 description: ""
-
+categories: 
+    - Medium
 subtitle: "The serverless pay-as-you go, on-demand compute model promises the opportunity to focus more of your time on delivering business value and…"
 
 image: "/posts/migrated/2016-08-25_make-sharpserverless-servers-great-again/images/1.png"

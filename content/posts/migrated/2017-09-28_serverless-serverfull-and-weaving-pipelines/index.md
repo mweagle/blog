@@ -5,7 +5,8 @@ date: 2017-09-28T02:30:16.110Z
 lastmod: 2023-02-18T21:57:34-08:00
 tags: ["serverless", "sparta"]
 description: ""
-
+categories: 
+    - Medium
 subtitle: "Serverless computing is a hot topic these days. Depending on the tweet-weather, it’s a cloud computing revolution, a ripe source of…"
 
 image: "/posts/migrated/2017-09-28_serverless-serverfull-and-weaving-pipelines/images/4.jpeg"

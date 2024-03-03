@@ -5,7 +5,8 @@ date: 2016-10-18T13:32:00.752Z
 lastmod: 2023-02-18T21:57:27-08:00
 tags: ["serverless", "sparta"]
 description: ""
-
+categories: 
+    - Medium
 subtitle: "Over the past year or so there’s been a growing interest in serverless/Function-as-a-Service/servicefull style compute models. There are…"
 
 image: "/posts/migrated/2016-10-18_serverless-deploy-thyself/images/1.jpeg"

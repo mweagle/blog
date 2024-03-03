@@ -3,7 +3,7 @@ title: "Twitter Archives"
 author: "Matt Weagle"
 date: 2023-02-25T22:24:42-07:00
 lastmod: 2023-02-18T21:57:17-08:00
-tags: ["twitter", "social_media"]
+tags: ["Social Media"]
 ShowToc: true
 description: "mweagle@ Twitter Archive"
 

@@ -1,7 +1,7 @@
-# Created: 2024-02-29T13:44:19-0800
+# Created: 2024-03-03T11:48:54-0800
 [build]
 command = "hugo"
 publish = "public"
 
 [build.environment]
-HUGO_VERSION = "0.121.1"
+HUGO_VERSION = "0.123.7"

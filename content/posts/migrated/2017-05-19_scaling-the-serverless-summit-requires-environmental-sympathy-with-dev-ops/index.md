@@ -5,7 +5,8 @@ date: 2017-05-19T05:37:48.855Z
 lastmod: 2023-02-18T21:57:32-08:00
 tags: ["serverless", "sparta"]
 description: ""
-
+categories: 
+    - Medium
 subtitle: "The only way to gain confidence that a feature branch will work in the cloud is to run it in the cloud — with environmental sympathy"
 
 image: "/posts/migrated/2017-05-19_scaling-the-serverless-summit-requires-environmental-sympathy-with-dev-ops/images/1.png"

@@ -7,7 +7,8 @@ tags: ["serverless", "sparta"]
 description: ""
 
 subtitle: ""
-
+categories: 
+    - Medium
 
 ---
 

@@ -5,7 +5,8 @@ date: 2016-04-26T14:04:02.793Z
 lastmod: 2023-02-18T21:57:21-08:00
 tags: ["serverless", "sparta"]
 description: ""
-
+categories: 
+    - Medium
 subtitle: "The last post introduced Sparta — A Go Framework for AWS Lambda. In this post I’ll cover some of Sparta’s internals, working off of the…"
 
 image: "/posts/migrated/2016-04-26_sparta-behind-the-shield/images/1.png"

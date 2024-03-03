@@ -3,7 +3,7 @@ default: build
 NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
 
 # Hugo requirements. 
-HUGO_VERSION := "0.121.1"
+HUGO_VERSION := "0.123.7"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 .PHONY: run edit
 

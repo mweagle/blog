@@ -1,7 +1,7 @@
 # We don't include a [deploy] config block because
 # it's built and deployed by netlify
 baseurl: ""
-theme: "hugo-PaperMod"
+theme: "hugo-theme-stack"
 # Documentation: https://github.com/adityatelange/hugo-PaperMod/wiki
 title: Matt Weagle
 paginate: 7
@@ -10,7 +10,6 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # is necessary for JS search
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -23,141 +22,128 @@ minify:
   disableXML: true
   minifyOutput: true
 
+module:
+  hugoVersion:
+    extended: true
+    min: "0.87.0"
+
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Matt Weagle
-  description: "Matt Weagle Blog"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: mweagle
-  # author: ["Me", "You"] # multiple authors
-  #images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  mainSections:
+    - posts
+    - twitter
+  featuredImageField: image
+  rssFullContent: true
+  favicon:
 
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShareButtons: ["linkedin", "reddit", "whatsapp", "telegram"]
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  footer:
+    since:
+    customText:
 
-  assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "/icons8-word.png"
-    favicon16x16: "/icons8-word.png"
-    favicon32x32: "/icons8-word.png"
-    apple_touch_icon: "/icons8-word.png"
-    safari_pinned_tab: "/icons8-word.png"
+  dateFormat:
+    published: 2006-01-02
+    lastUpdated: 2006-01-02T15:04:05Z
 
-  label:
-    text: "Home"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
+  sidebar:
+    compact: false
+    emoji:
+    subtitle: People, Ideas, Technology
+    avatar:
+      enabled: true
+      local: true
+      #src: img/mweagle.jpg
+      src: home-icon-silhouette-svgrepo-com.png
 
-  # profile-mode
-  profileMode:
-    enabled: true # needs to be explicitly set
-    title: Matt Weagle
-    subtitle: ""
-    imageUrl: "/mweagle.jpg"
-    imageWidth: 267
-    imageHeight: 267
-    imageTitle: Matt Weagle
-    buttons:
-      - name: posts
-        url: posts
-      - name: tags
-        url: tags
-      - name: search
-        url: search
+  article:
+    math: false
+    readingTime: true
+    license:
+      enabled: false
+      default: Licensed under CC BY-NC-SA 4.0
 
-  # home-info mode
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+  comments:
+    enabled: false
 
-  socialIcons:
-    - name: mastodon
-      url: "https://hachyderm.io/@mweagle"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/mweagle/"
-    - name: github
-      url: "https://github.com/mweagle"
-    - name: email
-      url: "mailto:mweagle+inquiry@gmail.com?subject=Hello"
+  widgets:
+    homepage:
+      - type: search
+      - type: tag-cloud
+        params:
+          limit: 10
+      - type: categories
+        params:
+          limit: 10
 
-  analytics:
-  #  google:
-  #    SiteVerificationTag: "XYZabc"
-  #    bing:
-  #      SiteVerificationTag: "XYZabc"
-  #    yandex:
-  #      SiteVerificationTag: "XYZabc"
+  opengraph:
+    twitter:
+      # Your Twitter username
+      site:
 
-  cover:
-    hidden: false # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: false # hide on single page
+      # Available values: summary, summary_large_image
+      card: summary_large_image
 
-  editPost:
-    URL: "https://github.com/mweagle/blog"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  defaultImage:
+    opengraph:
+      enabled: false
+      local: false
+      src:
 
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    includeScore: true
-    shouldSort: true
-    location: 0
-    distance: 32
-    threshold: 0
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+  colorScheme:
+    # Display toggle
+    toggle: true
+
+    # Available values: auto, light, dark
+    default: auto
+
+  imageProcessing:
+    cover:
+      enabled: true
+    content:
+      enabled: true
+
 menu:
-  main:
-    - identifier: resume
-      name: resume
-      url: /resume
-      weight: 10
-    - identifier: posts
-      name: posts
-      url: /posts/
-      weight: 15
-    - identifier: twitter
-      name: twitter
-      url: /posts/migrated/twitter/
-      weight: 20
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 30
-    - identifier: search
-      name: search
-      url: /search
-      weight: 40
+  main: []
 
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
+  social:
+    - identifier: linkedin
+      name: Linked In
+      url: https://www.linkedin.com/in/mweagle/
+      params:
+        icon: brand-linkedin
+    - identifier: github
+      name: GitHub
+      url: https://github.com/mweagle
+      params:
+        icon: brand-github
+    - identifier: mastodon
+      name: Mastodon
+      url: https://hachyderm.io/@mweagle
+      params:
+        icon: brand-mastodon
+
+related:
+  includeNewer: true
+  threshold: 60
+  toLower: false
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 200
+
 markup:
+  goldmark:
+    renderer:
+      ## Set to true if you have HTML content inside Markdown
+      unsafe: true
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    style: vscode
-    unsafe: true
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    tabWidth: 4

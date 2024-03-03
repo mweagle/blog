@@ -7,7 +7,8 @@ tags: ["serverless", "sparta"]
 description: ""
 
 subtitle: ""
-
+categories: 
+    - Medium
 ---
 
 Hi Glenn — could you file an issue about the problems you’re seeing? I develop on OSX and while sysinfo is imported, it should only be referenced when building the AWS Lambda binary ( — tags lambdabinary).

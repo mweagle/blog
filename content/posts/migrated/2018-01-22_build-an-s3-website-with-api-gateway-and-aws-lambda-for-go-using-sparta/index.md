@@ -5,7 +5,8 @@ date: 2018-01-22T04:29:17.440Z
 lastmod: 2023-02-18T21:57:36-08:00
 tags: ["serverless", "sparta"]
 description: ""
-
+categories: 
+    - Medium
 subtitle: "Deploy a complete microservice in less than 100 lines of code"
 
 image: "/posts/migrated/2018-01-22_build-an-s3-website-with-api-gateway-and-aws-lambda-for-go-using-sparta/images/1.png"

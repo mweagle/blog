@@ -18,6 +18,8 @@ images:
  - "/posts/migrated/2018-10-23_sparta-v1.5.0-the-observability-edition/images/6.gif"
  - "/posts/migrated/2018-10-23_sparta-v1.5.0-the-observability-edition/images/7.png"
 
+categories: 
+    - Medium
 ---
 
 ![image](/posts/migrated/2018-10-23_sparta-v1.5.0-the-observability-edition/images/1.jpeg#layoutTextWidth)

@@ -12,7 +12,8 @@ image: "/posts/migrated/2016-04-11_go-framework-for-aws-lambda/images/1.png"
 images:
  - "/posts/migrated/2016-04-11_go-framework-for-aws-lambda/images/1.png"
  - "/posts/migrated/2016-04-11_go-framework-for-aws-lambda/images/2.jpeg"
-
+categories: 
+    - Medium
 ---
 
 ![image](/posts/migrated/2016-04-11_go-framework-for-aws-lambda/images/1.png#layoutTextWidth)

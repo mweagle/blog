@@ -4,7 +4,6 @@ author: "Matt Weagle"
 date: 2016-03-21T22:06:55.585Z
 lastmod: 2023-02-18T21:57:17-08:00
 tags: ["serverless", "sparta"]
-ShowToc: true
 description: ""
 
 subtitle: "Over the past year or so, the “serverless” architecture movement has seen a frenzy of activity. AWS announced Lambda at re:Invent 2014 and…"
@@ -15,7 +14,8 @@ images:
  - "/posts/migrated/2016-03-21_serverless-the-next-discontinuity/images/2.png"
  - "/posts/migrated/2016-03-21_serverless-the-next-discontinuity/images/3.jpeg"
  - "/posts/migrated/2016-03-21_serverless-the-next-discontinuity/images/4.jpeg"
-
+categories: 
+    - Medium
 ---
 
 

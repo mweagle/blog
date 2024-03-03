@@ -5,7 +5,8 @@ date: 2016-11-08T15:50:49.504Z
 lastmod: 2023-02-18T21:57:29-08:00
 tags: ["serverless", "sparta"]
 description: ""
-
+categories: 
+    - Medium
 subtitle: "One of the most contentious and pedantically debated points around serverless is the term itself."
 
 image: "/posts/migrated/2016-11-08_spartagrafana-serverless-monitoring/images/1.png"

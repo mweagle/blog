@@ -5,9 +5,11 @@ date: 2017-05-03T03:16:28.419Z
 lastmod: 2023-02-18T21:57:31-08:00
 tags: ["serverless", "sparta"]
 description: ""
-
+categories: 
+    - Medium
 subtitle: "The Sparta framework for AWS Lambda provides a full-featured environment for writing Go-based, Serverless-powered applications."
-
+categories: 
+    - Medium
 image: "/posts/migrated/2017-05-03_see-lambda-go/images/1.png"
 images:
  - "/posts/migrated/2017-05-03_see-lambda-go/images/1.png"

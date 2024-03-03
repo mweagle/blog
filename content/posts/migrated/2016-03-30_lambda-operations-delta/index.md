@@ -11,7 +11,8 @@ subtitle: "“That doesn’t look like what we saw yesterday.”"
 image: "/posts/migrated/2016-03-30_lambda-operations-delta/images/1.jpeg"
 images:
  - "/posts/migrated/2016-03-30_lambda-operations-delta/images/1.jpeg"
-
+categories: 
+    - Medium
 ---
 
 ![image](/posts/migrated/2016-03-30_lambda-operations-delta/images/1.jpeg#layoutTextWidth)

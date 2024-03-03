@@ -7,7 +7,8 @@ tags: ["serverless", "sparta"]
 description: ""
 
 subtitle: "That error typically means that the go get -u -v ./... command didn’t properly fetch all the dependencies. I’ll take a look and see if I…"
-
+categories: 
+    - Medium
 ---
 
 Hi Glenn,
