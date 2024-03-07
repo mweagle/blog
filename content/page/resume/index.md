@@ -48,7 +48,7 @@ Software Development Manager for [AWS Lambda](https://aws.amazon.com/lambda/) an
 
 Engineering Manager for [Lyft](https://eng.lyft.com) Forecasting and ML Training/[Flyte](https://flyte.org/) teams. The Lyft Forecasting team is responsible for providing near real-time (~5 minute) and long-term business forecasts (~12 month).
 
-* Established funding for the team to replace legacy system with Spark-based pipelines for scalable, reliable, and cost-efficient training. Collaborated with team to migrate a near real-time system to a more durable and scalable solution using Kafka, [Flink](https://flink.apache.org/), [Druid](https://druid.apache.org/) and [Seldon](https://www.seldon.io/).
+* Established funding for the team to replace legacy system with Spark-based pipelines for scalable, reliable, and cost-efficient training. This investment was open-sourced as [Fugue](https://github.com/fugue-project/fugue). Collaborated with team to migrate a near real-time system to a more durable and scalable solution using Kafka, [Flink](https://flink.apache.org/), [Druid](https://druid.apache.org/) and [Seldon](https://www.seldon.io/).
 * Fostered a culture of learning, collaboration, and delivery.
 * Mentored and coached within and across the team.
 * Instituted [press release driven development](https://www.allthingsdistributed.com/2006/11/working_backwards.html) practices to clarify objectives and close accountability gaps.
