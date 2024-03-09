@@ -1,0 +1,22 @@
+---
+title: "Mastodon - 2023-01-19T06:18:33Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/109714414850583357
+description:
+image: "/images/mastodon.png"
+
+date: 2023-01-19T06:18:33Z
+lastmod: 2024-03-09T15:24:03-08:00
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+---
+![Mastodon](/images/mastodon.png)
+
+<p>“The more our attention gets monetized, the more our attention will be filled with quick hot takes that focus on excitement and entertainment over depth and thoughtfulness.”</p><p><a href="https://thegrowtheq.com/amusing-ourselves-to-death-in-the-attention-economy/" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span class="invisible">https://</span><span class="ellipsis">thegrowtheq.com/amusing-oursel</span><span class="invisible">ves-to-death-in-the-attention-economy/</span></a></p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/109714414850583357)
+
+___

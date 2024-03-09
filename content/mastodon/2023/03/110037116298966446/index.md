@@ -1,0 +1,22 @@
+---
+title: "Mastodon - 2023-03-17T06:05:46Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/110037116298966446
+description:
+image: "/images/mastodon.png"
+
+date: 2023-03-17T06:05:46Z
+lastmod: 2024-03-09T15:24:03-08:00
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+---
+![Mastodon](/images/mastodon.png)
+
+<p>“In all seriousness, this is a huge reason that spending three weeks paying down tech debt, carte blanche, often does little or nothing for the team’s velocity after those weeks have ended.”</p><p><a href="https://stackoverflow.blog/2023/02/27/stop-saying-technical-debt/" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span class="invisible">https://</span><span class="ellipsis">stackoverflow.blog/2023/02/27/</span><span class="invisible">stop-saying-technical-debt/</span></a></p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/110037116298966446)
+
+___

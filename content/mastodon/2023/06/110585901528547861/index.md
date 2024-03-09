@@ -1,0 +1,22 @@
+---
+title: "Mastodon - 2023-06-22T04:09:04Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/110585901528547861
+description:
+image: "/images/mastodon.png"
+
+date: 2023-06-22T04:09:04Z
+lastmod: 2024-03-09T15:24:03-08:00
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+---
+![Mastodon](/images/mastodon.png)
+
+<p>“My hope is that just because people-centric leadership is not what the industry seems to be valuing these days, that people who believe in it continue to live and breathe it because it’s the right thing to do.”</p><p><a href="https://jeanhsu.substack.com/p/saddened-by-the-tech-industry" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span class="invisible">https://</span><span class="ellipsis">jeanhsu.substack.com/p/saddene</span><span class="invisible">d-by-the-tech-industry</span></a></p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/110585901528547861)
+
+___

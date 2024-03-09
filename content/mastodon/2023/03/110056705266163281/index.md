@@ -1,0 +1,22 @@
+---
+title: "Mastodon - 2023-03-20T17:07:30Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/110056705266163281
+description:
+image: "/images/mastodon.png"
+
+date: 2023-03-20T17:07:30Z
+lastmod: 2024-03-09T15:24:03-08:00
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+---
+![Mastodon](/images/mastodon.png)
+
+<p>Dear LazyVerse: does anyone have pointers for the history of how &quot;milestone&quot; came to be used in project management?</p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/110056705266163281)
+
+___

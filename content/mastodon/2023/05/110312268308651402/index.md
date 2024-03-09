@@ -1,0 +1,22 @@
+---
+title: "Mastodon - 2023-05-04T20:20:33Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/110312268308651402
+description:
+image: "/images/mastodon.png"
+
+date: 2023-05-04T20:20:33Z
+lastmod: 2024-03-09T15:24:03-08:00
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+---
+![Mastodon](/images/mastodon.png)
+
+<p>Is there a browser extension that answers the &quot;We would like to send you notifications&quot; page modal with a request that triggers a backend alarm that asks &quot;I also would like to send you notifications&quot;.</p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/110312268308651402)
+
+___

@@ -1,0 +1,22 @@
+---
+title: "Mastodon - 2023-05-26T20:07:12Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/110436786668948851
+description:
+image: "/images/mastodon.png"
+
+date: 2023-05-26T20:07:12Z
+lastmod: 2024-03-09T15:24:03-08:00
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+---
+![Mastodon](/images/mastodon.png)
+
+<p>“Could you learn to understand written Thai? If so, how would you achieve that?”</p><p><a href="https://medium.com/@emilymenonbender/thought-experiment-in-the-national-library-of-thailand-f2bf761a8a83" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span class="invisible">https://</span><span class="ellipsis">medium.com/@emilymenonbender/t</span><span class="invisible">hought-experiment-in-the-national-library-of-thailand-f2bf761a8a83</span></a></p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/110436786668948851)
+
+___

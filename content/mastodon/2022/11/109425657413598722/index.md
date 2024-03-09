@@ -1,0 +1,22 @@
+---
+title: "Mastodon - 2022-11-29T06:23:44Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/109425657413598722
+description:
+image: "/images/mastodon.png"
+
+date: 2022-11-29T06:23:44Z
+lastmod: 2024-03-09T15:24:03-08:00
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+---
+![Mastodon](/images/mastodon.png)
+
+<p>“It’s a very subtle slippery slope between making prudent preparation for incident response based on assessment of risk and business needs, and making incident response complicated on purpose. At best, making oncall the exclusive responsibility of an elite SRE class  increases our tolerance for complexity.”</p><p><a href="https://www.usenix.org/publications/loginonline/oncall-equal-opportunity-waste-time" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span class="invisible">https://www.</span><span class="ellipsis">usenix.org/publications/logino</span><span class="invisible">nline/oncall-equal-opportunity-waste-time</span></a></p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/109425657413598722)
+
+___

@@ -1,0 +1,22 @@
+---
+title: "Mastodon - 2023-01-24T04:27:11Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/109742288520115959
+description:
+image: "/images/mastodon.png"
+
+date: 2023-01-24T04:27:11Z
+lastmod: 2024-03-09T15:24:03-08:00
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+---
+![Mastodon](/images/mastodon.png)
+
+<p>I can’t remember the book where Johann Hari wrote “We keep looking for individualistic solutions to collectivist problems” and I don’t think I’ll ever forget it.</p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/109742288520115959)
+
+___
