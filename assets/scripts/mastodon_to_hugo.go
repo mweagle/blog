@@ -231,9 +231,7 @@ type Outbox struct {
 	TotalItems           uint             `json:"totalItems"`
 	OrderedItems         []*ActivityEntry `json:"orderedItems"`
 	ArchiveDirectoryRoot string
-	// TODO - update this to be ID to ActivityEntry so that we can
-	// partition the output files to include the date
-	ThreadIDChain map[string]*ActivityEntry
+	ThreadIDChain        map[string]*ActivityEntry
 }
 
 func (ob *Outbox) filterToots(filterFunc FilterTootFunc) {
