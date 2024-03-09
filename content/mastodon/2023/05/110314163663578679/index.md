@@ -6,9 +6,9 @@ description:
 image: "/images/mastodon.png"
 
 date: 2023-05-05T04:22:33Z
-lastmod: 2024-03-09T15:24:03-08:00
+lastmod: 2024-03-09T15:47:03-08:00
 image: ""
-tags: ["#hugops","Social Media"]
+tags: ["hugops","Social Media"]
 
 categories: ["mastodon"]
 ---

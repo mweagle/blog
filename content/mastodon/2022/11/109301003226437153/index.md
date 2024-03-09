@@ -6,9 +6,9 @@ description:
 image: "/images/mastodon.png"
 
 date: 2022-11-07T06:02:32Z
-lastmod: 2024-03-09T15:24:03-08:00
+lastmod: 2024-03-09T15:47:03-08:00
 image: ""
-tags: ["#serverless","#management","#resiliency","#systems","#golang","#hiking","#travel","#guitar","#phish","#diy","Social Media"]
+tags: ["serverless","management","resiliency","systems","golang","hiking","travel","guitar","phish","diy","Social Media"]
 
 categories: ["mastodon"]
 ---

@@ -6,7 +6,7 @@ description:
 image: "/images/mastodon.png"
 
 date: 2024-02-08T07:22:10Z
-lastmod: 2024-03-09T15:24:03-08:00
+lastmod: 2024-03-09T15:47:03-08:00
 image: ""
 tags: ["Social Media"]
 

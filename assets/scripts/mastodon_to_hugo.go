@@ -197,6 +197,10 @@ func (ao *ActivityObject) UnmarshalJSON(data []byte) error {
 			if fieldUnmarshalErr != nil {
 				return fieldUnmarshalErr
 			}
+			// Remove any hashtags from the tags...
+			for _, eachTag := range ao.Tags {
+				eachTag.Name = strings.Replace(eachTag.Name, "#", "", -1)
+			}
 		}
 		// Always add a "Social Media" tag
 		if len(ao.Tags) <= 0 {
