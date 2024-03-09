@@ -30,7 +30,21 @@ module:
 params:
   mainSections:
     - posts
+  #
+  #   This additional parameter is referenced in the Stack search JSON theme
+  #   so that I can include the Mastodon toots but not have them show
+  #   up in the primary feed
+  #   Ref: _themes/hugo-theme-stack/layouts/page/search.json_
+  #
+  # {{- $searchPages := where .Site.Pages "Type" "in" .Site.Params.searchSections -}}
+  # {{- $pageSet := ($pages | union $searchPages) -}}
+
+  # {{- $notHidden := where .Site.RegularPages "Params.hidden" "!=" true -}}
+  # {{- $filtered := ($pageSet | intersect $notHidden) -}}
+  searchSections:
+    - mastodon
     - twitter
+
   featuredImageField: image
   rssFullContent: true
   favicon:
@@ -50,7 +64,6 @@ params:
     avatar:
       enabled: true
       local: true
-      #src: img/mweagle.jpg
       src: home-icon-silhouette-svgrepo-com.png
 
   article:
