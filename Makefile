@@ -3,7 +3,8 @@ default: build
 NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
 
 # Hugo requirements. 
-HUGO_VERSION := "0.123.7"
+# Ensure when this is updated we also regenerate the netlify toml
+HUGO_VERSION := "0.123.8"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 .PHONY: run edit
 
@@ -63,7 +64,7 @@ publish: commit-nomessage push
 commit-auto: commit-nomessage
 	git push
 
-edit: clean 
+edit: clean netlify_toml
 	# Used for localhost editing
 	open http://localhost:1313
 	LOCAL_DEVELOPMENT=TRUE ./hugo server --watch --disableFastRender --forceSyncStatic --noHTTPCache --buildDrafts
