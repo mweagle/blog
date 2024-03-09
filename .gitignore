@@ -6,6 +6,7 @@ vendor/
 .sparta/
 .envrc
 /public/*
+/resources/_gen/*
 .hugo_build.lock
 hugo
 frontmatter-maker.py
