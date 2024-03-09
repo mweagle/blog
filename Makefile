@@ -18,8 +18,7 @@ hugo_install:
 
 clean:
 	rm -rfv ./public
-	rm -rfv $(STAGING_DIR)
-	mkdir -pv $(STAGING_DIR)
+
 #
 # TODO: https://christianspecht.de/2020/08/10/creating-an-image-gallery-with-hugo-and-lightbox2/
 #
