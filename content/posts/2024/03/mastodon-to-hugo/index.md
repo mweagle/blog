@@ -5,7 +5,7 @@ description: "PESOS - Publish Elsewhere, Syndicate (to your) Own Site"
 draft: false
 
 date: 2024-03-09T21:11:33-08:00
-lastmod: 2024-03-09T21:11:33-08:00
+lastmod: 2024-03-10T15:11:30-07:00
 image: "/posts/2024/03/mastodon-to-hugo/mastodon.png"
 tags: ["Social Media"]
 categories: [""]
@@ -66,8 +66,7 @@ templateParamMap := map[string]interface{}{
 
 {{< /highlight >}}
 
-The Toot object is an `ActivityEntry` struct with fields extracted from deserializing the _outbox.json_ 
-`OrderedItems` contents.
+The Toot object is an [ActivityEntry](https://github.com/search?q=repo%3Amweagle%2Fmastodon-to-hugo%20ActivityEntry&type=code) struct with fields extracted from deserializing the _outbox.json_ `OrderedItems` contents.
 
 The templates make assumptions about my site and the [theme](https://github.com/CaiJimmy/hugo-theme-stack)
 I'm using. For example, the frontmatter template includes a hardcoded reference to a site asset:
@@ -89,7 +88,7 @@ sites' active theme.
 
 ### Modify Identity Constants
 
-There are three constants that are hardcoded as well. These values are used to determine
+There are two constants that are hardcoded as well. These values are used to determine
 toot visibility and reply threads.
 
 {{< highlight go >}}
