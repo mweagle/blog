@@ -2,7 +2,7 @@
 title: "AI: The Liberator"
 subtitle: ""
 draft: false
-description:
+description: "There is a long history supporting the Law of Stretched Systems"
 
 date: 2024-02-29T12:38:09-08:00
 lastmod: 2024-02-29T12:38:09-08:00
