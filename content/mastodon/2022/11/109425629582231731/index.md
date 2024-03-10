@@ -6,11 +6,12 @@ description:
 image: "/images/mastodon.png"
 
 date: 2022-11-29T06:16:39Z
-lastmod: 2024-03-09T15:47:03-08:00
+lastmod: 2022-11-29T06:16:39Z
 image: ""
 tags: ["Social Media"]
 
 categories: ["mastodon"]
+# generated: 2024-03-10T12:55:46-07:00
 ---
 ![Mastodon](/images/mastodon.png)
 
