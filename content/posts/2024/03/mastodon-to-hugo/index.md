@@ -1,7 +1,7 @@
 ---
-title: "Archiving Toots to Hugo Sites"
+title: "Archiving Mastodon Toots to Hugo"
 subtitle: ""
-description: "Own a copy of your own content" 
+description: "PESOS - Publish Elsewhere, Syndicate (to your) Own Site" 
 draft: false
 
 date: 2024-03-09T21:11:33-08:00
