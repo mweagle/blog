@@ -6,7 +6,7 @@ draft: false
 
 date: 2024-03-09T21:11:33-08:00
 lastmod: 2024-03-09T21:11:33-08:00
-image: "/posts/2024/03/mastodon-to-hugo/mastodon.svg"
+image: "/posts/2024/03/mastodon-to-hugo/mastodon.png"
 tags: ["Social Media"]
 categories: [""]
 
