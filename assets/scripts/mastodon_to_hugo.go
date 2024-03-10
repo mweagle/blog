@@ -8,6 +8,7 @@ import (
 	"log/slog"
 	"os"
 	"path"
+	"path/filepath"
 	"slices"
 	"strings"
 	"text/template"
@@ -31,7 +32,7 @@ import (
 // 			  |_|
 // /////////////////////////////////////////////////////////////////////////////
 
-var TEMPLATE_TOOT_ROOT = `---
+var TEMPLATE_TOOT_FRONTMATTER = `---
 title: "Mastodon - {{ .Toot.Published }}"
 subtitle: ""
 canonical: {{ .Toot.Object.ID }}
@@ -97,6 +98,19 @@ func (cla *commandLineArgs) parseCommandLine(log *slog.Logger) bool {
 		log.Error("Invalid command line arguments")
 		return false
 	}
+	expanded, expandedErr := filepath.Abs(cla.inputRootPathExpandedArchive)
+	if expandedErr != nil {
+		log.Error("Failed to expand input path")
+		return false
+	}
+	cla.inputRootPathExpandedArchive = expanded
+	expanded, expandedErr = filepath.Abs(cla.outputRootPathHugoAssets)
+	if expandedErr != nil {
+		log.Error("Failed to expand output path")
+		return false
+	}
+	cla.outputRootPathHugoAssets = expanded
+
 	return true
 }
 
@@ -329,7 +343,7 @@ func renderTootsToDisk(outputRoot string, filteredOutbox *Outbox, log *slog.Logg
 		renderedTootCount: uint(len(filteredOutbox.OrderedItems)),
 		filteredTootCount: filteredOutbox.TotalItems - uint(len(filteredOutbox.OrderedItems)),
 	}
-	tootRootTemplate, tootRootTemplateErr := template.New("tootRoot").Parse(TEMPLATE_TOOT_ROOT)
+	tootRootTemplate, tootRootTemplateErr := template.New("tootRoot").Parse(TEMPLATE_TOOT_FRONTMATTER)
 	if tootRootTemplateErr != nil {
 		return tootRootTemplateErr
 	}
@@ -343,8 +357,6 @@ func renderTootsToDisk(outputRoot string, filteredOutbox *Outbox, log *slog.Logg
 
 		// By default, each toot is it's own root. If there is a replyTo chain,
 		// recurse that to the root which becomes the active root
-		//defaultID := eachItem.Object.ID
-		// We need to keep recursing this to get to the root of the thread...
 		for {
 			replyToID := threadRootActivityItem.Object.InReplyTo
 			if len(replyToID) <= 0 {
@@ -388,8 +400,8 @@ func renderTootsToDisk(outputRoot string, filteredOutbox *Outbox, log *slog.Logg
 			"ExecutionTime": nowTime,
 			"Toot":          eachItem,
 		}
-		// Does the file already exist? If not, open in create and render the toot header. If it
-		// does exist, open in append mode and render the next in the thread.
+		// Either create the file and write out the frontmatter, or just open
+		// the output in append mode and render the toot.
 		var tootFS *os.File = nil
 		_, fileExistsErr := os.Stat(tootOutputPath)
 		if os.IsNotExist(fileExistsErr) {
@@ -398,7 +410,7 @@ func renderTootsToDisk(outputRoot string, filteredOutbox *Outbox, log *slog.Logg
 				return createFSErr
 			}
 			tootFS = createFS
-			// If the file doesn't exist, render the toot header to the file...
+			// The file doesn't exist - render the toot header to the file...
 			if err := tootRootTemplate.Execute(tootFS, templateParamMap); err != nil {
 				return err
 			}
@@ -416,7 +428,7 @@ func renderTootsToDisk(outputRoot string, filteredOutbox *Outbox, log *slog.Logg
 			tootFS = appendFS
 		}
 
-		// Then render the toot to the open file
+		// Either way, render the toot to the open file as well
 		if err := tootTemplate.Execute(tootFS, templateParamMap); err != nil {
 			return err
 		}
@@ -451,6 +463,7 @@ func renderTootsToDisk(outputRoot string, filteredOutbox *Outbox, log *slog.Logg
 			publishingStats.mediaFilesCount += 1
 		}
 	}
+	// All done
 	log.Info("Publishing statistics",
 		"totalTootCount", publishingStats.totalTootCount,
 		"renderedTootCount", publishingStats.renderedTootCount,
@@ -471,8 +484,11 @@ func renderTootsToDisk(outputRoot string, filteredOutbox *Outbox, log *slog.Logg
 //
 // //////////////////////////////////////////////////////////////////////////////
 func main() {
-	logger := slog.New(slog.NewTextHandler(os.Stdout, nil))
-	logger.Info("Welcome to Hugodon!")
+	lvl := &slog.LevelVar{}
+	lvl.Set(slog.LevelInfo)
+	logger := slog.New(slog.NewTextHandler(os.Stdout, &slog.HandlerOptions{
+		Level: lvl,
+	}))
 	cleanupFuncs := []cleanupFunc{}
 
 	cla := commandLineArgs{}
@@ -480,6 +496,7 @@ func main() {
 		logger.Error("Failed to parse command line arguments")
 		os.Exit(-1)
 	}
+	logger.Info("Welcome to Hugodon!")
 
 	// Unmarshal the data into
 	outboxFilePath := path.Join(cla.inputRootPathExpandedArchive, "outbox.json")
