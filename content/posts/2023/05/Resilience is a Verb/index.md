@@ -3,7 +3,7 @@ title: "Resilience is a Verb"
 draft: false
 
 subtitle:
-description:
+description: "Resilience is a potential capacity to be grown, rather than an end state to be achieved"
 date: 2023-05-25T06:57:00-07:00
 lastmod: 2023-05-26T08:38:00-07:00
 image: "pedro-sanz-5viuCBIXywA-unsplash.jpg"

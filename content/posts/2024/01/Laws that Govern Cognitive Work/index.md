@@ -1,8 +1,8 @@
 ---
 title: "Steering the Reverberations of Technology Change on Fields of Practice"
-subtitle: "Laws that Govern Cognitive Work"
+subtitle: ""
 draft: false
-description:
+description: "Every system is stretched to operate at its capacity"
 
 date: 2024-01-08T20:45:24-08:00
 lastmod: 2024-01-08T20:45:24-08:00

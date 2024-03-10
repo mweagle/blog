@@ -1,9 +1,8 @@
 ---
 title: "Five Principles of Human Performance"
 draft: false
-
-subtitle: "Todd Conklin's Five Principles of Performance"
-description:
+subtitle:
+description: "Todd Conklin's Five Principles of Performance"
 date: 2024-01-03T10:07:51-08:00
 lastmod: 2024-01-04T13:47:27-08:00
 tags: ["book", "organizational safety", "resilience"]
