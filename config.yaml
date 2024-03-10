@@ -86,8 +86,6 @@ params:
       - type: categories
         params:
           limit: 10
-    page:
-      - type: toc
 
   opengraph:
     twitter:
