@@ -15,7 +15,7 @@ categories: [""]
 ## TL;DR;
 
 Run a go script to archive your Mastodon archive to your Hugo site
-([source](https://github.com/mweagle/blog/blob/main/assets/scripts/mastodon_to_hugo.go)).
+([source](https://github.com/mweagle/mastodon-to-hugo/blob/main/mastodon-to-hugo.go)).
 Visit this site's [Mastodon category](https://mweagle.net/categories/mastodon/) for an illustration.
 
 ## PESOS
@@ -176,4 +176,4 @@ toot template via the `ActivityObjectAttachment.BaseFilename` field value
 
 ## Source
 
-Get the source [here](https://github.com/mweagle/blog/blob/main/assets/scripts/mastodon_to_hugo.go).
+Get the source [here](https://github.com/mweagle/mastodon-to-hugo/blob/main/mastodon-to-hugo.go).
