@@ -11,7 +11,7 @@ image: ""
 tags: ["posiwid","Social Media"]
 
 categories: ["mastodon"]
-# generated: 2024-03-10T12:55:46-07:00
+# generated: 2024-04-05T16:46:01-07:00
 ---
 ![Mastodon](/images/mastodon.png)
 

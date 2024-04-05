@@ -11,11 +11,11 @@ image: ""
 tags: ["Social Media"]
 
 categories: ["mastodon"]
-# generated: 2024-03-10T12:55:46-07:00
+# generated: 2024-04-05T16:46:01-07:00
 ---
 ![Mastodon](/images/mastodon.png)
 
-<p>“Leveraging strengths is the only way to do great work. (Not “fixing weaknesses.”)Better yet, leveraging differentiated strengths means you beat the competition.Best is when that differentiation is durable over time.”</p><p><a href="https://longform.asmartbear.com/leverage/" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span class="invisible">https://</span><span class="ellipsis">longform.asmartbear.com/levera</span><span class="invisible">ge/</span></a></p>
+<p>“Leveraging strengths is the only way to do great work. (Not “fixing weaknesses.”) Better yet, leveraging differentiated strengths means you beat the competition. Best is when that differentiation is durable over time.”</p><p><a href="https://longform.asmartbear.com/leverage/" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span class="invisible">https://</span><span class="ellipsis">longform.asmartbear.com/levera</span><span class="invisible">ge/</span></a></p>
 
 
 ###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/110686802908840066)
