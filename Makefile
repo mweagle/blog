@@ -4,7 +4,7 @@ NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
 
 # Hugo requirements. 
 # Ensure when this is updated we also regenerate the netlify toml
-HUGO_VERSION := "0.123.8"
+HUGO_VERSION := "0.124.1"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 .PHONY: run edit
 
@@ -20,6 +20,12 @@ hugo_install:
 clean:
 	rm -rfv ./public
 
+mastodon_replication:
+	rm -rfv %TMPDIR%/mastodon
+	unzip -d ${TMPDIR}/mastodon $(ARCHIVE_PATH)
+	rm -rfv ./content/mastodon
+	mkdir -pv ./content/mastodon
+	go run "/Users/mattweagle/Documents/Github/mastodon-to-hugo/mastodon-to-hugo.go" --input ${TMPDIR}/mastodon --output "./content/mastodon"
 #
 # TODO: https://christianspecht.de/2020/08/10/creating-an-image-gallery-with-hugo-and-lightbox2/
 #
