@@ -4,7 +4,7 @@ NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
 
 # Hugo requirements. 
 # Ensure when this is updated we also regenerate the netlify toml
-HUGO_VERSION := "0.124.1"
+HUGO_VERSION := "0.127.0"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 .PHONY: run edit
 
@@ -20,6 +20,7 @@ hugo_install:
 clean:
 	rm -rfv ./public
 
+# ARCHIVE_PATH=/Users/mattweagle/Downloads/mastodon-archive.zip make mastodon_replication
 mastodon_replication:
 	rm -rfv %TMPDIR%/mastodon
 	unzip -d ${TMPDIR}/mastodon $(ARCHIVE_PATH)
