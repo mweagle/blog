@@ -2,7 +2,7 @@
 title: "Anticipating the Effects of Technological Change"
 subtitle: "A New Era of Dynamics for Human Factors"
 description:
-draft: true
+draft: false
 toc: true
 date: 2024-10-19T14:44:28-07:00
 lastmod: 2024-10-19T14:44:28-07:00
