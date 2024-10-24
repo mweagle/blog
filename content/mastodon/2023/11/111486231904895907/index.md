@@ -11,7 +11,7 @@ image: ""
 tags: ["reinvent","Social Media"]
 
 categories: ["mastodon"]
-# generated: 2024-06-21T21:40:31-07:00
+# generated: 2024-10-23T18:04:53-07:00
 ---
 ![Mastodon](/images/mastodon.png)
 

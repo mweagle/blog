@@ -1,9 +1,6 @@
 {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
-{{- $searchPages := where .Site.Pages "Type" "in" .Site.Params.searchSections -}}
-{{- $pageSet := ($pages | union $searchPages) -}}
-
 {{- $notHidden := where .Site.RegularPages "Params.hidden" "!=" true -}}
-{{- $filtered := ($pageSet | intersect $notHidden) -}}
+{{- $filtered := ($pages | intersect $notHidden) -}}
 
 {{- $result := slice -}}
 

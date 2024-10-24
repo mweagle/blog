@@ -1,32 +1,34 @@
 default: build
+.PHONY: run edit
 # Execute time
 NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
 
 # Hugo requirements. 
 # Ensure when this is updated we also regenerate the netlify toml
-HUGO_VERSION := "0.127.0"
+# file://./netlify.toml
+HUGO_VERSION := "0.136.4"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
-.PHONY: run edit
 
 # External resources that need to be rebuilt
 STAGING_DIR := "./.staging"
 GITHUB_STAGING_DIR := "$(STAGING_DIR)/github"
 
-hugo_install:
+hugo_install: netlify_toml
 	curl -L -vs --create-dirs -O --output-dir ./.vscode $(HUGO_SOURCE_URL)
 	tar -xvf ./.vscode/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz --directory ./.vscode
 	mv -fv ./.vscode/hugo ./
+	./hugo version
 
 clean:
 	rm -rfv ./public
 
 # ARCHIVE_PATH=/Users/mattweagle/Downloads/mastodon-archive.zip make mastodon_replication
 mastodon_replication:
-	rm -rfv %TMPDIR%/mastodon
+	rm -rfv ${TMPDIR}/mastodon
 	unzip -d ${TMPDIR}/mastodon $(ARCHIVE_PATH)
 	rm -rfv ./content/mastodon
 	mkdir -pv ./content/mastodon
-	go run "/Users/mattweagle/Documents/Github/mastodon-to-hugo/mastodon-to-hugo.go" --input ${TMPDIR}/mastodon --output "./content/mastodon"
+	go run "../mastodon-to-hugo/mastodon-to-hugo.go" --input ${TMPDIR}/mastodon --output "./content/mastodon"
 #
 # TODO: https://christianspecht.de/2020/08/10/creating-an-image-gallery-with-hugo-and-lightbox2/
 #
@@ -37,7 +39,6 @@ mastodon_replication:
 # [build]
 # command = "hugo"
 # publish = "public"
-
 # [build.environment]
 # HUGO_VERSION = "0.121.1"
 # 

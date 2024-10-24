@@ -1,0 +1,23 @@
+---
+title: "Mastodon - 2024-07-23T19:57:42Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/112837568899388577
+description:
+image: "/images/mastodon.png"
+
+date: 2024-07-23T19:57:42Z
+lastmod: 2024-07-23T19:57:42Z
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+# generated: 2024-10-23T18:04:53-07:00
+---
+![Mastodon](/images/mastodon.png)
+
+<p>Negative goals: don’t make them</p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/112837568899388577)
+
+___

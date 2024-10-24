@@ -1,0 +1,23 @@
+---
+title: "Mastodon - 2024-09-10T19:12:17Z"
+subtitle: ""
+canonical: https://hachyderm.io/users/mweagle/statuses/113114843572045082
+description:
+image: "/images/mastodon.png"
+
+date: 2024-09-10T19:12:17Z
+lastmod: 2024-09-10T19:12:17Z
+image: ""
+tags: ["Social Media"]
+
+categories: ["mastodon"]
+# generated: 2024-10-23T18:04:53-07:00
+---
+![Mastodon](/images/mastodon.png)
+
+<p>“This experience probably reflects a fundamental limitation of language models. After all, they aren’t “intelligent” as such. Until we know otherwise, they’re just predicting what should come next based on analysis of the training data.”</p><p><a href="https://www.oreilly.com/radar/the-ai-blues/" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span class="invisible">https://www.</span><span class="ellipsis">oreilly.com/radar/the-ai-blues</span><span class="invisible">/</span></a></p>
+
+
+###### [Mastodon Source 🐘](https://hachyderm.io/@mweagle/113114843572045082)
+
+___

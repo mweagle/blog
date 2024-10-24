@@ -1,0 +1,27 @@
+<script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      mermaid.parseError = function (err, hash) {
+        console.error('Mermaid error: ', err);
+      };
+      var paramTheme = '{{ if site.Params.mermaid.theme }}{{ site.Params.mermaid.theme }}{{ else }}dark{{ end }}';
+      var paramAlign = '{{ if site.Params.mermaid.align }}{{ site.Params.mermaid.align }}{{ else }}center{{ end }}';
+
+      mermaid.initialize({
+        theme: paramTheme,
+        align: paramAlign,
+        startOnLoad: true,
+        logLevel: 2,
+        flowchart: {
+          useMaxWidth: false,
+          htmlLabels: true,
+        },
+        gantt: {
+          useMaxWidth: false,
+        },
+        useMaxWidth: false,
+      });
+      mermaid.parseError = function (err, hash) {
+        console.error('In parse error:');
+        console.error(err);
+      };
+</script>

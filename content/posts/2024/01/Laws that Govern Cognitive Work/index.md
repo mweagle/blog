@@ -3,12 +3,11 @@ title: "Steering the Reverberations of Technology Change on Fields of Practice"
 subtitle: ""
 draft: false
 description: "Every system is stretched to operate at its capacity"
-
+toc: true
 date: 2024-01-08T20:45:24-08:00
 lastmod: 2024-01-08T20:45:24-08:00
 categories: ["paper review"]
 image: "bozhin-karaivanov-TAm41f61SFQ-unsplash.jpg"
-
 cover:
     image: "bozhin-karaivanov-TAm41f61SFQ-unsplash.jpg"
     alt: ""

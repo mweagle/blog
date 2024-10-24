@@ -4,7 +4,6 @@ baseurl: ""
 theme: "hugo-theme-stack"
 # Documentation: https://github.com/adityatelange/hugo-PaperMod/wiki
 title: Matt Weagle
-paginate: 7
 
 outputs:
   home:
@@ -28,6 +27,21 @@ module:
     min: "0.87.0"
 
 params:
+  # This depends on including the partial in the single.html layout in
+  #
+  # <!-- Add mermaid min js file -->
+  # {{ if (.Params.mermaid) }}
+  # {{ partial "mermaid.html" }}
+  # {{ end }}
+  #
+  # in layouts/_default/single.html
+  #
+  # See https://navendu.me/posts/adding-diagrams-to-your-hugo-blog-with-mermaid/
+  # for more information
+  mermaid:
+    theme: "neutral"
+    align: "center"
+
   mainSections:
     - posts
   #
@@ -86,6 +100,9 @@ params:
       - type: categories
         params:
           limit: 10
+    page:
+      - type: search
+      - type: toc
 
   opengraph:
     twitter:
