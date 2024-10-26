@@ -21,6 +21,7 @@ hugo_install: netlify_toml
 
 clean:
 	rm -rfv ./public
+	rm -rfv "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes"
 
 # ARCHIVE_PATH=/Users/mattweagle/Downloads/mastodon-archive.zip make mastodon_replication
 mastodon_replication:

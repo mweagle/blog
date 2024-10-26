@@ -1,0 +1,41 @@
+<div id="{{ .Get "id" }}" style="width: {{ if .Get "width" }}{{ .Get "width" }}{{ else }}1024px{{ end }}; height: {{ if .Get "height" }}{{ .Get "height" }}{{ else }}800px{{ end }};"></div>
+
+<script type="text/javascript"> 
+    // Setup the theme...
+    // Ref: https://github.com/CaiJimmy/hugo-theme-stack/blob/839fbd0ecb5bba381f721f31f5195fb6517fc260/layouts/partials/head/colorScheme.html#L24
+    var echartTheme = 'infographic'
+    if (document.documentElement.dataset.scheme == 'dark') {
+      echartTheme = 'dark-digerati';
+    }
+    // Initialize the echarts instance based on the prepared dom
+    const elementID = '{{ .Get "id" }}';
+    var myChart = echarts.init(document.getElementById(elementID), echartTheme);
+
+    // Specify the configuration items and data for the chart
+    var defaultOptions = {
+      title: {
+        text: ''
+      },
+    };
+    var userOptions = {};
+    try {
+      {{ if isset .Params "srcChart" }}
+        {{- $srcPath := .Get "srcChart" -}}
+        {{- $chartSourceData := readFile $srcPath -}}
+        console.log("Using external script data");
+        const userChartOptions = eval({{ $chartSourceData }});
+        userOptions = userChartOptions;
+      {{ else }}
+      console.log("Using .Inner data");
+      userOptions = eval("(" + {{.Inner}} + ")");
+      {{ end }}
+    }
+    catch (err) {
+      console.log("Failed to parse echart Data: " + err)
+    }
+    const chartOptions = { ...defaultOptions, ...userOptions};
+
+    // Display the chart using the configuration items and data just specified.
+    myChart.setOption(chartOptions);
+</script>
+{{ if isset .Params "js"}}<script src={{ .Get "js"}} ></script>{{ end }}

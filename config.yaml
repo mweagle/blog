@@ -101,7 +101,6 @@ params:
         params:
           limit: 10
     page:
-      - type: search
       - type: toc
 
   opengraph:
