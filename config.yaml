@@ -1,6 +1,6 @@
 # We don't include a [deploy] config block because
 # it's built and deployed by netlify
-baseurl: ""
+baseurl: "https://mweagle.net"
 theme: "hugo-theme-stack"
 # Documentation: https://github.com/adityatelange/hugo-PaperMod/wiki
 title: Matt Weagle
