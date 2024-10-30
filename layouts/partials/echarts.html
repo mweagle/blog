@@ -2,5 +2,5 @@
 <script src="/echarts/dist/echarts.js"></script>
 
 <!-- Include the theme files -->
-<script src="/echarts/theme/dark-digerati.js"></script>
-<script src="/echarts/theme/vintage.js"></script>
+<script src="/echarts/theme/{{ if site.Params.echarts.theme.light }}{{ site.Params.echarts.theme.light }}{{ else }}default{{ end }}.js"></script>
+<script src="/echarts/theme/{{ if site.Params.echarts.theme.dark }}{{ site.Params.echarts.theme.dark }}{{ else }}dark{{ end }}.js"></script>

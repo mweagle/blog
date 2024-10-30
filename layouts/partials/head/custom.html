@@ -1,2 +1,34 @@
-<!-- TODO: Conditionalize ECharts -->
+<!-- See https://stack.jimmycai.com/config/header-footer#example-custom-font-family-for-article-content -->
+<style>
+    /* Overwrite CSS variable */
+    :root {
+        --article-font-family: "Open Sans", var(--base-font-family);
+        --code-font-family: "Source Code Pro", var(--base-font-family);
+    }
+</style>
+
+<script>
+    (function () {
+        const customFonts = [
+            "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
+            "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+        ];
+        for (const eachElement of customFonts) {
+            const customFont = document.createElement('link');
+            customFont.href = eachElement;
+            customFont.type = "text/css";
+            customFont.rel = "stylesheet";
+            document.head.appendChild(customFont);
+        }
+    }());
+</script>
+
+<!-- Add mermaid min js file -->
+{{ if (.Params.mermaid) }}
+{{ partial "mermaid.html" }}
+{{ end }}
+
+<!-- Add echarts js file -->
+{{ if (.Params.echarts) }}
 {{ partial "echarts.html" }}
+{{ end }}

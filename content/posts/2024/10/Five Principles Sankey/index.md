@@ -9,7 +9,8 @@ image: ""
 toc: false
 tags: ["resilience", "adaptive capacity"]
 categories: []
-mermaid: true
+mermaid: false
+echarts: true
 image: "ryan-johns-0X7ZNRcBT-k-unsplash.jpg"
 cover:
     image: "ryan-johns-0X7ZNRcBT-k-unsplash.jpg"
@@ -27,7 +28,7 @@ I'll describe the shortcode configuration in another post.
 
 ## Sankey Version
 
-{{< echarts id="fiveprinciples" width="1200px" height="1200px" srcChart="content/posts/2024/10/Five Principles - Sankey/chart.js">}}
+{{< echarts id="fiveprinciples" width="1200px" height="1200px" srcChart="content/posts/2024/10/Five Principles Sankey/chart.js">}}
 {{< /echarts >}}
 
 ## Attributions

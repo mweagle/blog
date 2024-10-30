@@ -1,15 +1,18 @@
-<div id="{{ .Get "id" }}" style="width: {{ if .Get "width" }}{{ .Get "width" }}{{ else }}1024px{{ end }}; height: {{ if .Get "height" }}{{ .Get "height" }}{{ else }}800px{{ end }};"></div>
+
+{{ $idName := .Get "id"}}
+{{ $safeJSIDalue := $idName | safeJS}}
+<div id="{{ $idName }}" 
+  style="width: {{ if .Get "width" }}{{ .Get "width" }}{{ else }}1024px{{ end }}; height: {{ if .Get "height" }}{{ .Get "height" }}{{ else }}800px{{ end }};"></div>
 
 <script type="text/javascript"> 
-    // Setup the theme...
-    // Ref: https://github.com/CaiJimmy/hugo-theme-stack/blob/839fbd0ecb5bba381f721f31f5195fb6517fc260/layouts/partials/head/colorScheme.html#L24
-    var echartTheme = 'infographic'
+    // Determine which theme to use. Reference:
+    // https://github.com/CaiJimmy/hugo-theme-stack/blob/839fbd0ecb5bba381f721f31f5195fb6517fc260/layouts/partials/head/colorScheme.html#L24
+    var echartTheme = '{{ if site.Params.echarts.theme.light }}{{ site.Params.echarts.theme.light }}{{ else }}default{{ end }}';
     if (document.documentElement.dataset.scheme == 'dark') {
-      echartTheme = 'dark-digerati';
+      echartTheme = '{{ if site.Params.echarts.theme.dark }}{{ site.Params.echarts.theme.dark }}{{ else }}dark{{ end }}';
     }
     // Initialize the echarts instance based on the prepared dom
-    const elementID = '{{ .Get "id" }}';
-    var myChart = echarts.init(document.getElementById(elementID), echartTheme);
+    var myChart = echarts.init(document.getElementById('{{ $idName }}'), echartTheme);
 
     // Specify the configuration items and data for the chart
     var defaultOptions = {
@@ -19,6 +22,7 @@
     };
     var userOptions = {};
     try {
+      // Load the data either from an external file or inline
       {{ if isset .Params "srcChart" }}
         {{- $srcPath := .Get "srcChart" -}}
         {{- $chartSourceData := readFile $srcPath -}}
@@ -26,16 +30,16 @@
         const userChartOptions = eval({{ $chartSourceData }});
         userOptions = userChartOptions;
       {{ else }}
-      console.log("Using .Inner data");
-      userOptions = eval("(" + {{.Inner}} + ")");
+        console.log("Using .Inner data");
+        userOptions = eval("(" + {{.Inner}} + ")");
       {{ end }}
     }
     catch (err) {
-      console.log("Failed to parse echart Data: " + err)
+      console.log("Failed to parse echart data: " + err)
     }
-    const chartOptions = { ...defaultOptions, ...userOptions};
-
     // Display the chart using the configuration items and data just specified.
-    myChart.setOption(chartOptions);
+    const chartOptions_{{ $safeJSIDalue }} = { ...defaultOptions, ...userOptions};
+    myChart.setOption(chartOptions_{{ $safeJSIDalue }});
 </script>
-{{ if isset .Params "js"}}<script src={{ .Get "js"}} ></script>{{ end }}
+{{ if isset .Params "jsSource"}}<script src={{ .Get "jsSource" }} ></script>{{ end }}
+

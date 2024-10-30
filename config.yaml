@@ -27,20 +27,18 @@ module:
     min: "0.87.0"
 
 params:
-  # This depends on including the partial in the single.html layout in
-  #
-  # <!-- Add mermaid min js file -->
-  # {{ if (.Params.mermaid) }}
-  # {{ partial "mermaid.html" }}
-  # {{ end }}
-  #
-  # in layouts/_default/single.html
+  # This depends on including the partial in the layouts/partials/head/custom.html layout
   #
   # See https://navendu.me/posts/adding-diagrams-to-your-hugo-blog-with-mermaid/
   # for more information
   mermaid:
     theme: "neutral"
     align: "center"
+  # This depends on including the partial in the layouts/partials/head/custom.html layout
+  echarts:
+    theme:
+      light: infographic
+      dark: dark-digerati
 
   mainSections:
     - posts
@@ -72,13 +70,13 @@ params:
     lastUpdated: 2006-01-02T15:04:05Z
 
   sidebar:
-    compact: false
+    compact: true
     emoji:
     subtitle: People, Ideas, Technology
     avatar:
       enabled: true
       local: true
-      src: home-icon-silhouette-svgrepo-com.png
+      src: process.png
 
   article:
     math: false

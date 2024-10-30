@@ -26,12 +26,6 @@
 {{ define "main" }}
     {{ partial "article/article.html" . }}
 
-    <!-- Add mermaid min js file -->
-    {{ if (.Params.mermaid) }}
-    {{ partial "mermaid.html" }}
-    {{ end }}
-
-
     {{ if .Params.links }}
         {{ partial "article/components/links" . }}
     {{ end }}
