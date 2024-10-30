@@ -1,6 +1,6 @@
 ---
-title: "Hugo Apache ECharts shortcode"
-subtitle: "Extending Hugo with custom javascript"
+title: "Creating an Apache ECharts Hugo shortcode"
+subtitle: "Extending Hugo with JavaScript libraries"
 description:
 draft: false
 date: 2024-10-25T22:07:34-07:00
@@ -21,7 +21,7 @@ cover:
 
 <!--more-->
 
-This is mostly documentation for myself summarizing what I did to add a `<echarts>` shortcode to Hugo that allows
+This is mostly documentation for myself summarizing what I did to add a `echarts` shortcode to Hugo that allows
 me to support [Apache Echarts](https://echarts.apache.org/en/index.html) on this blog. I initially thought I would use this to
 add a [Treemap](https://echarts.apache.org/examples/en/index.html#chart-type-treemap) visualization of
 [Todd Conklin's Five Principles of Human Performance](http://localhost:1313/posts/2024/10/five-principles-sankey/). These steps are very similar to Navendu Pottekkat's [Adding Diagrams to Your Hugo Blog With Mermaid](https://navendu.me/posts/adding-diagrams-to-your-hugo-blog-with-mermaid/).
@@ -63,7 +63,7 @@ eliminates downloading unnecessary files for the majority of the pages.
 
 The _layouts/partials/head/custom.html_ conditionally includes the EChart specific partial
 _layouts/partials/echarts.html_. The JavaScript in the `echarts` shortcode will check the Hugo
-theme's [local storage value](https://github.com/CaiJimmy/hugo-theme-stack/blob/839fbd0ecb5bba381f721f31f5195fb6517fc260) 
+theme's [local storage value](https://github.com/CaiJimmy/hugo-theme-stack/blob/839fbd0ecb5bba381f721f31f5195fb6517fc260)
 when rendering to determine which theme to use.
 
 ```html
@@ -81,7 +81,7 @@ a completely custom design.
 
 ### Usage
 
-The first requirement is to declare that the post requires EChart support in the post's frontmatter at the root:
+The first requirement is to declare an EChart dependency in the post's frontmatter:
 
 ```yaml
 echarts: true
@@ -171,6 +171,8 @@ Renders as:
 {{< echarts id="externalContent" srcChart="content/posts/2024/10/EChart Shortcode/line.js" >}}
 {{< /echarts >}}
 
+You can view the full [line.js source here](./line.js).
+
 #### Optional - Dimensions
 
 The shortcode supports optional `width` (default=_1024px_) and `height` (default=_800px_) params:
@@ -180,12 +182,10 @@ The shortcode supports optional `width` (default=_1024px_) and `height` (default
 {{</* /echarts */>}}
 ```
 
-http://localhost:1313/posts/2024/10/echart-shortcode/posts/2024/10/EChart%20Shortcode/gauge.js
-
 #### Optional - Interactivity
 
 Some ECharts like the [gauge](https://echarts.apache.org/examples/en/editor.html?c=gauge-clock) require
-event handlers to be configured. For these types of charts the entire configuration can be externalized into a 
+event handlers to be configured. For these types of charts the entire configuration can be externalized into a
 `jsSource` param:
 
 ```html
@@ -204,7 +204,7 @@ The content of the `jsSource` file is an immediate JavaScript function like:
 })
 ```
 
-Renders as:
+View the full source [here](./gauge.js) to see more. The content of this file renders as:
 
 {{< echarts id="jsInteractive" width="400px" height="400px"jsSource="./gauge.js" >}}
 {{< /echarts >}}
@@ -213,7 +213,7 @@ Renders as:
 
 The shortcode itself is responsible for creating a unique DOM element, constructing
 the chart input from either the inline or external source, and then optionally loading
-the interactive data. 
+the interactive data.
 
 {{% embed "/layouts/shortcodes/echarts.html" %}}
 

@@ -76,7 +76,7 @@ params:
     avatar:
       enabled: true
       local: true
-      src: process.png
+      src: networking.png
 
   article:
     math: false
@@ -146,7 +146,7 @@ menu:
       name: Mastodon
       url: https://hachyderm.io/@mweagle
       params:
-        icon: brand-mastodon
+        icon: mastodon-logo-white
 
 related:
   includeNewer: true
