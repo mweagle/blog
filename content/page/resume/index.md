@@ -31,6 +31,15 @@ Customer-focused, hands-on software engineering manager and individual contribut
 
 ## Experience
 
+### Senior Director of Engineering - Splice (2024)
+
+Senior Director of Engineering at [Splice](https://splice.com). Head of the Core Engineering Department which is responsible for Payments, Search, and foundational API support.
+
+* Provided line and middle-level management support, mentoring, and guidance for team members.
+* Created job role descriptions and corresponding leveling framework to ensure transparent, actionable conversations.
+* Partnered with Machine Learning researchers for delivery.
+* Worked with multiple cross-functional stakeholders to produce reliable, high-quality, and impactful releases.
+
 ### Software Development Manager - AWS (2020-2023)
 
 Software Development Manager for [AWS Lambda](https://aws.amazon.com/lambda/) and [AWS CodeCatalyst](https://codecatalyst.aws/explore).
