@@ -53,6 +53,9 @@ ext_assets: clean netlify_toml
 	cp -Rv "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes/palettes" ./content/posts/c4pumlthemes/puml/resources
 
 template_overrides:
+# Copy the search override file into the theme directory so that the 
+# mastodon and twitter contents are searchable, but don't show up in the
+# chronological feed. See config.yaml for details.
 	cp -fv ./layouts/page/search.json ./themes/hugo-theme-stack/layouts/page/search.json
 
 build: clean ext_assets template_overrides
