@@ -24,18 +24,7 @@
 {{ end }}
 
 {{ define "main" }}
-    <!-- Add mermaid min js file -->
-    {{ if (.Params.mermaid) }}
-    {{ partial "mermaid.html" }}
-    {{ end }}
-
-    <!-- Add mermaid min js file -->
-    {{ if (.Params.echarts) }}
-    {{ partial "echarts.html" }}
-    {{ end }}
-    
     {{ partial "article/article.html" . }}
-
 
     {{ if .Params.links }}
         {{ partial "article/components/links" . }}

@@ -9,6 +9,7 @@ outputs:
   home:
     - HTML
     - RSS
+    - JSON
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -42,6 +43,7 @@ params:
 
   mainSections:
     - posts
+
   #
   #   This additional parameter is referenced in the Stack search JSON theme
   #   so that I can include the Mastodon toots but not have them show
@@ -55,7 +57,7 @@ params:
   # {{- $filtered := ($pageSet | intersect $notHidden) -}}
   searchSections:
     - mastodon
-    - twitter
+  #    - twitter
 
   featuredImageField: image
   rssFullContent: true

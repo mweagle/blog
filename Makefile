@@ -6,7 +6,7 @@ NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
 # Hugo requirements. 
 # Ensure when this is updated we also regenerate the netlify toml
 # file://./netlify.toml
-HUGO_VERSION := "0.136.4"
+HUGO_VERSION := "0.140.0"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 
 # External resources that need to be rebuilt
@@ -52,7 +52,10 @@ ext_assets: clean netlify_toml
 	mkdir -pv ./content/posts/c4pumlthemes/puml/resources/palettes
 	cp -Rv "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes/palettes" ./content/posts/c4pumlthemes/puml/resources
 
-build: clean ext_assets 
+template_overrides:
+	cp -fv ./layouts/page/search.json ./themes/hugo-theme-stack/layouts/page/search.json
+
+build: clean ext_assets template_overrides
 	./hugo
 
 commit:
