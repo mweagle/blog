@@ -5,9 +5,10 @@ default: build
 YEAR=`date +'%Y'`
 MONTH=`date +'%m'`
 DAY=`date +'%m'`
-POST_DIR=posts/$(YEAR)/$(MONTH)
-TIME=`date +'%H:%M:%S%z'`
-NEW_POST_FILENAME=post_$(DAY)_$(TIME).md
+TIME=`date +'%H_%M_%S%z'`
+POST_DIR=posts/$(YEAR)/$(MONTH)/$(TIME)
+CONTENT_POSTS_DIR=content/$(POST_DIR)
+NEW_POST_FILENAME=index.md
 NOW_TIME=$(YEAR)-$(MONTH)-$(DAY)T$(TIME)
 
 # Hugo requirements. 
@@ -31,10 +32,10 @@ clean:
 	rm -rfv "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes"
 	
 post:
-	mkdir -pv $(POST_DIR)
-	@echo "POST FILENAME: $(NEW_POST_FILENAME)"
+	mkdir -pv $(CONTENT_POSTS_DIR)
+	@echo "POST FILENAME: $(CONTENT_POSTS_DIR)/$(NEW_POST_FILENAME)"
 	./hugo new content $(POST_DIR)/$(NEW_POST_FILENAME)
-	code "content/$(POST_DIR)/$(NEW_POST_FILENAME)"
+	code "$(CONTENT_POSTS_DIR)/$(NEW_POST_FILENAME)"
 
 # ARCHIVE_PATH=/Users/mattweagle/Downloads/mastodon-archive.zip make mastodon_replication
 mastodon_replication:
