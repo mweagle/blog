@@ -1,7 +1,14 @@
 default: build
 .PHONY: run edit
+
 # Execute time
-NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
+YEAR=`date +'%Y'`
+MONTH=`date +'%m'`
+DAY=`date +'%m'`
+POST_DIR=posts/$(YEAR)/$(MONTH)
+TIME=`date +'%H:%M:%S%z'`
+NEW_POST_FILENAME=post_$(DAY)_$(TIME).md
+NOW_TIME=$(YEAR)-$(MONTH)-$(DAY)T$(TIME)
 
 # Hugo requirements. 
 # Ensure when this is updated we also regenerate the netlify toml
@@ -22,6 +29,12 @@ hugo_install: netlify_toml
 clean:
 	rm -rfv ./public
 	rm -rfv "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes"
+	
+post:
+	mkdir -pv $(POST_DIR)
+	@echo "POST FILENAME: $(NEW_POST_FILENAME)"
+	./hugo new content $(POST_DIR)/$(NEW_POST_FILENAME)
+	code "content/$(POST_DIR)/$(NEW_POST_FILENAME)"
 
 # ARCHIVE_PATH=/Users/mattweagle/Downloads/mastodon-archive.zip make mastodon_replication
 mastodon_replication:
