@@ -6,7 +6,7 @@ NOW_TIME=`date +'%Y-%m-%dT%H:%M:%S%z'`
 # Hugo requirements. 
 # Ensure when this is updated we also regenerate the netlify toml
 # file://./netlify.toml
-HUGO_VERSION := "0.140.0"
+HUGO_VERSION := "0.142.0"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 
 # External resources that need to be rebuilt
