@@ -4,14 +4,14 @@ subtitle: ""
 canonical: https://hachyderm.io/users/mweagle/statuses/109301003226437153
 description:
 image: "/images/mastodon.png"
-toc: false
+
 date: 2022-11-07T06:02:32Z
 lastmod: 2022-11-07T06:02:32Z
 image: ""
 tags: ["serverless","management","resiliency","systems","golang","hiking","travel","guitar","phish","diy","Social Media"]
 
 categories: ["mastodon"]
-# generated: 2024-12-22T19:57:25-08:00
+# generated: 2025-03-16T12:33:30-04:00
 ---
 ![Mastodon](/images/mastodon.png)
 

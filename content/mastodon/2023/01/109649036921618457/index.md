@@ -4,14 +4,14 @@ subtitle: ""
 canonical: https://hachyderm.io/users/mweagle/statuses/109649036921618457
 description:
 image: "/images/mastodon.png"
-toc: false
+
 date: 2023-01-07T17:12:05Z
 lastmod: 2023-01-07T17:12:05Z
 image: ""
 tags: ["Social Media"]
 
 categories: ["mastodon"]
-# generated: 2024-12-22T19:57:25-08:00
+# generated: 2025-03-16T12:33:30-04:00
 ---
 ![Mastodon](/images/mastodon.png)
 
