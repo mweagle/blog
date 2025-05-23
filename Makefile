@@ -11,10 +11,10 @@ CONTENT_POSTS_DIR=content/$(POST_DIR)
 NEW_POST_FILENAME=index.md
 NOW_TIME=$(YEAR)-$(MONTH)-$(DAY)T$(TIME)
 
-# Hugo requirements. 
+# Hugo requirements.
 # Ensure when this is updated we also regenerate the netlify toml
 # file://./netlify.toml
-HUGO_VERSION := "0.145.0"
+HUGO_VERSION := "0.147.5"
 HUGO_SOURCE_URL := "https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_extended_$(HUGO_VERSION)_darwin-universal.tar.gz"
 
 # External resources that need to be rebuilt
@@ -30,7 +30,7 @@ hugo_install: netlify_toml
 clean:
 	rm -rfv ./public
 	rm -rfv "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes"
-	
+
 post:
 	mkdir -pv $(CONTENT_POSTS_DIR)
 	@echo "POST FILENAME: $(CONTENT_POSTS_DIR)/$(NEW_POST_FILENAME)"
@@ -49,14 +49,14 @@ mastodon_replication:
 #
 # Ensure that the Netlify config uses the same Hugo
 # version we've configured in the Makefile. Output:
-# 
+#
 # # Created: 2024-01-03T11:56:31-0800
 # [build]
 # command = "hugo"
 # publish = "public"
 # [build.environment]
 # HUGO_VERSION = "0.121.1"
-# 
+#
 netlify_toml:
 	 @echo "# Created: $(NOW_TIME)\n[build]\ncommand = \"hugo\"\npublish = \"public\"\n\n[build.environment]\nHUGO_VERSION = \"$(HUGO_VERSION)\"" > netlify.toml
 
@@ -67,7 +67,7 @@ ext_assets: clean netlify_toml
 	cp -Rv "$(GITHUB_STAGING_DIR)/C4-PlantUML-Themes/palettes" ./content/posts/c4pumlthemes/puml/resources
 
 template_overrides:
-# Copy the search override file into the theme directory so that the 
+# Copy the search override file into the theme directory so that the
 # mastodon and twitter contents are searchable, but don't show up in the
 # chronological feed. See config.yaml for details.
 	cp -fv ./layouts/page/search.json ./themes/hugo-theme-stack/layouts/page/search.json
