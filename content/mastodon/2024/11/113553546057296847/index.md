@@ -11,7 +11,7 @@ image: ""
 tags: ["page42","Social Media"]
 
 categories: ["mastodon"]
-# generated: 2025-05-22T22:29:20-07:00
+# generated: 2025-07-21T21:15:38-07:00
 ---
 ![Mastodon](/images/mastodon.png)
 
