@@ -3,3 +3,7 @@
 	url = https://github.com/CaiJimmy/hugo-theme-stack
 	branch = master
 	ignore = dirty
+[submodule "themes/blowfish"]
+	path = themes/blowfish
+	url = https://github.com/nunocoracao/blowfish.git
+	branch = main
